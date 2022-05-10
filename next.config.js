@@ -14,6 +14,7 @@ dotenv.config({ path: path.join(__dirname, "./.env") });
 const envVarsSchema = joi
   .object()
   .keys({
+    LOCAL_DB_PATH: joi.string(),
     NODE_ENV: joi
       .string()
       .valid("development", "production", "test", "provision")
@@ -67,6 +68,7 @@ const options = {
   // },
 
   env: {
+    localDbPath: envVars.LOCAL_DB_PATH,
     env: envVars.NODE_ENV,
     weather_app_key: envVars.WEATHER_APP_KEY,
     db: envVars.DB_CLIENT,

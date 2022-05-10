@@ -7,8 +7,8 @@
     "start": "next start -p 3000",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
-    "query": "db-essentials-query db=./public/db no_persist",
-    "seed": "db-essentials-seed ./src/lib/seeders ./public/db no_persist"
+    "query": "db-essentials-query db=./src/lib/db no_persist",
+    "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db no_persist"
   },
   "dependencies": {
     "@db-essentials/base": "^1.0.1",
