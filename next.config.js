@@ -19,15 +19,14 @@ const envVarsSchema = joi
       .valid("development", "production", "test", "provision")
       .required()
       .default("development"),
-    PORT: joi.number().required().default(3000),
-    DOMAIN: joi.string().required().default("localhost"),
+    PORT: joi.number().default(3000),
+    DOMAIN: joi.string().default("localhost"),
     DB_CLIENT: joi
       .string()
       .valid("persist", "no_persist", "mongo")
-      .required()
       .default("no_persist"),
-    DB_HOST: joi.string().required().default("test"),
-    DB_DATABASE: joi.string().required().default("test")
+    DB_HOST: joi.string().default("test"),
+    DB_DATABASE: joi.string().default("test")
   })
   .unknown();
 
