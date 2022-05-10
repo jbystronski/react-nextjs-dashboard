@@ -5,10 +5,11 @@ const path = require("path");
 export default async (req, res) => {
   try {
     const { url, body, query } = req;
+    console.log("P", path.join(__dirname, "./../../../../../../src/lib/db"));
 
     const conn = await cachedConnection(
       {
-        database: path.join(__dirname, "./../../../../../../public/db")
+        database: path.join(__dirname, "./../../../../../../src/lib/db")
       },
       "no_persist"
     );
