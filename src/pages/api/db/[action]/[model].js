@@ -8,7 +8,7 @@ export default async (req, res) => {
 
     const conn = await cachedConnection(
       {
-        database: "/var/nodejs/next_app/public/db"
+        database: path.resolve(__dirname, "../../../../../../public/db")
       },
       "no_persist"
     );
