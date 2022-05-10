@@ -8,7 +8,7 @@ export default async (req, res) => {
 
     const conn = await cachedConnection(
       {
-        database: process.env.localDbPath
+        database: path.resolve(process.env.localDbPath)
       },
       "no_persist"
     );
