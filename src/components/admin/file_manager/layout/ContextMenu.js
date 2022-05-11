@@ -68,8 +68,7 @@ const ContextMenu = () => {
     if (isImage(file["key"])) {
       actions.push({
         label: "View",
-        onClick: () =>
-          setFullscreenImage(process.env.baseUrl + serverPath(file.key)),
+        onClick: () => setFullscreenImage(file.key.split("public")[1]),
         icon: "image_file"
       });
     }
@@ -82,7 +81,7 @@ const ContextMenu = () => {
       {focusedFile ? (
         <Menu
           component={Box}
-          sx={{ zIndex: 1400 }}
+          sx={{ zIndex: 6400 }}
           open={contextMenu !== null}
           onClose={() => setContextMenu(null)}
           anchorReference="anchorPosition"

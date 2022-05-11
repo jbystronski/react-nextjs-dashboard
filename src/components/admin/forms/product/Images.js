@@ -47,7 +47,7 @@ const OverlayImage = ({ file, menu }) => {
       <UiAvatar
         styling={{ borderRadius: "8px" }}
         size={[146, 146]}
-        path={file ? file.split("public")[1] : null}
+        path={file ? file : null}
         fallback={
           <IconMapper icon="image_file" sx={{ color: "primary.light" }} />
         }
@@ -114,8 +114,7 @@ const Images = ({
                     icon: (
                       <IconMapper icon="image_file" color="secondary.main" />
                     ),
-                    onClick: () =>
-                      setFullscreenImage(process.env.baseUrl + file),
+                    onClick: () => setFullscreenImage(file),
 
                     tooltip: "Fullscreen"
                   },
@@ -152,11 +151,13 @@ const Images = ({
       >
         {sharedFiles.length
           ? sharedFiles.map((file) => {
+              const f = file.split("public")[1];
+
               return (
-                <Grid key={file} item xs={1}>
+                <Grid key={f} item xs={1}>
                   <OverlayImage
-                    key={file}
-                    file={file}
+                    key={f}
+                    file={f}
                     menu={[
                       {
                         icon: <IconMapper icon="x" color="secondary.main" />,
@@ -170,21 +171,20 @@ const Images = ({
                             color="secondary.main"
                           />
                         ),
-                        onClick: () =>
-                          setFullscreenImage(process.env.baseUrl + file),
+                        onClick: () => setFullscreenImage(f),
 
                         tooltip: "Fullscreen"
                       },
                       {
                         icon: <IconMapper icon="plus" color="secondary.main" />,
                         onClick: () => {
-                          if (secondary.indexOf(file) !== -1) {
+                          if (secondary.indexOf(f) !== -1) {
                             notification.set("Image already exists", "info");
                             notification.show();
                             return false;
                           }
 
-                          setSecondary([...secondary, file]);
+                          setSecondary([...secondary, f]);
                         },
                         tooltip: "Add image"
                       }
