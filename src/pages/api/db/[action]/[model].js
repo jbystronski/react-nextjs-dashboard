@@ -6,6 +6,8 @@ export default async (req, res) => {
   try {
     const { url, body, query } = req;
 
+    console.log("DIRNAME", __dirname);
+
     const conn = await cachedConnection(
       {
         database: process.env.localDbPath
