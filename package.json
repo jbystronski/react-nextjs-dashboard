@@ -11,7 +11,7 @@
     "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db no_persist"
   },
   "dependencies": {
-    "@db-essentials/base": "^1.0.1",
+    "@db-essentials/base": "^1.0.2",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/lab": "^5.0.0-alpha.65",
@@ -25,7 +25,6 @@
     "formidable-serverless": "^1.1.1",
     "jb-react-weather-widget": "^1.0.0",
     "joi": "^17.5.0",
-  
     "next": "12.0.8",
     "nodemailer": "^6.7.2",
     "react": "17.0.2",

@@ -25,7 +25,7 @@ export default async (req, res) => {
 
     const q = new Query(conn);
 
-    const data = await q.run(decodeURIComponent(url), body);
+    const data = await q.run(url, body);
 
     console.log("DAATA", data);
 
