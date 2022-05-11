@@ -12,7 +12,7 @@ import { useNotification } from "core/hooks";
 
 const OverlayImage = ({ file, menu }) => {
   const [state, setState] = useState(false);
-
+  console.log("FILE", file);
   return (
     // <Fade timeout={300} in={show} sx={{ opacity: 0 }}>
     <Box
@@ -47,7 +47,7 @@ const OverlayImage = ({ file, menu }) => {
       <UiAvatar
         styling={{ borderRadius: "8px" }}
         size={[146, 146]}
-        path={file ? process.env.baseUrl + file : null}
+        path={file ? file.split("public")[1] : null}
         fallback={
           <IconMapper icon="image_file" sx={{ color: "primary.light" }} />
         }

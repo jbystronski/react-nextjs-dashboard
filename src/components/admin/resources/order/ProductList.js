@@ -55,9 +55,7 @@ export default function ProductList({ orderProducts, productIds }) {
       <UiAvatar
         styling={{ borderRadius: "8px" }}
         size={[46, 46]}
-        path={
-          img.primary_image ? process.env.baseUrl + img.primary_image : null
-        }
+        path={img.primary_image ? img.primary_image : null}
         fallback={<IconMapper icon="image_file" color="primary.light" />}
       />
     ) : null;

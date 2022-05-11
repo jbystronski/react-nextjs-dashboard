@@ -56,7 +56,7 @@ export default function FileInfo({ file }) {
             <Text variant="body1" sx={{ mb: 2 }}>
               File details
             </Text>
-            <Text>Location: {stats.location}</Text>
+            <Text>Location: {stats.location.split("public")[1]}</Text>
             <Text>Created: {stats.created}</Text>
             <Text>Modified: {stats.modified}</Text>
             <Text>Size: {stats.sizeKb}</Text>

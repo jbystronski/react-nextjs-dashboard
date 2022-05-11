@@ -79,7 +79,7 @@ export default function BestsellersList() {
                         size={[42, 42]}
                         path={
                           product.primary_image
-                            ? process.env.baseUrl + product.primary_image
+                            ? product.primary_image
                             : undefined
                         }
                         styling={{ borderRadius: "8px" }}

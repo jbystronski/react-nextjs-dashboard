@@ -66,7 +66,7 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
           <UiAvatar
             styling={{ borderRadius: "8px" }}
             size={[64, 64]}
-            path={primary ? process.env.baseUrl + primary : null}
+            path={primary ? primary : null}
             fallback={<IconMapper icon="image_file" color="primary.light" />}
           />
         </Box>

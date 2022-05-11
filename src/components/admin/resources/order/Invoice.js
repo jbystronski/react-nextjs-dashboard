@@ -337,7 +337,7 @@ export default function Invoice({ details, showOrder }) {
                 amount_paid: (0).toFixed(2)
               }
             }}
-            logoUrl={process.env.baseUrl + "images/logo.png"}
+            logoUrl={"/images/logo.png"}
           />
         </Suspense>
       )}

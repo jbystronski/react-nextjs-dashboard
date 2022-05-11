@@ -63,7 +63,7 @@ module.exports = {
           <UiAvatar
             styling={{ borderRadius: "8px" }}
             size={[46, 46]}
-            path={path ? process.env.baseUrl + path : null}
+            path={path ? path : null}
             fallback={<IconMapper icon="image_file" color="primary.light" />}
           />
         </Suspense>
