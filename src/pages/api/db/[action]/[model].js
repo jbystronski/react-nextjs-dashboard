@@ -10,6 +10,9 @@ export default async (req, res) => {
 
     console.log("Q", JSON.stringify(query));
 
+    console.log("ENCODED", encodeURIComponent(url));
+    console.log("DECODED", decodeURIComponent(url));
+
     console.log("URL", url);
 
     const conn = await cachedConnection(
