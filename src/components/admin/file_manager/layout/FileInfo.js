@@ -20,13 +20,15 @@ export default function FileInfo({ file }) {
     }
   }, [file]);
 
-  const renderImage = (file) => (
-    <UiAvatar
-      styling={{ borderRadius: 2 }}
-      size={[200, 200]}
-      path={process.env.baseUrl + file.key.replace("./public", "")}
-    />
-  );
+  const renderImage = (file) => {
+    return (
+      <UiAvatar
+        styling={{ borderRadius: 2 }}
+        size={[200, 200]}
+        path={file.key.split("public")[1]}
+      />
+    );
+  };
 
   const renderIcon = (file) => (
     <UiAvatar

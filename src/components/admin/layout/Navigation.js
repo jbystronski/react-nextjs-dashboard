@@ -24,7 +24,7 @@ import { addProps } from "core/utils/addProps";
 import { useAdmin } from "lib/contexts";
 import { useWindowSize } from "core/hooks";
 import { Image, IconMapper } from "core/ui";
-import { registerables } from "chart.js";
+
 import { useTheme } from "core/ui/_libs";
 
 const Nav = ({
