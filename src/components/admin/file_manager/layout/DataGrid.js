@@ -140,10 +140,7 @@ const ItemRenderer = ({ index, style, data }) => {
               <Image
                 width={dimensions}
                 height={dimensions}
-                src={
-                  process.env.baseUrl +
-                  data[index]["key"].replace("./public", "")
-                }
+                src={data[index]["key"].split("public")[1]}
               />
             </Avatar>
           ) : (
