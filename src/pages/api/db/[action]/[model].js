@@ -8,6 +8,8 @@ export default async (req, res) => {
 
     console.log("DIRNAME", path.resolve("./src/lib", "db"));
 
+    console.log("URL", url);
+
     const conn = await cachedConnection(
       {
         database: path.resolve("./src/lib", "db")
