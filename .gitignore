@@ -6,8 +6,6 @@
 .pnp.js
 
 
-# local images
-/public/images
 
 # testing
 /coverage
