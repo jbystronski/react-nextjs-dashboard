@@ -2,7 +2,8 @@ const useDownload = () => {
   const download = async (path) => {
     try {
       const url = path.replace("./public", process.env.baseUrl);
-      const res = await fetch(url, {
+
+      const res = await fetch(url.split("public")[1], {
         method: "GET",
         responseType: "blob",
         headers: {
