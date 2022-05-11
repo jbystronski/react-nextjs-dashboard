@@ -12,7 +12,7 @@ export default async (req, res) => {
 
     console.log("ENCODED", encodeURIComponent(url));
     console.log("DECODED", decodeURIComponent(url));
-    console.log("DECODE URI", decodeUri(url));
+    console.log("DECODE URI", decodeURI(url));
 
     console.log("URL", url);
 
