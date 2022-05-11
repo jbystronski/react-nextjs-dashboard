@@ -6,11 +6,11 @@ export default async (req, res) => {
   try {
     const { url, body, query } = req;
 
-    console.log("DIRNAME", __dirname);
+    console.log("DIRNAME", path.resolve("./src/lib", "db"));
 
     const conn = await cachedConnection(
       {
-        database: process.env.localDbPath
+        database: path.resolve("./src/lib", "db")
       },
       "no_persist"
     );
