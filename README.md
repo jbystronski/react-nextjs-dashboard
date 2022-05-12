@@ -7,7 +7,7 @@
 <h2 style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/">Live Preview</a></h2> 
 
 
-<h2 style="text-align: center">Built with</h2>
+<h4 style="text-align: center;">Built with</h4>
 <br>
 <div style="display: inline-block; text-align: center; width: 100%">
     <img src="public/preview/next.svg" alt="Nextjs logo" title="Next.js" style="width: 48px; height: auto; margin-right: 42px;">
