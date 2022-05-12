@@ -13,7 +13,8 @@ import {
   Avatar,
   Grid,
   Stack,
-  Text
+  Text,
+  Portal
 } from "core/ui/_libs";
 
 import { useNotification } from "core/hooks";
@@ -37,13 +38,16 @@ const UploadList = () => {
   const info = useNotification();
 
   const handleUpload = async () => {
-    const res = await uploadFiles(directory);
-    await fetchFiles();
-
-    if (res.status === 200) {
-      info.set("Files uploaded", "success");
+    if (process.env.db !== "no_persist") {
+      const res = await uploadFiles(directory);
+      await fetchFiles();
+      if (res.status === 200) {
+        info.set("Files uploaded", "success");
+      } else {
+        info.set("Error occured, check if your files are not too big", "error");
+      }
     } else {
-      info.set("Error occured, check if your files are not too big", "error");
+      info.set("Changes are blocked in preview mode", "info");
     }
   };
 
@@ -98,7 +102,7 @@ const UploadList = () => {
                     <IconButton
                       sx={{ mr: 0.5 }}
                       onClick={() => removeFromUploadQueue(f.name)}
-                      icon={<IconMapper icon="cancel" fontSize="small" />}
+                      icon={<IconMapper icon="x" fontSize="small" />}
                       edge="end"
                       aria-label="delete"
                     />
@@ -110,7 +114,7 @@ const UploadList = () => {
                     <UiAvatar
                       size={[32, 32]}
                       path={URL.createObjectURL(f)}
-                      styling={{ borderRadius: 2 }}
+                      styling={{ borderRadius: 0 }}
                     />
                   ) : (
                     <UiAvatar
@@ -119,7 +123,7 @@ const UploadList = () => {
                         bgcolor: "background.image",
                         width: 32,
                         height: 32,
-                        borderRadius: 2
+                        borderRadius: 0
                       }}
                       fallback={
                         <IconMapper
@@ -172,19 +176,21 @@ const UploadList = () => {
       </Stack>
       <UiButton
         onClick={emptyUploadQueue}
-        label="Empty all"
+        label="Empty"
         disabled={!files.length}
-        endIcon={<IconMapper icon="trash" />}
+        endIcon={<IconMapper icon="x" />}
       />
     </Stack>
   );
 
   return (
-    <Box sx={{ height: "inherit" }}>
-      {list}
-      {btns}
-      {info.component}
-    </Box>
+    <>
+      <Box sx={{ height: "inherit" }}>
+        {list}
+        {btns}
+      </Box>
+      <Portal>{info.component}</Portal>
+    </>
   );
 };
 

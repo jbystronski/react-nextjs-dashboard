@@ -17,6 +17,8 @@ export default async (req, res) => {
 
     const data = await q.run(decodeURIComponent(url), body);
 
+    console.log("conn", JSON.stringify(conn));
+
     console.log("DAATA", data);
 
     res.status(200).json(data);

@@ -96,7 +96,7 @@ function usePagination({ url, limit, countUrl }) {
     },
     count,
     filter: (ids) => {
-      const cp = data.filter((entry) => !ids.includes(entry._id));
+      const cp = data.filter((entry) => !ids.includes(entry._id + ""));
       setData(cp);
     }
   };

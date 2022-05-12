@@ -126,7 +126,7 @@ function Index({ model, ...props }) {
 
   const deleteData = () => {
     async function handleDelete() {
-      await fetch(`/api/db/delete_many/${model}?_id.in=${checked}`, {
+      await fetch(`/api/db/delete_many/${model}?_id._in=${checked}`, {
         method: "DELETE"
       });
 
@@ -212,18 +212,18 @@ function Index({ model, ...props }) {
               const container = [];
 
               if (!allChecked) {
-                data.map((el) => container.push(el["_id"]));
+                data.map((el) => container.push(el["_id"] + ""));
               }
               setChecked(container);
               setAllChecked(!allChecked);
             }}
             handleCheck={(e) => {
-              const id = e.target.id;
+              const id = e.target.id + "";
               const copy = checked.slice();
 
-              copy.includes(id)
-                ? copy.splice(copy.indexOf(id), 1)
-                : copy.push(id);
+              copy.includes(id + "")
+                ? copy.splice(copy.indexOf(id + ""), 1)
+                : copy.push(id + "");
 
               setChecked(copy);
             }}

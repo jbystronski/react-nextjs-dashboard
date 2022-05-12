@@ -113,10 +113,10 @@
   dependencies:
     "@date-io/core" "^2.13.2"
 
-"@db-essentials/base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@db-essentials/base/-/base-1.0.2.tgz#f7c077f2f93ff3fcf1f6cb01542ec859ecec04ab"
-  integrity sha512-15Lz4hZA8DROIkRs+vzVIDwWIjZl0pdMAu63ek0rV/mE7hyLfmua2051J8gI7U2kq+hCExlgyqbwrGr9v4x/IQ==
+"@db-essentials/base@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@db-essentials/base/-/base-1.0.4.tgz#5daba486a06b9f5195134945f45148b5ab469e60"
+  integrity sha512-MMCgcFgNlMGPsmC7FTyKIhFv4+w187J5xON9noQPgOmiJFfi6O8sCKFVxiAI22UO6LbrWQgQ+mv+eOziYtftIg==
 
 "@emotion/babel-plugin@^11.7.1":
   version "11.9.2"

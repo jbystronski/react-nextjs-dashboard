@@ -2,7 +2,16 @@ import React from "react";
 
 import { IconMapper } from "core/ui";
 
-import { Menu, MenuItem, ListItemIcon, ListItemText, Box } from "core/ui/_libs";
+import { useNotification } from "core/hooks";
+
+import {
+  Menu,
+  MenuItem,
+  ListItemIcon,
+  ListItemText,
+  Box,
+  Portal
+} from "core/ui/_libs";
 
 import { useManager } from "../context";
 
@@ -22,6 +31,8 @@ const ContextMenu = () => {
     sharedFiles,
     serverPath
   } = useManager();
+
+  const info = useNotification();
 
   const contextMenuActions = [
     {
@@ -47,11 +58,7 @@ const ContextMenu = () => {
         download(focusedFile["key"]),
       icon: "download"
     },
-    {
-      label: "Add folder",
-      onClick: handleOpenModal,
-      icon: "add_folder"
-    },
+
     {
       label: "Rename",
       onClick: () => setRenameInput(true),
@@ -59,7 +66,10 @@ const ContextMenu = () => {
     },
     {
       label: "Delete",
-      onClick: remove,
+      onClick:
+        process.env.db !== "no_persist"
+          ? () => remove()
+          : () => info.set("Changes blocked in preview mode", "info"),
       icon: "trash"
     }
   ];
@@ -112,6 +122,7 @@ const ContextMenu = () => {
           ))}
         </Menu>
       ) : null}
+      <Portal>{info.component}</Portal>
     </>
   );
 };

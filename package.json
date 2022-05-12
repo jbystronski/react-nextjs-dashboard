@@ -1,6 +1,14 @@
 {
-  "name": "next_app",
+  "name": "react-nextjs-dashboard",
+  "author": "Jakub Bystroński",
   "private": true,
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "material ui",
+    "dashboard"
+  ],
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -11,7 +19,7 @@
     "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db no_persist"
   },
   "dependencies": {
-    "@db-essentials/base": "^1.0.2",
+    "@db-essentials/base": "^1.0.4",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/lab": "^5.0.0-alpha.65",

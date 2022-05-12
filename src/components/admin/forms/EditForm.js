@@ -58,11 +58,11 @@ const EditForm = ({ model, id, ...props }) => {
     try {
       if (validate(data)) {
         console.log(data);
-        const res = await fetch(`/api/db/update/${model}`, {
+        const res = await fetch(`/api/db/update_one/${model}`, {
           method: "PUT",
           body: JSON.stringify({
             _id: id,
-            set: data
+            _set: data
           })
         });
 
@@ -90,7 +90,7 @@ const EditForm = ({ model, id, ...props }) => {
             <Stack spacing={2}>
               {Object.keys(data).length &&
                 addProps(forms[model], {
-                  id: id,
+                  _id: id,
                   data: data,
                   handleSubmit: handleSubmit,
                   getError: getError,

@@ -225,7 +225,7 @@ export default function Invoice({ details, showOrder }) {
   const alignOpposite = (left, right) => (
     <Stack direction="row" justifyContent="space-between">
       <span style={{ width: "150px", textAlign: "right" }}>{left}</span>
-      <span style={{ width: "100px", textAlign: "right" }}>{right}</span>
+      <span style={{ width: "130px", textAlign: "right" }}>{right}</span>
     </Stack>
   );
 
@@ -306,39 +306,51 @@ export default function Invoice({ details, showOrder }) {
         </>
       ) : (
         <Suspense fallback={<div>Loading invoice...</div>}>
-          <PdfInvoice
-            close={() => setPdf(false)}
-            data={{
-              vendor: {
-                city: vendorCity,
-                country: vendorCountry,
-                phone: vendorPhone,
-                zipCode: vendorZipCode,
-                street: vendorStreet,
-                company: vendorCompany,
-                taxId: vendorTaxId,
-                email: vendorEmail
-              },
-              client: recipient,
-              items: {
-                names: items.map((i) => i.name),
-                codes: items.map((i) => i.code),
-                qts: items.map((i) => i.qty),
-                unit_prices: items.map((i) => i.unit_price_wo_tax.toFixed(2)),
-                taxes: items.map((i) =>
-                  (i.unit_price_w_tax - i.unit_price_wo_tax).toFixed(2)
-                ),
-                totals: items.map((i) => i.product_total.toFixed(2))
-              },
-              summary: {
-                total: details.total_to_pay.toFixed(2),
-                shipping_fee: (details.shipping_fee * 1).toFixed(2),
-                tax: (details.total - details.subtotal).toFixed(2),
-                amount_paid: (0).toFixed(2)
-              }
+          <Box
+            id="pdf_container"
+            sx={{
+              zIndex: 6000,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%"
             }}
-            logoUrl={"/images/logo.png"}
-          />
+          >
+            <PdfInvoice
+              close={() => setPdf(false)}
+              data={{
+                vendor: {
+                  city: vendorCity,
+                  country: vendorCountry,
+                  phone: vendorPhone,
+                  zipCode: vendorZipCode,
+                  street: vendorStreet,
+                  company: vendorCompany,
+                  taxId: vendorTaxId,
+                  email: vendorEmail
+                },
+                client: recipient,
+                items: {
+                  names: items.map((i) => i.name),
+                  codes: items.map((i) => i.code),
+                  qts: items.map((i) => i.qty),
+                  unit_prices: items.map((i) => i.unit_price_wo_tax.toFixed(2)),
+                  taxes: items.map((i) =>
+                    (i.unit_price_w_tax - i.unit_price_wo_tax).toFixed(2)
+                  ),
+                  totals: items.map((i) => i.product_total.toFixed(2))
+                },
+                summary: {
+                  total: details.total_to_pay.toFixed(2),
+                  shipping_fee: (details.shipping_fee * 1).toFixed(2),
+                  tax: (details.total - details.subtotal).toFixed(2),
+                  amount_paid: (0).toFixed(2)
+                }
+              }}
+              logoUrl={"/images/logo.png"}
+            />
+          </Box>
         </Suspense>
       )}
     </>

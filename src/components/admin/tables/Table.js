@@ -71,11 +71,11 @@ function Table({
                 {data.map((row, index) => {
                   return (
                     <TableRow key={index}>
-                      <TableCell key={row["_id"]}>
+                      <TableCell key={row["_id"] + ""}>
                         <Checkbox
                           size="small"
-                          id={row["_id"]}
-                          checked={checked.includes(row["_id"])}
+                          id={row["_id"] + ""}
+                          checked={checked.includes(row["_id"] + "")}
                           onChange={handleCheck}
                         />
                       </TableCell>
