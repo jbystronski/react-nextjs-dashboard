@@ -48,6 +48,8 @@ const useFilesystem = () => {
   };
 
   const navigateFs = (node) => {
+    node = node.split("/").reverse()[0] === "public" ? "/public" : node;
+
     const n = data.find(node);
     setFocusedFile(n);
     if (n.hasChildren) {
@@ -75,8 +77,8 @@ const useFilesystem = () => {
       return container;
     }
 
-    const tree = new Tree("./public");
-    const root = tree.find("./public");
+    const tree = new Tree("/public");
+    const root = tree.find("/public");
     root.children = convertToNodes(arr, root);
     setDirectory(root);
     setFocusedFile(root);

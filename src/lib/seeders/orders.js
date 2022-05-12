@@ -1,6 +1,6 @@
 const faker = require("faker");
 const path = require("path");
-const { cachedConnection } = require("jb-nodejs-database-adapter");
+const { cachedConnection, Query } = require("@db-essentials/base");
 
 const { numberRand, arrayRand, generateUniqueArray } = require(path.resolve(
   "src/core/utils"
@@ -15,40 +15,84 @@ let users;
 let shipping_methods;
 let payment_methods;
 
-(async function () {
-  const db = await cachedConnection(
-    path.join(__dirname, "/../../../public/db"),
-    "local"
+async function getProducts() {
+  const conn = await cachedConnection(
+    {
+      database: path.resolve("./src/lib", "db")
+    },
+    "no_persist"
   );
 
-  const productsPromise = await db.run(
-    "find/products?limit=200&only=code,name,price_wo_tax,price_w_tax,_id"
+  if (products) {
+    return products;
+  } else {
+    products = await new Query(conn).run(
+      "find/products?_limit=200&_only=code,name,price_wo_tax,price_w_tax,_id"
+    );
+    return products;
+  }
+}
+
+async function getUsers() {
+  const conn = await cachedConnection(
+    {
+      database: path.resolve("./src/lib", "db")
+    },
+    "no_persist"
   );
 
-  const usersPromise = await db.run("find/users?limit=200");
+  if (users) {
+    return users;
+  } else {
+    users = await new Query(conn).run("find/users?_limit=200");
+    return users;
+  }
+}
 
-  const shipping_methodsPromise = await db.run(
-    "find/shipping_methods?only=name,fee"
+async function getShippingMethods() {
+  const conn = await cachedConnection(
+    {
+      database: path.resolve("./src/lib", "db")
+    },
+    "no_persist"
   );
 
-  const payment_methodsPromise = await db.run(
-    "find/shipping_methods?only=name"
+  if (shipping_methods) {
+    return shipping_methods;
+  } else {
+    shipping_methods = await new Query(conn).run(
+      "find/shipping_methods?_only=name,fee"
+    );
+    return shipping_methods;
+  }
+}
+
+async function getPaymentMethods() {
+  const conn = await cachedConnection(
+    {
+      database: path.resolve("./src/lib", "db")
+    },
+    "no_persist"
   );
 
-  products = await productsPromise;
-  users = await usersPromise;
-  shipping_methods = await shipping_methodsPromise;
-  payment_methods = await payment_methodsPromise;
-})();
+  if (payment_methods) {
+    return payment_methods;
+  } else {
+    payment_methods = await new Query(conn).run(
+      "find/payment_methods?_only=name"
+    );
+    return payment_methods;
+  }
+}
 
-module.exports = () => {
+module.exports = async () => {
   const productCount = numberRand(1, 10);
 
   const productsArray = generateUniqueArray(
     [],
     productCount,
     arrayRand,
-    products
+    await getProducts()
   );
 
   let subtotal = 0;
@@ -75,9 +119,9 @@ module.exports = () => {
     total += p.price_w_tax * qty;
   }
 
-  const user = arrayRand(users);
-  const shipping_method = arrayRand(shipping_methods);
-  const payment_method = arrayRand(payment_methods);
+  const user = arrayRand(await getUsers());
+  const shipping_method = arrayRand(await getShippingMethods());
+  const payment_method = arrayRand(await getPaymentMethods());
 
   return {
     billing_details: {

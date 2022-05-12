@@ -1,6 +1,6 @@
 const faker = require("faker");
 
-module.exports = () => {
+module.exports = async () => {
   return {
     active: faker.datatype.boolean(),
     name: faker.company.catchPhrase(),

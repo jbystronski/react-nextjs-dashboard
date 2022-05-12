@@ -165,11 +165,10 @@ const FileManager = () => {
             >
               {!focusedFile
                 ? null
-                : focusedFile.key
-                    .substring(2)
-                    .split("/")
+                : ["public", ...focusedFile.key.split("public")[1].split("/")]
+                    .filter((el) => el !== "")
                     .map((subdir, index, self) => {
-                      const currKey = "./" + self.slice(0, index + 1).join("/");
+                      const currKey = self.slice(0, index + 1).join("/");
 
                       return (
                         <>
@@ -183,7 +182,11 @@ const FileManager = () => {
                                 color: "primary.main"
                               }
                             }}
-                            onClick={() => navigateFs(currKey)}
+                            onClick={() =>
+                              navigateFs(
+                                focusedFile.key.split(currKey)[0] + currKey
+                              )
+                            }
                           >
                             {subdir}
                           </Text>

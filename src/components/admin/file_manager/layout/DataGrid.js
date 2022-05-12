@@ -80,7 +80,7 @@ const ItemRenderer = ({ index, style, data }) => {
     handleContextMenu,
     handleShareFile,
     sharedFiles,
-    serverPath,
+
     setFocusedFile
   } = useManager();
   return (
