@@ -67,7 +67,11 @@ function usePagination({ url, limit, countUrl }) {
   };
 
   const getNext = () => {
-    page < lastPage ? setPage(page + 1) : false;
+    return page < lastPage
+      ? setPage(page + 1)
+      : page === lastPage
+      ? false
+      : false;
   };
 
   const getRecords = () => {
