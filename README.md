@@ -1,0 +1,1 @@
+<img src="public/preview/theme1.png" alt="Purple dark theme preview" title="Purple dark theme">
