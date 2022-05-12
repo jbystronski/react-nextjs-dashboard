@@ -25,7 +25,7 @@ categoriesPromise.then((res) => {
   categories = res;
 });
 
-module.exports = () => {
+module.exports = async () => {
   if (!categories.length) {
     console.log(
       "Found 0 categories, you must add some categories first, quitting."

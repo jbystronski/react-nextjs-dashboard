@@ -63,12 +63,13 @@ function usePagination({ url, limit, countUrl }) {
   }, [JSON.stringify([url, page, limit, count, resetCount])]);
 
   const getPrev = () => {
-    page > 1 ? setPage(page - 1) : false;
+    page > 1 ? setPage(--page) : false;
   };
 
   const getNext = () => {
+    console.log("LAST PAGE", lastPage, page);
     return page < lastPage
-      ? setPage(page + 1)
+      ? setPage(++page)
       : page === lastPage
       ? false
       : false;

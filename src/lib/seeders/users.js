@@ -4,10 +4,10 @@ const chalk = require("chalk");
 
 const { numberRand, arrayRand } = require(path.resolve("src/core/utils"));
 
-module.exports = () => {
+module.exports = async () => {
   const gender = arrayRand(["male", "female"]);
 
-  return {
+  const ob = {
     gender: gender,
     img: `https://randomuser.me/api/portraits/${arrayRand([
       "women",
@@ -40,4 +40,7 @@ module.exports = () => {
     created_at: faker.date.past().toISOString(),
     updated_at: faker.date.recent().toISOString()
   };
+
+  console.log(ob);
+  return ob;
 };

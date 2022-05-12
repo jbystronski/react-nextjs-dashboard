@@ -1,10 +1,22 @@
-const { cachedConnection, Query } = require("@db-essentials/base");
+const {
+  cachedConnection,
+  resolveConnection,
+  Query
+} = require("@db-essentials/base");
 
 const path = require("path");
 
 export default async (req, res) => {
   try {
     const { url, body, query } = req;
+
+    const Instance = resolveConnection(process.env.db);
+    const noCache = await new Instance(
+      { database: path.resolve("./src/lib", "db") },
+      "no_persist"
+    ).establishConnection();
+
+    console.log("nc", noCache);
 
     const conn = await cachedConnection(
       {
@@ -13,13 +25,9 @@ export default async (req, res) => {
       "no_persist"
     );
 
-    const q = new Query(conn);
+    const q = new Query(noCache);
 
-    const data = await q.run(decodeURIComponent(url), body);
-
-    console.log("conn", JSON.stringify(conn));
-
-    console.log("DAATA", data);
+    const data = await q.run(url, body);
 
     res.status(200).json(data);
   } catch (e) {

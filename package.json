@@ -16,10 +16,10 @@
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
     "query": "db-essentials-query db=./src/lib/db no_persist",
-    "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db no_persist"
+    "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db persist"
   },
   "dependencies": {
-    "@db-essentials/base": "^1.0.4",
+    "@db-essentials/base": "^1.0.5",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/lab": "^5.0.0-alpha.65",
