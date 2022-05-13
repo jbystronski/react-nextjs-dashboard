@@ -1,4 +1,4 @@
-<h4 align="center">A slim admin dashboard template created with Next.js and Material UI, with a built-in file manager.</h4>
+<h4 align="left">A slim admin dashboard template created with Next.js and Material UI, with a built-in file manager.</h4>
 
 
 
