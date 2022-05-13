@@ -11,7 +11,8 @@
 <div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme4.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
 
 <br>
-<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/">Live version</a></h4> 
+<h4 align="center">Live version</h4>
+<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/">Link</a></h4> 
 
 <h4 align="center">Created in</h4>
 <br>
