@@ -6,8 +6,12 @@
 
 <div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme2.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
 
+<div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme3.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
+
+<div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme4.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
+
 <br>
-<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/">Live</a></h4> 
+<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/">Live version</a></h4> 
 
 <h4 align="center">Created in</h4>
 <br>
