@@ -6,7 +6,7 @@
 
 
 
-<div align="center" style="display: inline-table;>
+<div align="center" style="display: inline-table;">
     <img style="width: 250px;" src="public/preview/col5.png" alt="Purple dark theme preview" title="Purple dark theme" >
     <img style="width: 250px;" src="public/preview/col7.png" alt="Purple dark theme preview" title="Purple dark theme" >
     <img style="width: 250px;" src="public/preview/col6.png" alt="Purple dark theme preview" title="Purple dark theme" >
