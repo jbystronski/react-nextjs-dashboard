@@ -5,6 +5,11 @@
 <br/>
 
 
+<div align="center" style="display: inline-table;">
+    <img style="width: 350px;" src="public/preview/col1.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 3500px;" src="public/preview/col1.png" alt="Purple dark theme preview" title="Purple dark theme" >
+</div>
+
 
 <div align="center" style="display: inline-table;">
     <img style="width: 270px;" src="public/preview/col5.png" alt="Purple dark theme preview" title="Purple dark theme" >
