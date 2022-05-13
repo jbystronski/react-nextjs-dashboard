@@ -8,7 +8,7 @@ import { useWindowSize } from "core/hooks";
 
 const Header = ({ handleMenuOpen }) => {
   const { ThemesMenu, SettingsMenu } = menus;
-  const windowSize = useWindowSize();
+  // const windowSize = useWindowSize();
 
   const theme = useTheme();
 
@@ -27,7 +27,7 @@ const Header = ({ handleMenuOpen }) => {
         }
       }}
     >
-      <Box
+      {/* <Box
         sx={{
           position: "fixed",
 
@@ -55,7 +55,7 @@ const Header = ({ handleMenuOpen }) => {
             }
           }
         }}
-      />
+      /> */}
       <Stack
         direction="row"
         sx={{

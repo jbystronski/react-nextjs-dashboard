@@ -1,14 +1,21 @@
 <p align="center">A slim admin dashboard template created with Next.js and Material UI, with a built-in file manager.</p>
 
 
-<img src="public/preview/theme1.png" alt="Purple dark theme preview" title="Purple dark theme" style="border-radius: 12px;">
+
 <br/>
 
-<div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme2.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
 
-<div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme3.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
 
-<div style="border-radius: 12px; overflow: hidden;"><img src="public/preview/theme4.png" alt="Purple dark theme preview" title="Purple dark theme" ></div>
+<div align="center">
+    <img style="height: 500px; width: auto;" src="public/preview/col1.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col2.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col3.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col4.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col5.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col6.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="height: 500px; width: auto;" src="public/preview/col7.png" alt="Purple dark theme preview" title="Purple dark theme" >
+</div>
+
 
 <br>
 <h4 align="center">Live version</h4>
