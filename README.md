@@ -1,4 +1,4 @@
-<p align="center">A slim admin dashboard template built with Next.js and Material UI</p>
+<p align="center">A slim admin dashboard template created with Next.js and Material UI, with a built-in file manager.</p>
 
 
 <img src="public/preview/theme1.png" alt="Purple dark theme preview" title="Purple dark theme" style="border-radius: 12px;">
