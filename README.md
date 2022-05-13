@@ -12,7 +12,7 @@
 
 <br>
 <h4 align="center">Live version</h4>
-<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/"><img src="public/preview/link.svg" alt="Preview" title="Preview" style="width: 32px; height: auto;"></a></h4> 
+<h4 align="center" style="text-align: center;"><a href="https://react-nextjs-dashboard.vercel.app/"><img src="public/preview/link.svg" alt="Preview" title="Preview" style="width: 24px; height: auto;"></a></h4> 
 
 <h4 align="center">Created in</h4>
 <br>
