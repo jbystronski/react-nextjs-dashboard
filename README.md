@@ -7,12 +7,12 @@
 
 
 <div align="center" style="display: inline-table;">
-    <img style="width: 250px;" src="public/preview/col5.png" alt="Purple dark theme preview" title="Purple dark theme" >
-    <img style="width: 250px;" src="public/preview/col7.png" alt="Purple dark theme preview" title="Purple dark theme" >
-    <img style="width: 250px;" src="public/preview/col6.png" alt="Purple dark theme preview" title="Purple dark theme" >
-    <img style="width: 250px;" src="public/preview/col2.png" alt="Purple dark theme preview" title="Purple dark theme" >
-    <img style="width: 250px;" src="public/preview/col1.png" alt="Purple dark theme preview" title="Purple dark theme" >
-    <img style="width: 250px;" src="public/preview/col3.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col5.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col7.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col6.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col2.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col1.png" alt="Purple dark theme preview" title="Purple dark theme" >
+    <img style="width: 270px;" src="public/preview/col3.png" alt="Purple dark theme preview" title="Purple dark theme" >
 </div>
 
 
