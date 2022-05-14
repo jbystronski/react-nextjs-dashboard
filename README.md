@@ -1,7 +1,13 @@
-<h3>DESCRIPTION</h3>
+<h3>OVERWIEW</h3>
 <h4 align="left">A slim admin dashboard template created with Next.js and Material UI, with a built-in file manager.</h4>
 
+<p>This is a preview version, it depends on @db-essentials/base package for data read/write operations. </p>
 
+
+
+<uL>
+    <li>This is a preview version supported with @db-essentials for backend data fetching (check it out ...). It's open source, so do whatever you want.</li>
+</ul>
 
 <br/>
 

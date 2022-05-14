@@ -16,8 +16,6 @@ export default async (req, res) => {
       "no_persist"
     ).establishConnection();
 
-    console.log("nc", noCache);
-
     const conn = await cachedConnection(
       {
         database: path.resolve("./src/lib", "db")
@@ -25,7 +23,7 @@ export default async (req, res) => {
       "no_persist"
     );
 
-    const q = new Query(noCache);
+    const q = new Query(conn);
 
     const data = await q.run(url, body);
 
