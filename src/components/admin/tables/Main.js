@@ -11,8 +11,9 @@ import {
   IconMapper
 } from "core/ui";
 import * as schemas from "lib/configs/table_schemas";
+import { useNotification } from "core/hooks";
 
-import { Paper, Box, Text, Stack } from "core/ui/_libs";
+import { Paper, Box, Text, Stack, Portal } from "core/ui/_libs";
 
 function Index({ model, ...props }) {
   const router = useRouter();
@@ -26,6 +27,8 @@ function Index({ model, ...props }) {
   const [timeRange, setTimeRange] = useState(null);
 
   const { showDialog, component: confirmDialog } = useConfirm();
+
+  const info = useNotification();
 
   const selectFields = `_only=${Object.keys(schemas[model]?.properties).join(
     ","
@@ -125,6 +128,11 @@ function Index({ model, ...props }) {
   ];
 
   const deleteData = () => {
+    if (process.env.db === "no_persist") {
+      info.set("Deleting blocked in preview mode", "info");
+      return;
+    }
+
     async function handleDelete() {
       await fetch(`/api/db/delete_many/${model}?_id._in=${checked}`, {
         method: "DELETE"
@@ -276,6 +284,7 @@ function Index({ model, ...props }) {
           </Stack>
         </Box>
       )}
+      <Portal>{info.component}</Portal>
     </>
   );
 }

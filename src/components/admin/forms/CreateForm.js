@@ -26,17 +26,18 @@ const CreateForm = ({ model }) => {
   const handleSubmit = async (data) => {
     try {
       if (validate(data)) {
-        await fetch(`/api/db/save_one/${model}`, {
-          method: "POST",
-          body: JSON.stringify({
-            _save: {
-              ...getDefaultModelData(model),
-              ...data,
-              created_at: getToday(),
-              updated_at: getToday()
-            }
-          })
-        });
+        process.env.db !== "no_persist" &&
+          (await fetch(`/api/db/save_one/${model}`, {
+            method: "POST",
+            body: JSON.stringify({
+              _save: {
+                ...getDefaultModelData(model),
+                ...data,
+                created_at: getToday(),
+                updated_at: getToday()
+              }
+            })
+          }));
         info.set("New entry created", "success");
       } else {
         info.set("You've got some errors in your form", "error");

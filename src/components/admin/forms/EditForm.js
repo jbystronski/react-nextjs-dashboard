@@ -54,19 +54,17 @@ const EditForm = ({ model, id, ...props }) => {
   // ];
 
   async function handleSubmit(data) {
-    console.log(data);
     try {
       if (validate(data)) {
-        console.log(data);
-        const res = await fetch(`/api/db/update_one/${model}`, {
-          method: "PUT",
-          body: JSON.stringify({
-            _id: id,
-            _set: data
-          })
-        });
+        process.env.db !== "no_persist" &&
+          (await fetch(`/api/db/update_one/${model}`, {
+            method: "PUT",
+            body: JSON.stringify({
+              _id: id,
+              _set: data
+            })
+          }));
 
-        // const json = await res.json();
         info.set("Entry updated", "success");
       } else {
         info.set("You've got some errors in your form", "error");
