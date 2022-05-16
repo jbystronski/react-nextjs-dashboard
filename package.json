@@ -19,7 +19,7 @@
     "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db persist"
   },
   "dependencies": {
-    "@db-essentials/base": "^1.0.6",
+    "@db-essentials/base": "^1.0.7",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/lab": "^5.0.0-alpha.65",

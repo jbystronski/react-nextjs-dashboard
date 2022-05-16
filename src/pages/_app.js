@@ -1,4 +1,3 @@
-import "../styles/globals.css";
 import { FullScreenLoader } from "core/ui";
 
 import { useState, useEffect } from "react";
