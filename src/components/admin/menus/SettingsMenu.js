@@ -1,5 +1,6 @@
 import { IconMapper } from "core/ui";
 import * as React from "react";
+import { useNotification } from "core/hooks";
 
 import {
   IconButton as UiIconButton,
@@ -9,13 +10,16 @@ import {
   List,
   ListItem,
   Text,
-  useTheme
+  useTheme,
+  Portal
 } from "core/ui/_libs";
 
 export default function SettingsMenu() {
   const {
     palette: { mode }
   } = useTheme();
+
+  const info = useNotification();
 
   const [open, setOpen] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -32,7 +36,7 @@ export default function SettingsMenu() {
     {
       icon: "logout",
       text: "Sign out",
-      onClick: () => alert("signing out")
+      onClick: () => info.set("Signing out", "info")
     }
   ];
 
@@ -81,6 +85,7 @@ export default function SettingsMenu() {
           </Fade>
         )}
       </Popper>
+      <Portal>{info.component}</Portal>
     </>
   );
 }

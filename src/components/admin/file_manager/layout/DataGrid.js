@@ -128,22 +128,22 @@ const ItemRenderer = ({ index, style, data }) => {
         />
         <div>
           {isImage(data[index]["value"]) ? (
-            // <UiAvatar
-            //   styling={{ borderRadius: 1 }}
-            //   size={[70, 70]}
-            //   path={data[index]["key"].replace("./public", process.env.baseUrl)}
-            // />
-            <Avatar
-              sx={{ width: dimensions, height: dimensions, borderRadius: 1 }}
-              // src={data[index]["key"].replace("./public", process.env.baseUrl)}
-            >
-              <Image
-                width={dimensions}
-                height={dimensions}
-                src={data[index]["key"].split("public")[1]}
-              />
-            </Avatar>
+            <UiAvatar
+              styling={{ borderRadius: 1 }}
+              size={[dimensions, dimensions]}
+              path={data[index]["key"].split("public")[1]}
+            />
           ) : (
+            // <Avatar
+            //   sx={{ width: dimensions, height: dimensions, borderRadius: 1 }}
+            //   // src={data[index]["key"].replace("./public", process.env.baseUrl)}
+            // >
+            //   <Image
+            //     width={dimensions}
+            //     height={dimensions}
+            //     src={data[index]["key"].split("public")[1]}
+            //   />
+            // </Avatar>
             <Box>
               <DocumentIcon
                 // hasChildren={data.items[index]?.["children"]?.length}
