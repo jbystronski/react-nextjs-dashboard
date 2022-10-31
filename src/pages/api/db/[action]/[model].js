@@ -1,4 +1,5 @@
 const { Query, Connection } = require("@db-essentials/base");
+const path = requrie("path");
 
 export default async (req, res) => {
   try {
@@ -7,7 +8,7 @@ export default async (req, res) => {
     const conn =
       Connection.getConnection("default") ||
       (await Connection.create({
-        database: "/src/lib/db",
+        database: path.resolve("../../../lib/db"),
         label: "default",
         mode: "no_persist",
       }));
