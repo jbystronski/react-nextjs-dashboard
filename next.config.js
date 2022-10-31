@@ -2,7 +2,7 @@
 
 const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true"
+  enabled: process.env.ANALYZE === "true",
 });
 
 const joi = require("joi");
@@ -27,7 +27,7 @@ const envVarsSchema = joi
       .valid("persist", "no_persist", "mongo")
       .default("no_persist"),
     DB_HOST: joi.string().default("test"),
-    DB_DATABASE: joi.string().default("test")
+    DB_DATABASE: joi.string().default("test"),
   })
   .unknown();
 
@@ -76,7 +76,7 @@ const options = {
     port: envVars.PORT,
     baseUrl: "http://" + envVars.DOMAIN + ":" + envVars.PORT + "/",
     storagePath: "./app/public/",
-    seedersPath: envVars.SEEDERS_PATH
+    seedersPath: envVars.SEEDERS_PATH,
   },
   isTest: envVars.NODE_ENV === "test",
   isDevelopment: envVars.NODE_ENV === "development",
@@ -87,16 +87,37 @@ const options = {
     client: envVars.DB_CLIENT,
     host: envVars.DB_HOST,
     database: envVars.DB_DATABASE,
-    resourceParam: "model"
+    resourceParam: "model",
   },
-  storagePath: "./app/public/"
+  storagePath: "./app/public/",
 };
 
 module.exports = {
   ...withBundleAnalyzer(options),
   images: {
-    domains: ["localhost"]
-  }
+    domains: ["localhost"],
+  },
+  async headers() {
+    return [
+      {
+        // matching all API routes
+        source: "/api/:path*",
+        headers: [
+          { key: "Access-Control-Allow-Credentials", value: "true" },
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          {
+            key: "Access-Control-Allow-Methods",
+            value: "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+          },
+          {
+            key: "Access-Control-Allow-Headers",
+            value:
+              "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+          },
+        ],
+      },
+    ];
+  },
   // async redirects() {
   //   return [
   //     {
