@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAdmin } from "lib/contexts";
 import { Stack, Text, Box, Fade, Divider, Grid } from "core/ui/_libs";
-import { useFileshare } from "jb-react-file-manager";
+// import { useFileshare } from "jb-react-file-manager";
 import {
   UiButton,
   IconMapper,
