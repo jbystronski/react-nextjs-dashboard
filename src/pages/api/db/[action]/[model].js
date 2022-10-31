@@ -1,5 +1,5 @@
 const { Query, Connection } = require("@db-essentials/base");
-const path = requrie("path");
+const path = require("path");
 
 export default async (req, res) => {
   try {
