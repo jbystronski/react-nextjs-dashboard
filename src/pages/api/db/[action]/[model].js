@@ -8,7 +8,7 @@ export default async (req, res) => {
     const conn =
       Connection.getConnection("default") ||
       (await Connection.create({
-        database: path.resolve("../../../lib/db"),
+        database: "./../../../lib/db",
         label: "default",
         mode: "no_persist",
       }));
