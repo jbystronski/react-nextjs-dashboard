@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useAdmin } from "lib/contexts";
 import { Stack, Text, Box, Fade, Divider, Grid } from "core/ui/_libs";
+import { useFileshare } from "jb-react-file-manager";
 import {
   UiButton,
   IconMapper,
   UiAvatar,
   InteractiveImageMenu,
-  FullscreenImage
+  FullscreenImage,
 } from "core/ui";
 import { useNotification } from "core/hooks";
 
@@ -23,7 +24,7 @@ const OverlayImage = ({ file, menu }) => {
         height: "146px",
         overflow: "hidden",
         borderRadius: "8px",
-        position: "relative"
+        position: "relative",
       }}
     >
       <Box
@@ -38,7 +39,7 @@ const OverlayImage = ({ file, menu }) => {
           width: "100%",
           height: "100%",
           display: state ? "block" : "none",
-          zIndex: 2000
+          zIndex: 2000,
         }}
       >
         <InteractiveImageMenu menu={menu} />
@@ -61,7 +62,7 @@ const Images = ({
   productImages,
   handleSubmit,
   handleSetPrimary,
-  primary
+  primary,
 }) => {
   const [secondary, setSecondary] = useState(
     productImages?.secondary_images || []
@@ -70,17 +71,15 @@ const Images = ({
 
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
-  const {
-    sharedFiles,
-    handleShareFile: removeFile,
-    setManagerOpen
-  } = useAdmin();
+  const { setManagerOpen } = useAdmin();
+
+  const { shared, shareFile } = useFileshare();
   const notification = useNotification();
 
   const onSubmit = () => {
     const dataObject = {
       primary_image: primary,
-      secondary_images: secondary
+      secondary_images: secondary,
     };
     handleSubmit(dataObject);
   };
@@ -108,7 +107,7 @@ const Images = ({
                       cp.splice(index, 1);
                       setSecondary(cp);
                     },
-                    tooltip: "Remove image"
+                    tooltip: "Remove image",
                   },
                   {
                     icon: (
@@ -116,7 +115,7 @@ const Images = ({
                     ),
                     onClick: () => setFullscreenImage(file),
 
-                    tooltip: "Fullscreen"
+                    tooltip: "Fullscreen",
                   },
                   {
                     icon: (
@@ -127,8 +126,8 @@ const Images = ({
                     ),
                     onClick: () =>
                       handleSetPrimary(file === primary ? null : file),
-                    tooltip: "Set primary image"
-                  }
+                    tooltip: "Set primary image",
+                  },
                 ]}
               />
             </Grid>
@@ -149,8 +148,8 @@ const Images = ({
         spacing={3}
         sx={{ mb: 4 }}
       >
-        {sharedFiles.length
-          ? sharedFiles.map((file) => {
+        {shared.length
+          ? shared.map((file) => {
               const f = file.split("public")[1];
 
               return (
@@ -161,8 +160,8 @@ const Images = ({
                     menu={[
                       {
                         icon: <IconMapper icon="x" color="secondary.main" />,
-                        onClick: () => removeFile(file),
-                        tooltip: "Remove image"
+                        onClick: () => shareFile(file),
+                        tooltip: "Remove image",
                       },
                       {
                         icon: (
@@ -173,7 +172,7 @@ const Images = ({
                         ),
                         onClick: () => setFullscreenImage(f),
 
-                        tooltip: "Fullscreen"
+                        tooltip: "Fullscreen",
                       },
                       {
                         icon: <IconMapper icon="plus" color="secondary.main" />,
@@ -186,8 +185,8 @@ const Images = ({
 
                           setSecondary([...secondary, f]);
                         },
-                        tooltip: "Add image"
-                      }
+                        tooltip: "Add image",
+                      },
                     ]}
                   />
                 </Grid>
