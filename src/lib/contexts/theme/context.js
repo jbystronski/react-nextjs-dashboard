@@ -21,9 +21,9 @@ const AppThemeProvider = (props) => {
         body: JSON.stringify({
           name: "theme",
           _set: {
-            value: currentTheme
-          }
-        })
+            value: currentTheme,
+          },
+        }),
       });
     } catch (e) {
       console.log(e);
@@ -38,18 +38,22 @@ const AppThemeProvider = (props) => {
     setPalette(themeProps.values);
   };
 
-  useEffect(async () => {
-    if (!themes) return;
-    try {
-      const res = await fetch(
-        `/api/db/find_one/settings?name=theme&_only=value`
-      );
-      const savedTheme = await res.json();
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const res = await fetch(
+          `/api/db/find_one/settings?name=theme&_only=value`
+        );
+        const savedTheme = await res.json();
 
-      setThemeProps(themes[savedTheme.value]);
-    } catch (e) {
-      console.log(e);
+        setThemeProps(themes[savedTheme.value]);
+      } catch (e) {
+        console.log(e);
+      }
     }
+    if (!themes) return;
+
+    fetchData();
   }, [themes]);
 
   const values = {
@@ -57,11 +61,11 @@ const AppThemeProvider = (props) => {
     availableThemes: Object.keys(themes).map((t) => {
       return {
         name: themes[t].name,
-        mode: themes[t].mode
+        mode: themes[t].mode,
       };
     }),
     changeTheme,
-    updateTheme
+    updateTheme,
   };
 
   return (

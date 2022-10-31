@@ -69,16 +69,13 @@ function usePagination({ url, limit, countUrl }) {
   const getNext = () => {
     console.log("LAST PAGE", lastPage, page);
     return page < lastPage
-      ? setPage(++page)
+      ? setPage((prev) => prev + 1)
       : page === lastPage
       ? false
       : false;
   };
 
   const getRecords = () => {
-    // page 1 count 2
-    // page 3 count 17
-
     if (lastPage === 1) return [1, count];
     if (page === 1) return [1, limit];
     if (page === lastPage) return [page * limit + 1 - limit, count];
@@ -103,7 +100,7 @@ function usePagination({ url, limit, countUrl }) {
     filter: (ids) => {
       const cp = data.filter((entry) => !ids.includes(entry._id + ""));
       setData(cp);
-    }
+    },
   };
 }
 

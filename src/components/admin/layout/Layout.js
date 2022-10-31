@@ -24,7 +24,7 @@ const Layout = (props) => {
               top: 0,
               left: 0,
               width: "100%",
-              zIndex: 5000
+              zIndex: 5000,
             }}
           >
             <Header />
@@ -36,7 +36,7 @@ const Layout = (props) => {
               alignItems: "center",
               justifyContent: "center",
               display: "flex",
-              width: "100%"
+              width: "100%",
             }}
           >
             <Stack
@@ -52,14 +52,14 @@ const Layout = (props) => {
                   sm: "90%",
                   md: "95%",
                   lg: "85%",
-                  xl: "50%"
-                }
+                  xl: "50%",
+                },
               }}
               spacing={{
                 lg: 4,
                 md: 3,
                 sm: 0,
-                xs: 0
+                xs: 0,
               }}
               // rowSpacing={{ xl: 4, xs: 0 }}
               // columnSpacing={{ xl: 4, xs: 0 }}
@@ -71,8 +71,8 @@ const Layout = (props) => {
                   width: {
                     xl: "25%",
                     lg: "20%",
-                    md: "25%"
-                  }
+                    md: "25%",
+                  },
                 }}
               >
                 <Navigation />
@@ -84,8 +84,8 @@ const Layout = (props) => {
                     sm: "100%",
                     md: "75%",
                     lg: "80%",
-                    xl: "90%"
-                  }
+                    xl: "90%",
+                  },
                 }}
               >
                 <Main>{props.children}</Main>

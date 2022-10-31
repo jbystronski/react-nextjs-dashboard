@@ -1,49 +1,28 @@
 import { React, useState, createContext, useContext } from "react";
+// import { FileshareProvider } from "jb-react-file-manager";
 
-import { Portal, Box } from "core/ui/_libs";
-
-import FileManager from "components/admin/file_manager/FileManager";
+import { useTheme } from "core/ui/_libs";
 
 const AdminContext = createContext({});
 
 const AdminContextProvider = (props) => {
   const [managerOpen, setManagerOpen] = useState(false);
 
-  const [sharedFiles, setSharedFiles] = useState([]);
-
   const serverPath = (path, url) => url + path.replace("./public", "");
 
-  const handleShareFile = (filePath) => {
-    const cp = sharedFiles.slice();
-
-    const path = filePath.replace("./public", "");
-
-    const index = cp.indexOf(path);
-
-    index !== -1 ? cp.splice(index, 1) : cp.push(path);
-    setSharedFiles(cp);
-  };
+  const { palette } = useTheme();
 
   const values = {
     setManagerOpen,
     managerOpen,
 
-    sharedFiles,
-
-    handleShareFile,
-    serverPath
+    serverPath,
   };
 
   return (
     <AdminContext.Provider value={values}>
       {props.children}
-      {managerOpen ? (
-        <Portal>
-          <Box sx={{ display: "block" }}>
-            <FileManager />
-          </Box>
-        </Portal>
-      ) : null}
+      {/* <FileshareProvider>{props.children}</FileshareProvider> */}
     </AdminContext.Provider>
   );
 };

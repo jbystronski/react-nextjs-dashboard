@@ -1,25 +1,20 @@
-const {
-  cachedConnection,
-
-  Query
-} = require("@db-essentials/base");
-
-const path = require("path");
+const { Query, Connection } = require("@db-essentials/base");
 
 export default async (req, res) => {
   try {
     const { url, body, query } = req;
 
-    const conn = await cachedConnection(
-      {
-        database: path.resolve("./src/lib", "db")
-      },
-      "no_persist"
-    );
+    const conn =
+      Connection.getConnection("default") ||
+      (await Connection.create({
+        database: "./src/lib/db",
+        label: "default",
+        mode: "no_persist",
+      }));
 
-    const q = new Query(conn);
+    const q = await Query.create({ connection: conn, url: url, body: body });
 
-    const data = await q.run(url, body);
+    const data = await q.run();
 
     res.status(200).json(data);
   } catch (e) {

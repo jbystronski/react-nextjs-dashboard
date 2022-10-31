@@ -3,7 +3,6 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  ListSubheader,
   Collapse,
   Box,
   Paper,
@@ -13,14 +12,12 @@ import {
   ThemeProvider,
   createTheme,
   IconButton,
-  Popper,
-  Fade
 } from "core/ui/_libs";
 
 import { default as MuiDrawer } from "@mui/material/Drawer";
 
 import { useRouter } from "next/router";
-import { addProps } from "core/utils/addProps";
+
 import { useAdmin } from "lib/contexts";
 import { useWindowSize } from "core/hooks";
 import { Image, IconMapper } from "core/ui";
@@ -28,9 +25,8 @@ import { Image, IconMapper } from "core/ui";
 import { useTheme } from "core/ui/_libs";
 
 const Nav = ({
-  menu,
   addedMenu = [],
-  listStyling = { p: 1, my: 2, width: "95%" }
+  listStyling = { p: 1, my: 2, width: "95%" },
 }) => {
   const router = useRouter();
   const { setManagerOpen, managerOpen, setManagerHidden, managerHidden } =
@@ -49,7 +45,7 @@ const Nav = ({
       button: true,
       label: "Analytics",
       icon: <IconMapper icon="dashboard" />,
-      onClick: () => router.push("/admin/charts")
+      onClick: () => router.push("/admin/charts"),
     },
     {
       path: null,
@@ -65,10 +61,10 @@ const Nav = ({
           onClick: () =>
             router.push({
               pathname: "/admin/tables/[model]",
-              query: { model: "users" }
-            })
-        }
-      ]
+              query: { model: "users" },
+            }),
+        },
+      ],
     },
     {
       path: null,
@@ -84,8 +80,8 @@ const Nav = ({
           onClick: () =>
             router.push({
               pathname: "/admin/tables/[model]",
-              query: { model: "products" }
-            })
+              query: { model: "products" },
+            }),
         },
         {
           path: "/admin/clollections/products",
@@ -94,10 +90,10 @@ const Nav = ({
           onClick: () =>
             router.push({
               pathname: "/admin/forms/create/[model]",
-              query: { model: "products" }
-            })
-        }
-      ]
+              query: { model: "products" },
+            }),
+        },
+      ],
     },
     {
       path: null,
@@ -113,10 +109,10 @@ const Nav = ({
           onClick: () =>
             router.push({
               pathname: "/admin/tables/[model]",
-              query: { model: "orders" }
-            })
-        }
-      ]
+              query: { model: "orders" },
+            }),
+        },
+      ],
     },
 
     {
@@ -125,9 +121,9 @@ const Nav = ({
       label: "Filesystem",
       icon: <IconMapper icon="fs" />,
       onClick: () =>
-        managerHidden ? alert("hiddewn") : setManagerOpen(!managerOpen)
+        managerHidden ? alert("hidden") : setManagerOpen(!managerOpen),
     },
-    ...addedMenu
+    ...addedMenu,
   ];
 
   return (
@@ -140,7 +136,7 @@ const Nav = ({
               <ListItemText
                 primary={element.label}
                 primaryTypographyProps={{
-                  variant: "body"
+                  variant: "body",
                 }}
               />
               {submenus[element.submenuId] ? (
@@ -167,7 +163,7 @@ const Nav = ({
                         <ListItemText
                           primary={child.label}
                           primaryTypographyProps={{
-                            variant: "body"
+                            variant: "body",
                           }}
                         />
                       </ListItem>
@@ -187,7 +183,7 @@ const Nav = ({
             <ListItemIcon>{element.icon && element.icon}</ListItemIcon>
             <ListItemText
               primaryTypographyProps={{
-                variant: "body"
+                variant: "body",
               }}
               primary={element.label}
             />
@@ -203,11 +199,11 @@ const CompactMenu = ({ menuWidth }) => {
     top: false,
     left: false,
     bottom: false,
-    right: false
+    right: false,
   });
 
   const {
-    palette: { mode }
+    palette: { mode },
   } = useTheme();
   const windowSize = useWindowSize();
 
@@ -232,14 +228,14 @@ const CompactMenu = ({ menuWidth }) => {
           color: {
             xs: "#fff",
             sm: "#fff",
-            md: mode === "light" ? "icons.primary" : "#fff"
+            md: mode === "light" ? "icons.primary" : "#fff",
           },
           position: "fixed",
           top: 0,
           left: 0,
           zIndex: 5001,
           ml: 2,
-          mt: 1.5
+          mt: 1.5,
         }}
       >
         <IconMapper icon="menu" />
@@ -275,8 +271,8 @@ const getTheme = (palette) =>
   createTheme({
     palette: {
       action: {
-        hover: palette.background.hover || "rgba(0,0,0,0.05)"
-      }
+        hover: palette.background.hover || "rgba(0,0,0,0.05)",
+      },
     },
     components: {
       MuiButtonBase: {
@@ -284,10 +280,10 @@ const getTheme = (palette) =>
           root: {
             borderLeft: "5px solid transparent",
             "& .MuiTypography-root": {
-              color: palette.navigation.main
+              color: palette.navigation.main,
             },
             "& .MuiSvgIcon-root": {
-              color: palette.navigation.main
+              color: palette.navigation.main,
             },
             borderTopRightRadius: "8px",
             borderBottomRightRadius: "8px",
@@ -296,16 +292,16 @@ const getTheme = (palette) =>
 
               color: palette.navigation.hover,
               "& .MuiSvgIcon-root": {
-                color: palette.navigation.hover
+                color: palette.navigation.hover,
               },
               "& .MuiTypography-root": {
-                color: palette.navigation.hover
-              }
-            }
-          }
-        }
-      }
-    }
+                color: palette.navigation.hover,
+              },
+            },
+          },
+        },
+      },
+    },
   });
 
 const Logo = ({ size, mb = 3, mt = 3 }) => {
@@ -326,6 +322,7 @@ const Logo = ({ size, mb = 3, mt = 3 }) => {
 const Drawer = () => {
   const { palette } = useTheme();
   const windowSize = useWindowSize();
+  const { managerOpen, setManagerOpen } = useAdmin();
 
   const { breakpoints } = useTheme();
 
@@ -338,8 +335,8 @@ const Drawer = () => {
             minHeight: {
               xl: "60vh",
               md: "60vh",
-              xs: "100px"
-            }
+              xs: "100px",
+            },
           }}
         >
           <>
