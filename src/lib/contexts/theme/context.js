@@ -44,13 +44,15 @@ const AppThemeProvider = (props) => {
         const res = await fetch(
           `/api/db/find_one/settings?name=theme&_only=value`
         );
-        const savedTheme = await res.json();
 
+        const savedTheme = await res.json();
+        console.log("res", savedTheme);
         setThemeProps(themes[savedTheme.value]);
       } catch (e) {
         console.log(e);
       }
     }
+    console.log("themes", themes);
     if (!themes) return;
 
     fetchData();
