@@ -1,5 +1,5 @@
 import { Box } from "core/ui/_libs";
-import ReactFileManager from "jb-react-file-manager";
+// import ReactFileManager from "jb-react-file-manager";
 
 import { useAdmin } from "lib/contexts";
 
@@ -15,7 +15,7 @@ const Main = (props) => {
       >
         {props.children}
 
-        {managerOpen && (
+        {/* {managerOpen && (
           <ReactFileManager
             isOpen={managerOpen}
             onClose={() => setManagerOpen(false)}
@@ -30,7 +30,7 @@ const Main = (props) => {
             lightTheme={{}}
             darkTheme={{}}
           />
-        )}
+        )} */}
       </Box>
     </Box>
   );

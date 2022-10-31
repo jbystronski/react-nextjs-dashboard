@@ -1,5 +1,5 @@
 import { React, useState, createContext, useContext } from "react";
-import { FileshareProvider } from "jb-react-file-manager";
+// import { FileshareProvider } from "jb-react-file-manager";
 
 import { useTheme } from "core/ui/_libs";
 
@@ -21,7 +21,9 @@ const AdminContextProvider = (props) => {
 
   return (
     <AdminContext.Provider value={values}>
-      <FileshareProvider>{props.children}</FileshareProvider>
+      {/* <FileshareProvider> */}
+      {props.children}
+      {/* </FileshareProvider> */}
     </AdminContext.Provider>
   );
 };
