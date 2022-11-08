@@ -9,7 +9,9 @@ const getCollection = async (db, name) => {
       console.log("file", JSON.parse(await fs.readFile(`${db}/${name}.json`)));
     }
 
-    const coll = JSON.parse(await fs.readFile(`${db}/${name}.json`));
+    const coll = JSON.parse(
+      await fs.readFile(path.resolve(__dirname, `${db}/${name}.json`))
+    );
     return JSON.parse(JSON.stringify(coll));
   } catch (error) {
     console.error(error);
