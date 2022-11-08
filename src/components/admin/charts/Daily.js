@@ -1,6 +1,6 @@
-import { Box, Paper } from "core/ui/_libs";
+import { Box, Paper } from "@mui/material";
 
-import { SectionHeader } from ".";
+import { SectionHeader } from "./SectionHeader";
 
 export default function Daily() {
   return (

@@ -1,19 +1,17 @@
 import { useState } from "react";
-import { Chart } from ".";
+import { Chart } from "./Chart";
 import {
   getYearFirstDay,
   getToday,
-  setTimeRange
+  setTimeRange,
 } from "core/utils/dateHelpers";
-import { Paper } from "core/ui/_libs";
-
+import { Paper } from "@mui/material";
 import { useTheme } from "@mui/styles";
-
 import { useFetch } from "core/hooks";
 
 export const UsersChart = () => {
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
 
   const [timeUnit, setTimeUnit] = useState("day");
@@ -46,9 +44,9 @@ export const UsersChart = () => {
         {
           backgroundColor: colors && colors[2],
           borderColor: colors && colors[2],
-          data: Object.values(chartData)
-        }
-      ]
+          data: Object.values(chartData),
+        },
+      ],
     };
   };
 

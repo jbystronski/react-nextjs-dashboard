@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ConfirmationDialog } from "core/ui";
+
+import ConfirmationDialog from "core/ui/ConfirmationDialog";
 
 export default function useConfirm() {
   const [open, setOpen] = useState(false);
@@ -23,6 +24,6 @@ export default function useConfirm() {
           setOpen(false);
         }}
       />
-    )
+    ),
   };
 }

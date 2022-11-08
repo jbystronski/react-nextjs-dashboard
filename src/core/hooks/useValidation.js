@@ -4,19 +4,19 @@ const rules = {
   isRequired: { test: (val) => !!val, msg: "Value required" },
   isNumber: {
     test: (val) => /^\d+$/.test(val),
-    msg: "Incorrect number value"
+    msg: "Incorrect number value",
   },
   isPositiveNumber: {
     test: (val) => parseInt(val) > 0,
-    msg: "Value must be bigger than zero"
+    msg: "Value must be bigger than zero",
   },
   isEmail: {
     test: (val) =>
       val.match(
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       ),
-    msg: "Incorrect email"
-  }
+    msg: "Incorrect email",
+  },
 };
 
 export default function useValidation(validationSchema, customRules = {}) {
@@ -44,7 +44,7 @@ export default function useValidation(validationSchema, customRules = {}) {
           }
         }
       });
-      console.log(errorBag);
+
       setErrors(errorBag);
 
       return JSON.stringify(errorBag) === "{}";
@@ -64,6 +64,6 @@ export default function useValidation(validationSchema, customRules = {}) {
         return errors[value][0];
       }
     },
-    validatorError
+    validatorError,
   };
 }

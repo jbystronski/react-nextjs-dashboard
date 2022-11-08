@@ -1,10 +1,10 @@
 import { useRouter } from "next/router";
-import { getLayout, tables } from "components";
+import { getLayout } from "components/admin/layout/Layout";
+import { AdminTable } from "components/admin/tables";
 
 export default function Table() {
   const router = useRouter();
   const { model } = router.query;
-  const { AdminTable } = tables;
 
   return router.isReady && <AdminTable key={model} model={model} />;
 }

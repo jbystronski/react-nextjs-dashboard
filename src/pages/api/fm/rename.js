@@ -1,10 +1,10 @@
-const { rename } = require("jb-fm-node-utils");
+const { rename } = require("@jb_fmanager/node-utils");
 
 export default async (req, res) => {
   try {
-    const result = await rename(req.query.oldPath, res.query.newPath);
+    await rename(req.query.oldPath, res.query.newPath);
 
-    return res.status(200).json(result);
+    return res.status(200).json({});
   } catch (error) {
     console.error(error);
     return res.status(500);

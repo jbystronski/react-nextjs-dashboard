@@ -1,3 +1,4 @@
+import { Typography, Box, Chip, Stack } from "@mui/material";
 import {
   Timeline,
   TimelineItem,
@@ -6,18 +7,15 @@ import {
   TimelineContent,
   TimelineDot,
   TimelineOppositeContent,
-  Text,
-  Box,
-  Chip,
-  Stack
-} from "core/ui/_libs";
-
+} from "@mui/lab";
 import { useChunk } from "core/hooks";
-import { SectionHeader } from ".";
+import { SectionHeader } from "./SectionHeader";
 import { formatDate } from "core/utils/dateHelpers";
 import { useTheme } from "@mui/styles";
-import { IconButton, LinkIconButton, IconMapper, UiAvatar } from "core/ui";
 import { useRouter } from "next/router";
+import IconMapper from "core/ui/icons/IconMapper";
+import LinkIconButton from "core/ui/LinkIconButton";
+import IconButton from "core/ui/IconButton";
 
 const arrayRand = require("core/utils/arrayRand");
 
@@ -26,7 +24,7 @@ export default function OrdersTimeline() {
   const limit = 3;
 
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
   const { chunk, next, prev } = useChunk(
     `/api/db/find/orders?_sort.created_at=-1&_only=billing_details.first_name,billing_details.last_name,payment_status,created_at`,
@@ -41,12 +39,12 @@ export default function OrdersTimeline() {
           return (
             <TimelineItem key={order._id}>
               <TimelineOppositeContent>
-                <Text variant="body2">
+                <Typography variant="body2">
                   {formatDate(order.created_at, ".").slice(0, 10)}
-                </Text>
-                <Text variant="caption" sx={{ fontStyle: "oblique" }}>
+                </Typography>
+                <Typography variant="caption" sx={{ fontStyle: "oblique" }}>
                   {formatDate(order.created_at).slice(11)}
-                </Text>
+                </Typography>
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot sx={{ bgcolor: arrayRand(colors) }} />
@@ -62,7 +60,7 @@ export default function OrdersTimeline() {
                     p: 1,
                     px: 2,
                     borderRadius: "8px",
-                    minWidth: "230px"
+                    minWidth: "230px",
                   }}
                 >
                   <Box>
@@ -75,7 +73,7 @@ export default function OrdersTimeline() {
                           ["PAR/P"]: "info",
                           PD: "success",
                           RFD: "success",
-                          CXL: "warning"
+                          CXL: "warning",
                         }[order.payment_status]
                       }
                       label={
@@ -84,16 +82,16 @@ export default function OrdersTimeline() {
                           ["PAR/P"]: "partial payment",
                           PD: "paid",
                           RFD: "refund",
-                          CXL: "cancelled"
+                          CXL: "cancelled",
                         }[order.payment_status]
                       }
                     />
-                    <Text sx={{ ml: 1 }}>
+                    <Typography sx={{ ml: 1 }}>
                       {"by " +
                         order.billing_details.first_name +
                         " " +
                         order.billing_details.last_name}
-                    </Text>
+                    </Typography>
                   </Box>
 
                   <LinkIconButton
@@ -102,7 +100,7 @@ export default function OrdersTimeline() {
                     onClick={() =>
                       router.push({
                         pathname: "/admin/resources/[model]/[id]",
-                        query: { model: "orders", id: order._id }
+                        query: { model: "orders", id: order._id },
                       })
                     }
                   />
@@ -114,18 +112,12 @@ export default function OrdersTimeline() {
       </Timeline>
 
       <Box sx={{ p: 1, display: "flex", justifyContent: "space-between" }}>
-        <IconButton
-          size="small"
-          icon={<IconMapper icon="paginate_prev" color="icons.primary" />}
-          onClick={prev}
-          tooltip="Previous orders"
-        />
-        <IconButton
-          size="small"
-          icon={<IconMapper icon="paginate_next" color="icons.primary" />}
-          onClick={next}
-          tooltip="Next orders"
-        />
+        <IconButton size="small" onClick={prev} tooltip="Previous orders">
+          <IconMapper icon="paginate_prev" color="icons.primary" />
+        </IconButton>
+        <IconButton size="small" onClick={next} tooltip="Next orders">
+          <IconMapper icon="paginate_next" color="icons.primary" />
+        </IconButton>
       </Box>
     </Box>
   );

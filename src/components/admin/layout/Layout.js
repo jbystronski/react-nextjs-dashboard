@@ -1,18 +1,11 @@
 import React from "react";
-// import withAdminPrivileges from "@backoffice/providers/withAdminPrivileges";
-
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Main from "./Main";
 import { AdminContextProvider, AppThemeProvider } from "lib/contexts";
-
-import { useWindowSize } from "core/hooks";
-
-import { Grid, Box, CssBaseline, Stack } from "core/ui/_libs";
+import { Box, CssBaseline, Stack } from "@mui/material";
 
 const Layout = (props) => {
-  const windowSize = useWindowSize();
-
   return (
     <AppThemeProvider>
       <AdminContextProvider>
@@ -41,11 +34,6 @@ const Layout = (props) => {
           >
             <Stack
               direction="row"
-              // xs={12}
-              // sm={10}
-              // md={8}
-              // lg={6}
-              // xl={6}
               sx={{
                 width: {
                   xs: "100%",
@@ -61,10 +49,6 @@ const Layout = (props) => {
                 sm: 0,
                 xs: 0,
               }}
-              // rowSpacing={{ xl: 4, xs: 0 }}
-              // columnSpacing={{ xl: 4, xs: 0 }}
-              // rowSpacing={{ md: 4, xl: 4 }}
-              // spacing={{ md: 4, xl: 4 }}
             >
               <Box
                 sx={{

@@ -1,6 +1,5 @@
 import React from "react";
-
-import { TextField as UiTextField } from "core/ui/_libs";
+import { TextField as UiTextField } from "@mui/material";
 
 const TextField = React.forwardRef((props, ref) => {
   const { init, type = "text" } = props;

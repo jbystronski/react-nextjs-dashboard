@@ -1,19 +1,16 @@
-import { IconButton, Select, LinkIconButton, Loader } from "core/ui";
+import LinkIconButton from "core/ui/LinkIconButton";
 
 import {
   Box,
-  Text,
-  Stack,
+  Typography,
   Checkbox,
-  Paper,
   TableRow,
   TableHead,
-  TableFooter,
   TableContainer,
   TableCell,
   TableBody,
-  Table as UiTable
-} from "core/ui/_libs";
+  Table as UiTable,
+} from "@mui/material";
 
 function Table({
   model,
@@ -23,7 +20,7 @@ function Table({
   checked,
   handleCheck,
   allChecked,
-  handleCheckAll
+  handleCheckAll,
 }) {
   const dataKeys = Object.keys(tableProps);
 
@@ -57,13 +54,13 @@ function Table({
                   </TableCell>
                   {headers.map((header) => (
                     <TableCell key={header}>
-                      <Text variant="body2">{header}</Text>
+                      <Typography variant="body2">{header}</Typography>
                     </TableCell>
                   ))}
                   <TableCell>
-                    <Text align="justify" variant="body2">
+                    <Typography align="justify" variant="body2">
                       Link
-                    </Text>
+                    </Typography>
                   </TableCell>
                 </TableRow>
               </TableHead>
@@ -87,7 +84,9 @@ function Table({
                               {"render" in tableProps[key] ? (
                                 tableProps[key].render(row[key])
                               ) : (
-                                <Text variant="body2">{row[key]}</Text>
+                                <Typography variant="body2">
+                                  {row[key]}
+                                </Typography>
                               )}
                             </TableCell>
                           )

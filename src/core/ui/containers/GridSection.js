@@ -1,10 +1,10 @@
 import React from "react";
-import { Grid, Divider, Box } from "core/ui/_libs";
+import { Grid, Divider, Box } from "@mui/material";
 
 export default function GridSection({
   sectionChildren,
   sizing,
-  divider = true
+  divider = true,
 }) {
   return (
     <Grid container component={Box} sx={{ mb: 2 }} direction="row">

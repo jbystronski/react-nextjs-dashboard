@@ -1,6 +1,6 @@
 import { React, useState, useEffect, createContext, useContext } from "react";
-import { ThemeProvider } from "core/ui/_libs";
-import { FullScreenLoader } from "core/ui";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
+import FullScreenLoader from "core/ui/FullScreenLoader";
 import CssBaseline from "@mui/material/CssBaseline";
 import mountTheme from "./theme";
 const { themes, defaultTheme } = require("../../utils/themes");
@@ -26,7 +26,7 @@ const AppThemeProvider = (props) => {
         }),
       });
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   };
 
@@ -46,13 +46,13 @@ const AppThemeProvider = (props) => {
         );
 
         const savedTheme = await res.json();
-        console.log("res", savedTheme);
+
         setThemeProps(themes[savedTheme.value]);
       } catch (e) {
-        console.log(e);
+        console.error(e);
       }
     }
-    console.log("themes", themes);
+
     if (!themes) return;
 
     fetchData();

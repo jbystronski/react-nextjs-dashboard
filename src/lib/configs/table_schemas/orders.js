@@ -1,12 +1,6 @@
 import { formatDate } from "core/utils/dateHelpers";
 
-import { Text, Chip } from "core/ui/_libs";
-
-const mapStatusColor = (status) => {};
-
-const mapStatusLabel = (search, valuesFrom, valuesTo) => {
-  const index = va;
-};
+import { Typography, Chip } from "@mui/material";
 
 module.exports = {
   title: "Orders",
@@ -16,45 +10,45 @@ module.exports = {
   searchable: [
     {
       key: "order_number",
-      value: "Order no"
-    }
+      value: "Order no",
+    },
   ],
   defaultSort: { created_at: -1 },
   sortable: [
     {
       key: "order_number",
       value: "Order no",
-      order: 0
+      order: 0,
     },
     {
       key: "total_to_pay",
       value: "Value",
-      order: 0
+      order: 0,
     },
     {
       key: "payment_status",
       value: "Payment status",
-      order: 0
+      order: 0,
     },
     {
       key: "shipping_status",
       value: "Shipping status",
-      order: 0
+      order: 0,
     },
     {
       key: "created_at",
       value: "Created",
-      order: -1
-    }
+      order: -1,
+    },
   ],
   properties: {
     order_number: {
       header: "Order number",
-      width: "14%"
+      width: "14%",
     },
     total_to_pay: {
       header: "Value",
-      width: "15%"
+      width: "15%",
     },
     payment_status: {
       header: "Payment status",
@@ -67,7 +61,7 @@ module.exports = {
               ["PAR/P"]: "info",
               PD: "success",
               RFD: "warning",
-              CXL: "error"
+              CXL: "error",
             }[v]
           }
           label={
@@ -76,11 +70,11 @@ module.exports = {
               ["PAR/P"]: "partial payment",
               PD: "paid",
               RFD: "refund",
-              CXL: "cancelled"
+              CXL: "cancelled",
             }[v]
           }
         />
-      )
+      ),
     },
 
     shipping_status: {
@@ -93,7 +87,7 @@ module.exports = {
               PREP: "info",
               DSPCH: "info",
               DELIV: "success",
-              CXL: "warning"
+              CXL: "warning",
             }[v]
           }
           label={
@@ -101,11 +95,11 @@ module.exports = {
               PREP: "preparing",
               DSPCH: "en route",
               DELIV: "delivered",
-              CXL: "cancelled"
+              CXL: "cancelled",
             }[v]
           }
         />
-      )
+      ),
     },
 
     created_at: {
@@ -113,12 +107,14 @@ module.exports = {
       width: "15%",
       render: (v) => (
         <>
-          <Text variant="body2">{formatDate(v, ".").slice(0, 10)}</Text>
-          <Text variant="body2" sx={{ fontStyle: "oblique" }}>
+          <Typography variant="body2">
+            {formatDate(v, ".").slice(0, 10)}
+          </Typography>
+          <Typography variant="body2" sx={{ fontStyle: "oblique" }}>
             {formatDate(v, ".").slice(10)}
-          </Text>
+          </Typography>
         </>
-      )
-    }
-  }
+      ),
+    },
+  },
 };

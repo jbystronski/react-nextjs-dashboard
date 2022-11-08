@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { addProps } from "core/utils/addProps";
-import { TimeRange, SectionHeader, Buttons } from ".";
-
+import TimeRange from "./controls/TimeRange";
+import { SectionHeader } from "./SectionHeader";
+import Buttons from "./controls/Buttons";
 import dynamic from "next/dynamic";
 const BarChart = dynamic(() => import("core/ui/charts/BarChart"));
 const LineChart = dynamic(() => import("core/ui/charts/LineChart"));
-import { Divider, Box } from "core/ui/_libs";
+import { Box } from "@mui/material";
 
 export const Chart = ({
   type,
@@ -13,13 +14,13 @@ export const Chart = ({
   refresh,
   headerIcon,
   headerText,
-  headerBg
+  headerBg,
 }) => {
   const [chartType, setChartType] = useState(type);
 
   const charts = {
     bar: <BarChart />,
-    line: <LineChart />
+    line: <LineChart />,
   };
 
   const handleRefresh = (from, to, time) => {
@@ -27,12 +28,9 @@ export const Chart = ({
   };
 
   const getData = (canvas) => {
-    // const ctx = canvas.getContext("2d");
-    // const gradient = ctx.createLinearGradient(0, 0, 100, 0);
-
     return {
       labels: data.labels,
-      datasets: data.datasets
+      datasets: data.datasets,
     };
   };
 
@@ -45,13 +43,13 @@ export const Chart = ({
         sx={{
           p: {
             xs: 1,
-            sm: 5
+            sm: 5,
           },
-          pb: 3
+          pb: 3,
         }}
       >
         {addProps(charts[chartType], {
-          data: getData()
+          data: getData(),
         })}
       </Box>
 

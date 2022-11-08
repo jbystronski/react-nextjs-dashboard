@@ -6,7 +6,7 @@ import {
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 } from "chart.js";
 
 ChartJS.register(
@@ -23,31 +23,26 @@ export const options = {
   scales: {
     x: {
       grid: {
-        display: false
-      }
+        display: false,
+      },
     },
     y: {
       grid: {
-        display: false
-      }
-    }
+        display: false,
+      },
+    },
   },
 
   elements: {
     bar: {
-      borderRadius: 50
-    }
+      borderRadius: 50,
+    },
   },
   plugins: {
     legend: {
-      display: false
-
-      // position: "top"
-    }
-    // title: {
-    //   display: false
-    // }
-  }
+      display: false,
+    },
+  },
 };
 
 const BarChart = ({ data }) => {

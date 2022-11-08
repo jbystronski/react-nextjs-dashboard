@@ -1,8 +1,8 @@
 import { useState } from "react";
-
-import { Box, Slide, Fade } from "core/ui/_libs";
-
-import { Image, InteractiveImageMenu, Overlay } from "..";
+import { Fade } from "@mui/material";
+import Image from "./Image";
+import InteractiveImageMenu from "./InteractiveImageMenu";
+import Overlay from "../Overlay";
 
 const InteractiveImage = ({ path, menu }) => {
   const [overlay, setOverlay] = useState(false);
@@ -15,12 +15,9 @@ const InteractiveImage = ({ path, menu }) => {
     >
       <Fade timeout={300} in={overlay}>
         <Overlay style={{ display: overlay ? "block" : "none" }}>
-          {/* <Slide direction="up" timeOut={500} in={overlay}> */}
           <InteractiveImageMenu menu={menu} />
-          {/* </Slide> */}
         </Overlay>
       </Fade>
-      {/* <Slide in={overlay}></Slide> */}
     </Image>
   );
 };

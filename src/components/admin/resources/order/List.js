@@ -1,13 +1,10 @@
 import {
-  Text,
+  Typography,
   List as UiList,
-  ListItemIcon,
   ListItem,
   ListItemText,
-  Divider,
   Box,
-  ListItemSecondaryAction
-} from "core/ui/_libs";
+} from "@mui/material";
 
 export default function List({ items, header, icon }) {
   return (
@@ -18,25 +15,24 @@ export default function List({ items, header, icon }) {
           p: 2,
           display: "flex",
           flexDirection: "column",
-          alignItems: "center"
+          alignItems: "center",
         }}
       >
-        <Text sx={{ fontWeight: 600, mb: 1 }} variant="caption">
+        <Typography sx={{ fontWeight: 600, mb: 1 }} variant="caption">
           {header}
-        </Text>
+        </Typography>
         {icon}
       </Box>
 
       <UiList dense disablePadding sx={{ mb: 3, mt: 2 }}>
-        {items.map((val) => (
-          <ListItem key={val.label} divider sx={{ borderRadius: 0 }}>
-            {/* <ListItemIcon>{val.icon}</ListItemIcon> */}
+        {items.map((val, i) => (
+          <ListItem key={val.label + i} divider sx={{ borderRadius: 0 }}>
             <ListItemText
               primaryTypographyProps={{
                 variant: "caption",
                 sx: {
-                  fontWeight: 600
-                }
+                  fontWeight: 600,
+                },
               }}
               primary={val.label}
               secondary={val.value}

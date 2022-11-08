@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Table from "./Table";
-import { usePagination, useFetch, useConfirm } from "core/hooks";
-import {
-  Select,
-  IconButton,
-  SearchBar,
-  TableSortMenu,
-  DateSortMenu,
-  IconMapper
-} from "core/ui";
+import { usePagination, useNotification, useConfirm } from "core/hooks";
 import * as schemas from "lib/configs/table_schemas";
-import { useNotification } from "core/hooks";
 
-import { Paper, Box, Text, Stack, Portal } from "core/ui/_libs";
+import DateSortMenu from "core/ui/menus/DateSortMenu";
+import TableSortMenu from "core/ui/menus/TableSortMenu";
+import SearchBar from "core/ui/bars/SearchBar";
+import IconMapper from "core/ui/icons/IconMapper";
+import IconButton from "core/ui/IconButton";
+
+import { Paper, Box, Typography, Stack, Portal } from "@mui/material";
+import Select from "core/ui/Select";
 
 function Index({ model, ...props }) {
   const router = useRouter();
@@ -71,7 +69,7 @@ function Index({ model, ...props }) {
     getRecords,
     filter,
     count,
-    resetCount
+    resetCount,
   } = usePagination({
     url: `/api/db/find/${model}${getParams(
       searchFilter,
@@ -81,7 +79,7 @@ function Index({ model, ...props }) {
 
     countUrl: `/api/db/count/${model}${getParams(searchFilter)}`,
 
-    limit: limit
+    limit: limit,
   });
 
   const searchData = (v) => {
@@ -108,23 +106,23 @@ function Index({ model, ...props }) {
     {
       onClick: first,
       icon: "paginate_first",
-      tooltip: "First page"
+      tooltip: "First page",
     },
     {
       onClick: prev,
       icon: "paginate_prev",
-      tooltip: "Previous page"
+      tooltip: "Previous page",
     },
     {
       onClick: next,
       icon: "paginate_next",
-      tooltip: "Next page"
+      tooltip: "Next page",
     },
     {
       onClick: getLastPage,
       icon: "paginate_last",
-      tooltip: "Last page"
-    }
+      tooltip: "Last page",
+    },
   ];
 
   const deleteData = () => {
@@ -135,7 +133,7 @@ function Index({ model, ...props }) {
 
     async function handleDelete() {
       await fetch(`/api/db/delete_many/${model}?_id._in=${checked}`, {
-        method: "DELETE"
+        method: "DELETE",
       });
 
       filter(checked);
@@ -146,7 +144,7 @@ function Index({ model, ...props }) {
     if (checked.length) {
       showDialog({
         title: "You are about to delete resource. Proceed?",
-        accept: handleDelete
+        accept: handleDelete,
       });
     }
   };
@@ -156,14 +154,14 @@ function Index({ model, ...props }) {
       {model in schemas && (
         <Box component={Paper} sx={{ width: 1, p: 3 }}>
           <Box>
-            <Text
+            <Typography
               variant="h6"
               sx={{
-                pr: 2
+                pr: 2,
               }}
             >
               {schemas[model].title}
-            </Text>
+            </Typography>
             {/* <Stack direction="row" sx={{ p: 2, pt: 3 }}>
            
           </Stack> */}
@@ -201,10 +199,9 @@ function Index({ model, ...props }) {
                   initialProp="order"
                   handleSort={handleSort}
                 />
-                <IconButton
-                  onClick={deleteData}
-                  icon={<IconMapper icon="trash" color="icons.primary" />}
-                />
+                <IconButton onClick={deleteData}>
+                  <IconMapper icon="trash" color="icons.primary" />
+                </IconButton>
               </Box>
 
               {confirmDialog}
@@ -238,14 +235,14 @@ function Index({ model, ...props }) {
             redirect={(model, id) =>
               router.push({
                 pathname: "/admin/" + schemas[model].subRoute + "/[model]/[id]",
-                query: { model: model, id: id }
+                query: { model: model, id: id },
               })
             }
           />
           <Stack
             direction={{
               xs: "column",
-              md: "row"
+              md: "row",
             }}
             spacing={{ xs: 2, md: 0 }}
             alignItems="center"
@@ -262,10 +259,10 @@ function Index({ model, ...props }) {
               inputProps={{ fontSize: "0.75rem" }}
             />
             <Stack direction="column" alignItems="center">
-              <Text variant="body2">{`Page ${page} of ${lastPage}`}</Text>
-              <Text variant="body2">{`Records ${getRecords().join(
+              <Typography variant="body2">{`Page ${page} of ${lastPage}`}</Typography>
+              <Typography variant="body2">{`Records ${getRecords().join(
                 " - "
-              )} of ${count}`}</Text>
+              )} of ${count}`}</Typography>
             </Stack>
 
             <Stack direction="row" alignItems="center">
@@ -276,8 +273,9 @@ function Index({ model, ...props }) {
                     size="small"
                     onClick={el.onClick}
                     tooltip={el.tooltip}
-                    icon={<IconMapper icon={el.icon} color="icons.primary" />}
-                  />
+                  >
+                    <IconMapper icon={el.icon} color="icons.primary" />
+                  </IconButton>
                 ))}
               </>
             </Stack>

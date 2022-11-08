@@ -1,6 +1,6 @@
-import { Loader } from "core/ui";
+import Loader from "core/ui/Loader";
 
-import { Box } from "core/ui/_libs";
+import { Box } from "@mui/material";
 
 export default function FullScreenLoader() {
   return (
@@ -10,7 +10,7 @@ export default function FullScreenLoader() {
         h: "100vh",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <Box
@@ -18,7 +18,7 @@ export default function FullScreenLoader() {
           position: "absolute",
           top: "50%",
           left: "50%",
-          transform: "translate(-50%,-50%)"
+          transform: "translate(-50%,-50%)",
         }}
       >
         <Loader />

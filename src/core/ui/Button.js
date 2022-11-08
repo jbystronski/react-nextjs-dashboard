@@ -1,6 +1,6 @@
-import { Button, Text } from "core/ui/_libs";
+import { Button as B, Typography } from "@mui/material";
 
-export default function UiButton({
+export default function Button({
   label,
   onClick,
   size = "medium",
@@ -8,7 +8,7 @@ export default function UiButton({
   ...props
 }) {
   return (
-    <Button
+    <B
       onClick={onClick}
       variant="contained"
       disableElevation={true}
@@ -19,10 +19,10 @@ export default function UiButton({
         minWidth: "100px",
         borderRadius: "16px",
         fontSize: "0.75rem",
-        ...styling
+        ...styling,
       }}
     >
-      <Text variant="body1">{label}</Text>
-    </Button>
+      <Typography variant="body2">{label}</Typography>
+    </B>
   );
 }

@@ -9,20 +9,16 @@ import {
   List,
   Divider,
   Stack,
-  ThemeProvider,
-  createTheme,
-  IconButton,
-} from "core/ui/_libs";
-
+} from "@mui/material";
+import { createTheme, useTheme } from "@mui/material/styles";
+import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import { default as MuiDrawer } from "@mui/material/Drawer";
-
 import { useRouter } from "next/router";
-
 import { useAdmin } from "lib/contexts";
 import { useWindowSize } from "core/hooks";
-import { Image, IconMapper } from "core/ui";
-
-import { useTheme } from "core/ui/_libs";
+import IconMapper from "core/ui/icons/IconMapper";
+import Image from "core/ui/images/Image";
+import IconButton from "core/ui/IconButton";
 
 const Nav = ({
   addedMenu = [],
@@ -32,7 +28,7 @@ const Nav = ({
   const { setManagerOpen, managerOpen, setManagerHidden, managerHidden } =
     useAdmin();
   const [submenus, setSubmenu] = React.useState([false]);
-  const submenuIds = [0, 1, 2, 3];
+
   const handleClick = (int) => {
     const copy = submenus.slice();
     copy[int] = !copy[int];

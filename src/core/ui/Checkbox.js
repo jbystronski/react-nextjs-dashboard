@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Checkbox as UiCheckbox, FormControlLabel } from "core/ui/_libs";
+import { Checkbox as UiCheckbox, FormControlLabel } from "@mui/material";
 
 const Checkbox = (props) => {
   const { initial, label } = props;
@@ -15,8 +15,8 @@ const Checkbox = (props) => {
     <FormControlLabel
       componentsProps={{
         typography: {
-          variant: "caption"
-        }
+          variant: "caption",
+        },
       }}
       control={
         <UiCheckbox checked={!!value} onChange={handleCheck} {...props} />

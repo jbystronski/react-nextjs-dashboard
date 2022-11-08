@@ -1,1 +1,2762 @@
-[{"billing_details":{"first_name":"Adriana","last_name":"Conn","company":"Welch, Koelpin and Fisher","tax_id":"91959-97929-49373-77315","street":"97630 Rohan Curve","city":"Palmdale","zip_code":"43240-2529","phone_number":"948-688-1923","countr":"Pitcairn Islands"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"CXL","payment_method":"VISA","payment_status":"PD","subtotal":1105060.43,"total":1359224.31,"total_to_pay":1359224.31,"shipping_fee":"0.9","order_number":"2594900","products":[{"product_id":4,"code":"2662184","name":"Generic Modern Mouse","qty":10,"unit_price_wo_tax":28195.61,"unit_price_w_tax":34680.6,"product_subtotal":281956.1,"product_total":346806},{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":3,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":254000.85,"product_total":312421.05},{"product_id":32,"code":"3242655","name":"Cheap Universal Phone","qty":6,"unit_price_wo_tax":11423.96,"unit_price_w_tax":14051.47,"product_subtotal":68543.76,"product_total":84308.82},{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":6,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":500559.72,"product_total":615688.44}],"comment":"...","created_at":"2022-04-07T16:25:50.916Z","updated_at":"2022-05-12T06:31:36.611Z","user_id":10,"_id":1},{"billing_details":{"first_name":"Manley","last_name":"Bauch","company":"MacGyver - Runolfsson","tax_id":"20084-18421-37145-72527","street":"390 VonRueden Row","city":"Tonawanda","zip_code":"77161","phone_number":"794-742-7610 x91687","countr":"Jersey"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"PREP","payment_method":"Przelew","payment_status":"CXL","subtotal":1776227.26,"total":2184759.52,"total_to_pay":2184769.52,"shipping_fee":"10.00","order_number":"8654005","products":[{"product_id":17,"code":"5711729","name":"Universal Slim Notebook","qty":10,"unit_price_wo_tax":85445.79,"unit_price_w_tax":105098.32,"product_subtotal":854457.9,"product_total":1050983.2},{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":8,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":416433.36,"product_total":512213.04},{"product_id":38,"code":"9304348","name":"Unbranded Modern Speakers","qty":8,"unit_price_wo_tax":63167,"unit_price_w_tax":77695.41,"product_subtotal":505336,"product_total":621563.28}],"comment":"...","created_at":"2021-07-02T20:23:22.043Z","updated_at":"2022-05-12T05:45:13.557Z","user_id":26,"_id":2},{"billing_details":{"first_name":"Lafayette","last_name":"Bechtelar","company":"Schulist - Kuvalis","tax_id":"60729-88173-36327-84545","street":"04557 Reichel Path","city":"Burke","zip_code":"13189","phone_number":"1-254-345-7704","countr":"Malaysia"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"DELIV","payment_method":"Apple Pay","payment_status":"RFD","subtotal":57171.35,"total":70320.75,"total_to_pay":70339.75,"shipping_fee":"19.99","order_number":"2598548","products":[{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":5,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":57171.35,"product_total":70320.75}],"comment":"...","created_at":"2022-05-07T14:20:48.085Z","updated_at":"2022-05-12T07:47:54.629Z","user_id":14,"_id":3},{"billing_details":{"first_name":"Amy","last_name":"Smith","company":"Fritsch Inc","tax_id":"48707-50511-38950-31510","street":"448 Doyle Avenue","city":"Broomfield","zip_code":"13707","phone_number":"862-223-3701","countr":"United Kingdom"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"Przelew","payment_status":"PAR/P","subtotal":675781.16,"total":831210.88,"total_to_pay":831220.88,"shipping_fee":"10.00","order_number":"8265574","products":[{"product_id":18,"code":"1624005","name":"Licensed Modern Notebook","qty":10,"unit_price_wo_tax":43689.82,"unit_price_w_tax":53738.48,"product_subtotal":436898.2,"product_total":537384.8},{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":8,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":238882.96,"product_total":293826.08}],"comment":"...","created_at":"2022-05-07T11:19:36.262Z","updated_at":"2022-05-12T19:21:08.120Z","user_id":6,"_id":4},{"billing_details":{"first_name":"Zita","last_name":"Roob","company":"Murphy - Yost","tax_id":"56920-33332-63480-91931","street":"81929 Novella Causeway","city":"University","zip_code":"04954-2491","phone_number":"1-899-585-8033 x027","countr":"Nicaragua"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"CXL","payment_method":"G2A Pay","payment_status":"PAR/P","subtotal":3392711.85,"total":4173035.49,"total_to_pay":4173045.49,"shipping_fee":"10.00","order_number":"4521196","products":[{"product_id":2,"code":"8505741","name":"Slim Modern Mouse","qty":7,"unit_price_wo_tax":42571.52,"unit_price_w_tax":52362.97,"product_subtotal":298000.64,"product_total":366540.79},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":4,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":277921.44,"product_total":341843.36},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":8,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":318399.44,"product_total":391631.28},{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":8,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":390539.92,"product_total":480364.08},{"product_id":4,"code":"2662184","name":"Generic Modern Mouse","qty":7,"unit_price_wo_tax":28195.61,"unit_price_w_tax":34680.6,"product_subtotal":197369.27,"product_total":242764.2},{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":4,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":333706.48,"product_total":410458.96},{"product_id":38,"code":"9304348","name":"Unbranded Modern Speakers","qty":10,"unit_price_wo_tax":63167,"unit_price_w_tax":77695.41,"product_subtotal":631670,"product_total":776954.1},{"product_id":31,"code":"9833802","name":"Flexible Elite Phone","qty":4,"unit_price_wo_tax":40891.74,"unit_price_w_tax":50296.84,"product_subtotal":163566.96,"product_total":201187.36},{"product_id":17,"code":"5711729","name":"Universal Slim Notebook","qty":6,"unit_price_wo_tax":85445.79,"unit_price_w_tax":105098.32,"product_subtotal":512674.74,"product_total":630589.92},{"product_id":5,"code":"7343358","name":"Laser Super Mouse","qty":8,"unit_price_wo_tax":33607.87,"unit_price_w_tax":41337.68,"product_subtotal":268862.96,"product_total":330701.44}],"comment":"...","created_at":"2021-11-04T09:08:27.732Z","updated_at":"2022-05-11T22:58:15.514Z","user_id":24,"_id":5},{"billing_details":{"first_name":"Lupe","last_name":"Schultz","company":"Hamill - Wiza","tax_id":"22306-89129-49631-79715","street":"829 Bryce Cape","city":"Haltom City","zip_code":"05315","phone_number":"1-858-216-4317 x91968","countr":"Guatemala"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"DELIV","payment_method":"Dotpay","payment_status":"RFD","subtotal":521665.37,"total":641648.41,"total_to_pay":641648.41,"shipping_fee":"0.9","order_number":"7478062","products":[{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":5,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":260270.85,"product_total":320133.15},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":2,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":118416.48,"product_total":145652.28},{"product_id":7,"code":"5187950","name":"Aluminium Gaming Mouse","qty":2,"unit_price_wo_tax":71489.02,"unit_price_w_tax":87931.49,"product_subtotal":142978.04,"product_total":175862.98}],"comment":"...","created_at":"2021-10-26T02:19:27.542Z","updated_at":"2022-05-12T15:11:05.075Z","user_id":12,"_id":6},{"billing_details":{"first_name":"Ambrose","last_name":"Zemlak","company":"Davis - Borer","tax_id":"75392-37262-89054-56598","street":"8886 Zachariah Unions","city":"Gilroy","zip_code":"79387-7985","phone_number":"313-643-8103 x5698","countr":"El Salvador"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"DSPCH","payment_method":"G2A Pay","payment_status":"RFD","subtotal":829496.1,"total":1020280.23,"total_to_pay":1020280.23,"shipping_fee":"0.9","order_number":"4238072","products":[{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":10,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":298603.7,"product_total":367282.6},{"product_id":32,"code":"3242655","name":"Cheap Universal Phone","qty":5,"unit_price_wo_tax":11423.96,"unit_price_w_tax":14051.47,"product_subtotal":57119.8,"product_total":70257.35},{"product_id":6,"code":"9171186","name":"Hybrid Wireless Mouse","qty":3,"unit_price_wo_tax":24189.13,"unit_price_w_tax":29752.63,"product_subtotal":72567.39,"product_total":89257.89},{"product_id":36,"code":"4011354","name":"Flexible Pro Speakers","qty":4,"unit_price_wo_tax":10751.46,"unit_price_w_tax":13224.3,"product_subtotal":43005.84,"product_total":52897.2},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":9,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":358199.37,"product_total":440585.19}],"comment":"...","created_at":"2021-06-01T18:19:10.878Z","updated_at":"2022-05-12T12:43:57.736Z","user_id":4,"_id":7},{"billing_details":{"first_name":"Manley","last_name":"Bauch","company":"MacGyver - Runolfsson","tax_id":"20084-18421-37145-72527","street":"390 VonRueden Row","city":"Tonawanda","zip_code":"77161","phone_number":"794-742-7610 x91687","countr":"Jersey"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"Apple Pay","payment_status":"RFD","subtotal":987196.36,"total":1214251.52,"total_to_pay":1214261.52,"shipping_fee":"10.00","order_number":"2173653","products":[{"product_id":28,"code":"4113938","name":"Hybrid Steel Phone","qty":5,"unit_price_wo_tax":30089.9,"unit_price_w_tax":37010.58,"product_subtotal":150449.5,"product_total":185052.9},{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":2,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":169333.9,"product_total":208280.7},{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":8,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":667412.96,"product_total":820917.92}],"comment":"...","created_at":"2021-09-20T09:18:34.240Z","updated_at":"2022-05-12T15:24:12.970Z","user_id":26,"_id":8},{"billing_details":{"first_name":"Manley","last_name":"Bauch","company":"MacGyver - Runolfsson","tax_id":"20084-18421-37145-72527","street":"390 VonRueden Row","city":"Tonawanda","zip_code":"77161","phone_number":"794-742-7610 x91687","countr":"Jersey"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"CXL","payment_method":"PayU","payment_status":"PD","subtotal":1969367.16,"total":2422321.65,"total_to_pay":2422331.65,"shipping_fee":"10.00","order_number":"5730517","products":[{"product_id":24,"code":"4777646","name":"Universal Aluminium Phone","qty":8,"unit_price_wo_tax":26354.98,"unit_price_w_tax":32416.63,"product_subtotal":210839.84,"product_total":259333.04},{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":1,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":29860.37,"product_total":36728.26},{"product_id":20,"code":"3547106","name":"Awesome Modern Notebook","qty":4,"unit_price_wo_tax":98453.43,"unit_price_w_tax":121097.72,"product_subtotal":393813.72,"product_total":484390.88},{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":7,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":583986.34,"product_total":718303.18},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":6,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":355249.44,"product_total":436956.84},{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":5,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":57171.35,"product_total":70320.75},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":10,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":338446.1,"product_total":416288.7}],"comment":"...","created_at":"2021-12-25T19:43:00.491Z","updated_at":"2022-05-12T10:23:40.711Z","user_id":26,"_id":9},{"billing_details":{"first_name":"Kole","last_name":"Stoltenberg","company":"Johnston, Moen and Hyatt","tax_id":"36579-89532-76759-51908","street":"9055 Annette Lane","city":"Durham","zip_code":"80472-4389","phone_number":"595-422-5190 x98967","countr":"Austria"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"PREP","payment_method":"Apple Pay","payment_status":"CXL","subtotal":1205201.21,"total":1482397.52,"total_to_pay":1482416.52,"shipping_fee":"19.99","order_number":"7813424","products":[{"product_id":20,"code":"3547106","name":"Awesome Modern Notebook","qty":4,"unit_price_wo_tax":98453.43,"unit_price_w_tax":121097.72,"product_subtotal":393813.72,"product_total":484390.88},{"product_id":36,"code":"4011354","name":"Flexible Pro Speakers","qty":2,"unit_price_wo_tax":10751.46,"unit_price_w_tax":13224.3,"product_subtotal":21502.92,"product_total":26448.6},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":3,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":177624.72,"product_total":218478.42},{"product_id":2,"code":"8505741","name":"Slim Modern Mouse","qty":3,"unit_price_wo_tax":42571.52,"unit_price_w_tax":52362.97,"product_subtotal":127714.56,"product_total":157088.91},{"product_id":6,"code":"9171186","name":"Hybrid Wireless Mouse","qty":5,"unit_price_wo_tax":24189.13,"unit_price_w_tax":29752.63,"product_subtotal":120945.65,"product_total":148763.15},{"product_id":32,"code":"3242655","name":"Cheap Universal Phone","qty":8,"unit_price_wo_tax":11423.96,"unit_price_w_tax":14051.47,"product_subtotal":91391.68,"product_total":112411.76},{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":4,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":208216.68,"product_total":256106.52},{"product_id":21,"code":"1078809","name":"Intelligent Aluminium Notebook","qty":4,"unit_price_wo_tax":15997.82,"unit_price_w_tax":19677.32,"product_subtotal":63991.28,"product_total":78709.28}],"comment":"...","created_at":"2022-04-22T07:19:03.561Z","updated_at":"2022-05-12T09:27:43.023Z","user_id":15,"_id":10},{"billing_details":{"first_name":"Adam","last_name":"Pacocha","company":"Schiller LLC","tax_id":"97858-72116-19417-29661","street":"50048 Jalon Burgs","city":"Blacksburg","zip_code":"67163","phone_number":"(701) 805-1286 x77663","countr":"Luxembourg"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"DELIV","payment_method":"Dotpay","payment_status":"CXL","subtotal":1869368.73,"total":2299323.58,"total_to_pay":2299342.58,"shipping_fee":"19.99","order_number":"1352117","products":[{"product_id":5,"code":"7343358","name":"Laser Super Mouse","qty":8,"unit_price_wo_tax":33607.87,"unit_price_w_tax":41337.68,"product_subtotal":268862.96,"product_total":330701.44},{"product_id":20,"code":"3547106","name":"Awesome Modern Notebook","qty":6,"unit_price_wo_tax":98453.43,"unit_price_w_tax":121097.72,"product_subtotal":590720.58,"product_total":726586.32},{"product_id":4,"code":"2662184","name":"Generic Modern Mouse","qty":3,"unit_price_wo_tax":28195.61,"unit_price_w_tax":34680.6,"product_subtotal":84586.83,"product_total":104041.8},{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":6,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":179162.22,"product_total":220369.56},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":8,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":318399.44,"product_total":391631.28},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":1,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":33844.61,"product_total":41628.87},{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":9,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":102908.43,"product_total":126577.35},{"product_id":36,"code":"4011354","name":"Flexible Pro Speakers","qty":10,"unit_price_wo_tax":10751.46,"unit_price_w_tax":13224.3,"product_subtotal":107514.6,"product_total":132243},{"product_id":39,"code":"7139144","name":"Sleek Steel Speakers","qty":9,"unit_price_wo_tax":20374.34,"unit_price_w_tax":25060.44,"product_subtotal":183369.06,"product_total":225543.96}],"comment":"...","created_at":"2022-05-11T14:20:41.710Z","updated_at":"2022-05-12T09:47:29.748Z","user_id":3,"_id":11},{"billing_details":{"first_name":"Adriana","last_name":"Conn","company":"Welch, Koelpin and Fisher","tax_id":"91959-97929-49373-77315","street":"97630 Rohan Curve","city":"Palmdale","zip_code":"43240-2529","phone_number":"948-688-1923","countr":"Pitcairn Islands"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"G2A Pay","payment_status":"PAR/P","subtotal":2048968.97,"total":2520231.83,"total_to_pay":2520241.83,"shipping_fee":"10.00","order_number":"5151427","products":[{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":9,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":358199.37,"product_total":440585.19},{"product_id":4,"code":"2662184","name":"Generic Modern Mouse","qty":10,"unit_price_wo_tax":28195.61,"unit_price_w_tax":34680.6,"product_subtotal":281956.1,"product_total":346806},{"product_id":24,"code":"4777646","name":"Universal Aluminium Phone","qty":9,"unit_price_wo_tax":26354.98,"unit_price_w_tax":32416.63,"product_subtotal":237194.82,"product_total":291749.67},{"product_id":40,"code":"7167560","name":"Elite Plastic Speakers","qty":2,"unit_price_wo_tax":14916.68,"unit_price_w_tax":18347.52,"product_subtotal":29833.36,"product_total":36695.04},{"product_id":3,"code":"6163073","name":"Sleek Gaming Mouse","qty":9,"unit_price_wo_tax":45253.36,"unit_price_w_tax":55661.63,"product_subtotal":407280.24,"product_total":500954.67},{"product_id":21,"code":"1078809","name":"Intelligent Aluminium Notebook","qty":7,"unit_price_wo_tax":15997.82,"unit_price_w_tax":19677.32,"product_subtotal":111984.74,"product_total":137741.24},{"product_id":27,"code":"7616458","name":"Smart Metal Phone","qty":9,"unit_price_wo_tax":47715,"unit_price_w_tax":58689.45,"product_subtotal":429435,"product_total":528205.05},{"product_id":28,"code":"4113938","name":"Hybrid Steel Phone","qty":3,"unit_price_wo_tax":30089.9,"unit_price_w_tax":37010.58,"product_subtotal":90269.7,"product_total":111031.74},{"product_id":32,"code":"3242655","name":"Cheap Universal Phone","qty":9,"unit_price_wo_tax":11423.96,"unit_price_w_tax":14051.47,"product_subtotal":102815.64,"product_total":126463.23}],"comment":"...","created_at":"2021-07-31T14:30:05.061Z","updated_at":"2022-05-12T14:26:32.298Z","user_id":10,"_id":12},{"billing_details":{"first_name":"Zita","last_name":"Roob","company":"Murphy - Yost","tax_id":"56920-33332-63480-91931","street":"81929 Novella Causeway","city":"University","zip_code":"04954-2491","phone_number":"1-899-585-8033 x027","countr":"Nicaragua"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"DSPCH","payment_method":"Dotpay","payment_status":"RFD","subtotal":2885683.55,"total":3549390.86,"total_to_pay":3549409.86,"shipping_fee":"19.99","order_number":"3422718","products":[{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":8,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":416433.36,"product_total":512213.04},{"product_id":12,"code":"9163837","name":"Elite Hybrid Headphones","qty":2,"unit_price_wo_tax":8950.74,"unit_price_w_tax":11009.41,"product_subtotal":17901.48,"product_total":22018.82},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":5,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":347401.8,"product_total":427304.2},{"product_id":35,"code":"1785579","name":"Smart Modern Speakers","qty":6,"unit_price_wo_tax":46907.85,"unit_price_w_tax":57696.66,"product_subtotal":281447.1,"product_total":346179.96},{"product_id":17,"code":"5711729","name":"Universal Slim Notebook","qty":4,"unit_price_wo_tax":85445.79,"unit_price_w_tax":105098.32,"product_subtotal":341783.16,"product_total":420393.28},{"product_id":30,"code":"4657291","name":"Universal Hybrid Phone","qty":9,"unit_price_wo_tax":78568.59,"unit_price_w_tax":96639.37,"product_subtotal":707117.31,"product_total":869754.33},{"product_id":11,"code":"6085686","name":"Universal Gaming Headphones","qty":9,"unit_price_wo_tax":64736.56,"unit_price_w_tax":79625.97,"product_subtotal":582629.04,"product_total":716633.73},{"product_id":10,"code":"2943354","name":"Smart Solid Headphones","qty":10,"unit_price_wo_tax":19097.03,"unit_price_w_tax":23489.35,"product_subtotal":190970.3,"product_total":234893.5}],"comment":"...","created_at":"2021-09-02T01:27:55.040Z","updated_at":"2022-05-12T09:09:06.857Z","user_id":24,"_id":13},{"billing_details":{"first_name":"Chelsea","last_name":"O'Connell","company":"Ebert - Wilkinson","tax_id":"95381-44665-15450-59308","street":"506 Madeline Shore","city":"Temecula","zip_code":"63273","phone_number":"1-941-732-8654 x674","countr":"Jamaica"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"CXL","payment_method":"Apple Pay","payment_status":"CXL","subtotal":1367408.77,"total":1681912.76,"total_to_pay":1681912.76,"shipping_fee":"0.9","order_number":"1686366","products":[{"product_id":27,"code":"7616458","name":"Smart Metal Phone","qty":1,"unit_price_wo_tax":47715,"unit_price_w_tax":58689.45,"product_subtotal":47715,"product_total":58689.45},{"product_id":17,"code":"5711729","name":"Universal Slim Notebook","qty":2,"unit_price_wo_tax":85445.79,"unit_price_w_tax":105098.32,"product_subtotal":170891.58,"product_total":210196.64},{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":7,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":364379.19,"product_total":448186.41},{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":3,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":34302.81,"product_total":42192.45},{"product_id":3,"code":"6163073","name":"Sleek Gaming Mouse","qty":4,"unit_price_wo_tax":45253.36,"unit_price_w_tax":55661.63,"product_subtotal":181013.44,"product_total":222646.52},{"product_id":36,"code":"4011354","name":"Flexible Pro Speakers","qty":5,"unit_price_wo_tax":10751.46,"unit_price_w_tax":13224.3,"product_subtotal":53757.3,"product_total":66121.5},{"product_id":14,"code":"1413240","name":"Sleek Steel Headphones","qty":4,"unit_price_wo_tax":18998.01,"unit_price_w_tax":23367.55,"product_subtotal":75992.04,"product_total":93470.2},{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":9,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":439357.41,"product_total":540409.59}],"comment":"...","created_at":"2021-05-31T19:56:26.706Z","updated_at":"2022-05-12T11:54:04.040Z","user_id":23,"_id":14},{"billing_details":{"first_name":"Irene","last_name":"Littel","company":"Bayer Group","tax_id":"75079-71503-99904-56269","street":"784 Padberg Shores","city":"Spring Valley","zip_code":"76550-6622","phone_number":"582-922-4255 x16234","countr":"Faroe Islands"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"G2A Pay","payment_status":"PD","subtotal":1993950.57,"total":2452559.2,"total_to_pay":2452569.2,"shipping_fee":"10.00","order_number":"4698165","products":[{"product_id":11,"code":"6085686","name":"Universal Gaming Headphones","qty":6,"unit_price_wo_tax":64736.56,"unit_price_w_tax":79625.97,"product_subtotal":388419.36,"product_total":477755.82},{"product_id":38,"code":"9304348","name":"Unbranded Modern Speakers","qty":6,"unit_price_wo_tax":63167,"unit_price_w_tax":77695.41,"product_subtotal":379002,"product_total":466172.46},{"product_id":6,"code":"9171186","name":"Hybrid Wireless Mouse","qty":2,"unit_price_wo_tax":24189.13,"unit_price_w_tax":29752.63,"product_subtotal":48378.26,"product_total":59505.26},{"product_id":24,"code":"4777646","name":"Universal Aluminium Phone","qty":3,"unit_price_wo_tax":26354.98,"unit_price_w_tax":32416.63,"product_subtotal":79064.94,"product_total":97249.89},{"product_id":41,"code":"3921967","name":"Universal Metal Speakers","qty":4,"unit_price_wo_tax":18127.17,"unit_price_w_tax":22296.42,"product_subtotal":72508.68,"product_total":89185.68},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":5,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":296041.2,"product_total":364130.7},{"product_id":22,"code":"1977802","name":"Flexible Pro Notebook","qty":7,"unit_price_wo_tax":10208.18,"unit_price_w_tax":12556.06,"product_subtotal":71457.26,"product_total":87892.42},{"product_id":42,"code":"7211191","name":"Flexible Hybrid Speakers","qty":5,"unit_price_wo_tax":73314.97,"unit_price_w_tax":90177.41,"product_subtotal":366574.85,"product_total":450887.05},{"product_id":12,"code":"9163837","name":"Elite Hybrid Headphones","qty":6,"unit_price_wo_tax":8950.74,"unit_price_w_tax":11009.41,"product_subtotal":53704.44,"product_total":66056.46},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":6,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":238799.58,"product_total":293723.46}],"comment":"...","created_at":"2022-01-22T02:41:47.599Z","updated_at":"2022-05-12T12:32:54.855Z","user_id":22,"_id":15},{"billing_details":{"first_name":"Bettie","last_name":"Legros","company":"Smitham - Schmidt","tax_id":"14817-72007-82828-86523","street":"425 VonRueden Shoal","city":"Hutchinson","zip_code":"41980-4394","phone_number":"1-506-266-7215 x567","countr":"Gibraltar"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DELIV","payment_method":"VISA","payment_status":"AWT","subtotal":1229914.22,"total":1512794.51,"total_to_pay":1512804.51,"shipping_fee":"10.00","order_number":"4667683","products":[{"product_id":36,"code":"4011354","name":"Flexible Pro Speakers","qty":9,"unit_price_wo_tax":10751.46,"unit_price_w_tax":13224.3,"product_subtotal":96763.14,"product_total":119018.7},{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":2,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":169333.9,"product_total":208280.7},{"product_id":31,"code":"9833802","name":"Flexible Elite Phone","qty":3,"unit_price_wo_tax":40891.74,"unit_price_w_tax":50296.84,"product_subtotal":122675.22,"product_total":150890.52},{"product_id":37,"code":"4784913","name":"Universal Ultra Speakers","qty":2,"unit_price_wo_tax":28374.51,"unit_price_w_tax":34900.65,"product_subtotal":56749.02,"product_total":69801.3},{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":1,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":48817.49,"product_total":60045.51},{"product_id":38,"code":"9304348","name":"Unbranded Modern Speakers","qty":6,"unit_price_wo_tax":63167,"unit_price_w_tax":77695.41,"product_subtotal":379002,"product_total":466172.46},{"product_id":3,"code":"6163073","name":"Sleek Gaming Mouse","qty":7,"unit_price_wo_tax":45253.36,"unit_price_w_tax":55661.63,"product_subtotal":316773.52,"product_total":389631.41},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":1,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":39799.93,"product_total":48953.91}],"comment":"...","created_at":"2021-10-04T21:21:52.770Z","updated_at":"2022-05-12T00:34:12.200Z","user_id":2,"_id":16},{"billing_details":{"first_name":"Okey","last_name":"Leannon","company":"Willms - Parisian","tax_id":"21812-85031-37960-85980","street":"154 Hassie Isle","city":"Fayetteville","zip_code":"14503","phone_number":"1-298-888-1691 x6753","countr":"New Zealand"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"G2A Pay","payment_status":"PAR/P","subtotal":1165407.41,"total":1433451.13,"total_to_pay":1433461.13,"shipping_fee":"10.00","order_number":"4153150","products":[{"product_id":32,"code":"3242655","name":"Cheap Universal Phone","qty":4,"unit_price_wo_tax":11423.96,"unit_price_w_tax":14051.47,"product_subtotal":45695.84,"product_total":56205.88},{"product_id":5,"code":"7343358","name":"Laser Super Mouse","qty":7,"unit_price_wo_tax":33607.87,"unit_price_w_tax":41337.68,"product_subtotal":235255.09,"product_total":289363.76},{"product_id":43,"code":"1139920","name":"Smart Plastic Speakers","qty":2,"unit_price_wo_tax":55929.85,"unit_price_w_tax":68793.72,"product_subtotal":111859.7,"product_total":137587.44},{"product_id":28,"code":"4113938","name":"Hybrid Steel Phone","qty":10,"unit_price_wo_tax":30089.9,"unit_price_w_tax":37010.58,"product_subtotal":300899,"product_total":370105.8},{"product_id":31,"code":"9833802","name":"Flexible Elite Phone","qty":1,"unit_price_wo_tax":40891.74,"unit_price_w_tax":50296.84,"product_subtotal":40891.74,"product_total":50296.84},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":5,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":347401.8,"product_total":427304.2},{"product_id":2,"code":"8505741","name":"Slim Modern Mouse","qty":1,"unit_price_wo_tax":42571.52,"unit_price_w_tax":52362.97,"product_subtotal":42571.52,"product_total":52362.97},{"product_id":22,"code":"1977802","name":"Flexible Pro Notebook","qty":4,"unit_price_wo_tax":10208.18,"unit_price_w_tax":12556.06,"product_subtotal":40832.72,"product_total":50224.24}],"comment":"...","created_at":"2021-11-24T03:49:11.674Z","updated_at":"2022-05-12T08:58:10.179Z","user_id":17,"_id":17},{"billing_details":{"first_name":"Adriana","last_name":"Conn","company":"Welch, Koelpin and Fisher","tax_id":"91959-97929-49373-77315","street":"97630 Rohan Curve","city":"Palmdale","zip_code":"43240-2529","phone_number":"948-688-1923","countr":"Pitcairn Islands"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"CXL","payment_method":"VISA","payment_status":"CXL","subtotal":1153365.98,"total":1418640.2,"total_to_pay":1418640.2,"shipping_fee":"0.9","order_number":"6292221","products":[{"product_id":12,"code":"9163837","name":"Elite Hybrid Headphones","qty":8,"unit_price_wo_tax":8950.74,"unit_price_w_tax":11009.41,"product_subtotal":71605.92,"product_total":88075.28},{"product_id":30,"code":"4657291","name":"Universal Hybrid Phone","qty":1,"unit_price_wo_tax":78568.59,"unit_price_w_tax":96639.37,"product_subtotal":78568.59,"product_total":96639.37},{"product_id":39,"code":"7139144","name":"Sleek Steel Speakers","qty":1,"unit_price_wo_tax":20374.34,"unit_price_w_tax":25060.44,"product_subtotal":20374.34,"product_total":25060.44},{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":2,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":104108.34,"product_total":128053.26},{"product_id":37,"code":"4784913","name":"Universal Ultra Speakers","qty":1,"unit_price_wo_tax":28374.51,"unit_price_w_tax":34900.65,"product_subtotal":28374.51,"product_total":34900.65},{"product_id":22,"code":"1977802","name":"Flexible Pro Notebook","qty":6,"unit_price_wo_tax":10208.18,"unit_price_w_tax":12556.06,"product_subtotal":61249.08,"product_total":75336.36},{"product_id":10,"code":"2943354","name":"Smart Solid Headphones","qty":8,"unit_price_wo_tax":19097.03,"unit_price_w_tax":23489.35,"product_subtotal":152776.24,"product_total":187914.8},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":2,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":118416.48,"product_total":145652.28},{"product_id":11,"code":"6085686","name":"Universal Gaming Headphones","qty":8,"unit_price_wo_tax":64736.56,"unit_price_w_tax":79625.97,"product_subtotal":517892.48,"product_total":637007.76}],"comment":"...","created_at":"2022-05-09T06:07:07.370Z","updated_at":"2022-05-12T00:00:40.488Z","user_id":10,"_id":18},{"billing_details":{"first_name":"Audrey","last_name":"Trantow","company":"Braun Group","tax_id":"11553-55161-64805-52498","street":"586 Runolfsson Harbor","city":"Santa Clara","zip_code":"08553","phone_number":"827.502.8785 x67683","countr":"New Caledonia"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"PREP","payment_method":"Przelew","payment_status":"AWT","subtotal":708744.12,"total":871755.24,"total_to_pay":871765.24,"shipping_fee":"10.00","order_number":"9928241","products":[{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":10,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":397999.3,"product_total":489539.1},{"product_id":11,"code":"6085686","name":"Universal Gaming Headphones","qty":2,"unit_price_wo_tax":64736.56,"unit_price_w_tax":79625.97,"product_subtotal":129473.12,"product_total":159251.94},{"product_id":41,"code":"3921967","name":"Universal Metal Speakers","qty":10,"unit_price_wo_tax":18127.17,"unit_price_w_tax":22296.42,"product_subtotal":181271.7,"product_total":222964.2}],"comment":"...","created_at":"2021-12-31T00:10:30.820Z","updated_at":"2022-05-12T03:33:02.203Z","user_id":33,"_id":19},{"billing_details":{"first_name":"Kiara","last_name":"Beier","company":"Mueller - Wintheiser","tax_id":"77350-50096-54493-56568","street":"7769 Francisca Oval","city":"Trenton","zip_code":"39434-5885","phone_number":"419-958-4501 x683","countr":"Congo"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"Dotpay","payment_status":"AWT","subtotal":263565.62,"total":324185.7,"total_to_pay":324195.7,"shipping_fee":"10.00","order_number":"5101783","products":[{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":2,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":22868.54,"product_total":28128.3},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":4,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":159199.72,"product_total":195815.64},{"product_id":39,"code":"7139144","name":"Sleek Steel Speakers","qty":4,"unit_price_wo_tax":20374.34,"unit_price_w_tax":25060.44,"product_subtotal":81497.36,"product_total":100241.76}],"comment":"...","created_at":"2021-06-01T12:34:47.279Z","updated_at":"2022-05-12T02:00:21.190Z","user_id":1,"_id":20},{"billing_details":{"first_name":"Rex","last_name":"Pouros","company":"Stamm Inc","tax_id":"40575-80363-18895-90051","street":"7381 Kuphal Cliffs","city":"Lancaster","zip_code":"86795-3822","phone_number":"(397) 780-8271 x5637","countr":"Switzerland"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"DSPCH","payment_method":"Dotpay","payment_status":"PAR/P","subtotal":1540058.47,"total":1894271.87,"total_to_pay":1894271.87,"shipping_fee":"0.9","order_number":"6890738","products":[{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":8,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":677335.6,"product_total":833122.8},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":1,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":33844.61,"product_total":41628.87},{"product_id":14,"code":"1413240","name":"Sleek Steel Headphones","qty":6,"unit_price_wo_tax":18998.01,"unit_price_w_tax":23367.55,"product_subtotal":113988.06,"product_total":140205.3},{"product_id":7,"code":"5187950","name":"Aluminium Gaming Mouse","qty":10,"unit_price_wo_tax":71489.02,"unit_price_w_tax":87931.49,"product_subtotal":714890.2,"product_total":879314.9}],"comment":"...","created_at":"2021-11-23T05:04:08.735Z","updated_at":"2022-05-12T15:46:31.825Z","user_id":31,"_id":21},{"billing_details":{"first_name":"Samanta","last_name":"Corkery","company":"Torphy, Jenkins and Wehner","tax_id":"55967-66638-25543-38037","street":"341 Kenny Vista","city":"East Lansing","zip_code":"60558-1207","phone_number":"731.298.6878","countr":"United States"},"package_tracking_code":null,"shipping_method":"Inpost","shipping_status":"PREP","payment_method":"G2A Pay","payment_status":"CXL","subtotal":499153.81,"total":613959.23,"total_to_pay":613959.23,"shipping_fee":"0.9","order_number":"6301987","products":[{"product_id":23,"code":"8187074","name":"Elite Modern Notebook","qty":5,"unit_price_wo_tax":52054.17,"unit_price_w_tax":64026.63,"product_subtotal":260270.85,"product_total":320133.15},{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":8,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":238882.96,"product_total":293826.08}],"comment":"...","created_at":"2021-06-21T11:00:38.406Z","updated_at":"2022-05-12T03:03:26.174Z","user_id":20,"_id":22},{"billing_details":{"first_name":"Allyson","last_name":"Pfeffer","company":"Kris, Braun and Rempel","tax_id":"34397-32221-84068-82398","street":"178 Pagac Meadows","city":"East Lansing","zip_code":"13084-0700","phone_number":"806.780.8622","countr":"Somalia"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DSPCH","payment_method":"G2A Pay","payment_status":"CXL","subtotal":2763453.79,"total":3399048.2,"total_to_pay":3399058.2,"shipping_fee":"10.00","order_number":"4375347","products":[{"product_id":33,"code":"5695198","name":"Smart Ultra Speakers","qty":6,"unit_price_wo_tax":14003.66,"unit_price_w_tax":17224.5,"product_subtotal":84021.96,"product_total":103347},{"product_id":1,"code":"3245223","name":"Fantastic Plastic Mouse","qty":10,"unit_price_wo_tax":70605.91,"unit_price_w_tax":86845.27,"product_subtotal":706059.1,"product_total":868452.7},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":6,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":416882.16,"product_total":512765.04},{"product_id":15,"code":"3402007","name":"Smart Slim Headphones","qty":7,"unit_price_wo_tax":43804.86,"unit_price_w_tax":53879.98,"product_subtotal":306634.02,"product_total":377159.86},{"product_id":29,"code":"2696884","name":"Intelligent Modern Phone","qty":7,"unit_price_wo_tax":29860.37,"unit_price_w_tax":36728.26,"product_subtotal":209022.59,"product_total":257097.82},{"product_id":43,"code":"1139920","name":"Smart Plastic Speakers","qty":2,"unit_price_wo_tax":55929.85,"unit_price_w_tax":68793.72,"product_subtotal":111859.7,"product_total":137587.44},{"product_id":7,"code":"5187950","name":"Aluminium Gaming Mouse","qty":9,"unit_price_wo_tax":71489.02,"unit_price_w_tax":87931.49,"product_subtotal":643401.18,"product_total":791383.41},{"product_id":6,"code":"9171186","name":"Hybrid Wireless Mouse","qty":2,"unit_price_wo_tax":24189.13,"unit_price_w_tax":29752.63,"product_subtotal":48378.26,"product_total":59505.26},{"product_id":24,"code":"4777646","name":"Universal Aluminium Phone","qty":9,"unit_price_wo_tax":26354.98,"unit_price_w_tax":32416.63,"product_subtotal":237194.82,"product_total":291749.67}],"comment":"...","created_at":"2021-09-29T21:14:24.113Z","updated_at":"2022-05-11T23:52:27.844Z","user_id":8,"_id":23},{"billing_details":{"first_name":"Jonah","last_name":"Wilkinson","company":"Beier - Collins","tax_id":"83690-95398-72830-38869","street":"74335 Orval Land","city":"South Whittier","zip_code":"19784","phone_number":"236.438.2908 x964","countr":"United Kingdom"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"DSPCH","payment_method":"Apple Pay","payment_status":"RFD","subtotal":474918.3,"total":584149.5,"total_to_pay":584168.5,"shipping_fee":"19.99","order_number":"9789565","products":[{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":4,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":333706.48,"product_total":410458.96},{"product_id":1,"code":"3245223","name":"Fantastic Plastic Mouse","qty":2,"unit_price_wo_tax":70605.91,"unit_price_w_tax":86845.27,"product_subtotal":141211.82,"product_total":173690.54}],"comment":"...","created_at":"2022-02-05T22:48:19.468Z","updated_at":"2022-05-12T06:03:48.192Z","user_id":16,"_id":24},{"billing_details":{"first_name":"Jonah","last_name":"Wilkinson","company":"Beier - Collins","tax_id":"83690-95398-72830-38869","street":"74335 Orval Land","city":"South Whittier","zip_code":"19784","phone_number":"236.438.2908 x964","countr":"United Kingdom"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"PREP","payment_method":"G2A Pay","payment_status":"PAR/P","subtotal":1295618.32,"total":1593610.55,"total_to_pay":1593620.55,"shipping_fee":"10.00","order_number":"2659243","products":[{"product_id":20,"code":"3547106","name":"Awesome Modern Notebook","qty":1,"unit_price_wo_tax":98453.43,"unit_price_w_tax":121097.72,"product_subtotal":98453.43,"product_total":121097.72},{"product_id":40,"code":"7167560","name":"Elite Plastic Speakers","qty":8,"unit_price_wo_tax":14916.68,"unit_price_w_tax":18347.52,"product_subtotal":119333.44,"product_total":146780.16},{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":3,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":146452.47,"product_total":180136.53},{"product_id":8,"code":"3519998","name":"Small Modern Mouse","qty":9,"unit_price_wo_tax":83426.62,"unit_price_w_tax":102614.74,"product_subtotal":750839.58,"product_total":923532.66},{"product_id":28,"code":"4113938","name":"Hybrid Steel Phone","qty":6,"unit_price_wo_tax":30089.9,"unit_price_w_tax":37010.58,"product_subtotal":180539.4,"product_total":222063.48}],"comment":"...","created_at":"2021-08-03T05:20:07.104Z","updated_at":"2022-05-12T15:44:00.735Z","user_id":16,"_id":25},{"billing_details":{"first_name":"Irene","last_name":"Littel","company":"Bayer Group","tax_id":"75079-71503-99904-56269","street":"784 Padberg Shores","city":"Spring Valley","zip_code":"76550-6622","phone_number":"582-922-4255 x16234","countr":"Faroe Islands"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"CXL","payment_method":"Apple Pay","payment_status":"AWT","subtotal":1328313.93,"total":1633826.16,"total_to_pay":1633845.16,"shipping_fee":"19.99","order_number":"4247943","products":[{"product_id":35,"code":"1785579","name":"Smart Modern Speakers","qty":1,"unit_price_wo_tax":46907.85,"unit_price_w_tax":57696.66,"product_subtotal":46907.85,"product_total":57696.66},{"product_id":43,"code":"1139920","name":"Smart Plastic Speakers","qty":6,"unit_price_wo_tax":55929.85,"unit_price_w_tax":68793.72,"product_subtotal":335579.1,"product_total":412762.32},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":3,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":101533.83,"product_total":124886.61},{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":3,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":146452.47,"product_total":180136.53},{"product_id":15,"code":"3402007","name":"Smart Slim Headphones","qty":8,"unit_price_wo_tax":43804.86,"unit_price_w_tax":53879.98,"product_subtotal":350438.88,"product_total":431039.84},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":5,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":347401.8,"product_total":427304.2}],"comment":"...","created_at":"2021-09-11T03:34:24.507Z","updated_at":"2022-05-12T02:45:06.215Z","user_id":22,"_id":26},{"billing_details":{"first_name":"Michale","last_name":"Collier","company":"Thompson, Morissette and Hermiston","tax_id":"87318-18176-29332-98629","street":"3384 Griffin Forest","city":"Santa Maria","zip_code":"34028-8404","phone_number":"947.511.5879","countr":"Italy"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"CXL","payment_method":"Przelew","payment_status":"RFD","subtotal":1419895.11,"total":1746471,"total_to_pay":1746481,"shipping_fee":"10.00","order_number":"3898023","products":[{"product_id":33,"code":"5695198","name":"Smart Ultra Speakers","qty":1,"unit_price_wo_tax":14003.66,"unit_price_w_tax":17224.5,"product_subtotal":14003.66,"product_total":17224.5},{"product_id":42,"code":"7211191","name":"Flexible Hybrid Speakers","qty":2,"unit_price_wo_tax":73314.97,"unit_price_w_tax":90177.41,"product_subtotal":146629.94,"product_total":180354.82},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":1,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":33844.61,"product_total":41628.87},{"product_id":1,"code":"3245223","name":"Fantastic Plastic Mouse","qty":10,"unit_price_wo_tax":70605.91,"unit_price_w_tax":86845.27,"product_subtotal":706059.1,"product_total":868452.7},{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":3,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":254000.85,"product_total":312421.05},{"product_id":35,"code":"1785579","name":"Smart Modern Speakers","qty":1,"unit_price_wo_tax":46907.85,"unit_price_w_tax":57696.66,"product_subtotal":46907.85,"product_total":57696.66},{"product_id":18,"code":"1624005","name":"Licensed Modern Notebook","qty":5,"unit_price_wo_tax":43689.82,"unit_price_w_tax":53738.48,"product_subtotal":218449.1,"product_total":268692.4}],"comment":"...","created_at":"2022-03-28T11:11:34.706Z","updated_at":"2022-05-12T14:17:55.162Z","user_id":28,"_id":27},{"billing_details":{"first_name":"Jillian","last_name":"Towne","company":"Batz, Hayes and Bechtelar","tax_id":"13604-75009-30096-62221","street":"7917 Mann Passage","city":"Baldwin Park","zip_code":"12633","phone_number":"1-497-205-5462 x2794","countr":"China"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"DELIV","payment_method":"Amazon","payment_status":"AWT","subtotal":1958064.89,"total":2408419.85,"total_to_pay":2408429.85,"shipping_fee":"10.00","order_number":"6033117","products":[{"product_id":28,"code":"4113938","name":"Hybrid Steel Phone","qty":3,"unit_price_wo_tax":30089.9,"unit_price_w_tax":37010.58,"product_subtotal":90269.7,"product_total":111031.74},{"product_id":16,"code":"5170703","name":"Elite Modern Headphones","qty":8,"unit_price_wo_tax":59208.24,"unit_price_w_tax":72826.14,"product_subtotal":473665.92,"product_total":582609.12},{"product_id":34,"code":"7731727","name":"Awesome Aluminium Speakers","qty":2,"unit_price_wo_tax":33844.61,"unit_price_w_tax":41628.87,"product_subtotal":67689.22,"product_total":83257.74},{"product_id":38,"code":"9304348","name":"Unbranded Modern Speakers","qty":4,"unit_price_wo_tax":63167,"unit_price_w_tax":77695.41,"product_subtotal":252668,"product_total":310781.64},{"product_id":2,"code":"8505741","name":"Slim Modern Mouse","qty":10,"unit_price_wo_tax":42571.52,"unit_price_w_tax":52362.97,"product_subtotal":425715.2,"product_total":523629.7},{"product_id":39,"code":"7139144","name":"Sleek Steel Speakers","qty":2,"unit_price_wo_tax":20374.34,"unit_price_w_tax":25060.44,"product_subtotal":40748.68,"product_total":50120.88},{"product_id":6,"code":"9171186","name":"Hybrid Wireless Mouse","qty":5,"unit_price_wo_tax":24189.13,"unit_price_w_tax":29752.63,"product_subtotal":120945.65,"product_total":148763.15},{"product_id":26,"code":"6249204","name":"Elite Slim Phone","qty":7,"unit_price_wo_tax":69480.36,"unit_price_w_tax":85460.84,"product_subtotal":486362.52,"product_total":598225.88}],"comment":"...","created_at":"2021-12-24T11:54:38.825Z","updated_at":"2022-05-12T21:06:46.610Z","user_id":13,"_id":28},{"billing_details":{"first_name":"Bridgette","last_name":"Rutherford","company":"Kertzmann - Cruickshank","tax_id":"46429-41022-30470-40417","street":"216 Auer Centers","city":"Midland","zip_code":"30523","phone_number":"1-269-667-9097","countr":"French Southern Territories"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"PREP","payment_method":"Dotpay","payment_status":"PD","subtotal":1885855.8,"total":2319602.58,"total_to_pay":2319612.58,"shipping_fee":"10.00","order_number":"7867132","products":[{"product_id":19,"code":"2669931","name":"Gorgeous Ultra Notebook","qty":1,"unit_price_wo_tax":48817.49,"unit_price_w_tax":60045.51,"product_subtotal":48817.49,"product_total":60045.51},{"product_id":33,"code":"5695198","name":"Smart Ultra Speakers","qty":1,"unit_price_wo_tax":14003.66,"unit_price_w_tax":17224.5,"product_subtotal":14003.66,"product_total":17224.5},{"product_id":4,"code":"2662184","name":"Generic Modern Mouse","qty":10,"unit_price_wo_tax":28195.61,"unit_price_w_tax":34680.6,"product_subtotal":281956.1,"product_total":346806},{"product_id":27,"code":"7616458","name":"Smart Metal Phone","qty":10,"unit_price_wo_tax":47715,"unit_price_w_tax":58689.45,"product_subtotal":477150,"product_total":586894.5},{"product_id":9,"code":"9674420","name":"Slim Ultra Mouse","qty":8,"unit_price_wo_tax":39799.93,"unit_price_w_tax":48953.91,"product_subtotal":318399.44,"product_total":391631.28},{"product_id":11,"code":"6085686","name":"Universal Gaming Headphones","qty":9,"unit_price_wo_tax":64736.56,"unit_price_w_tax":79625.97,"product_subtotal":582629.04,"product_total":716633.73},{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":9,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":102908.43,"product_total":126577.35},{"product_id":22,"code":"1977802","name":"Flexible Pro Notebook","qty":5,"unit_price_wo_tax":10208.18,"unit_price_w_tax":12556.06,"product_subtotal":51040.9,"product_total":62780.3},{"product_id":12,"code":"9163837","name":"Elite Hybrid Headphones","qty":1,"unit_price_wo_tax":8950.74,"unit_price_w_tax":11009.41,"product_subtotal":8950.74,"product_total":11009.41}],"comment":"...","created_at":"2021-12-08T10:42:04.848Z","updated_at":"2022-05-12T14:19:34.099Z","user_id":34,"_id":29},{"billing_details":{"first_name":"Bettie","last_name":"Legros","company":"Smitham - Schmidt","tax_id":"14817-72007-82828-86523","street":"425 VonRueden Shoal","city":"Hutchinson","zip_code":"41980-4394","phone_number":"1-506-266-7215 x567","countr":"Gibraltar"},"package_tracking_code":null,"shipping_method":"Poczta polska","shipping_status":"DELIV","payment_method":"Przelew","payment_status":"CXL","subtotal":1549891.08,"total":1906366.08,"total_to_pay":1906385.08,"shipping_fee":"19.99","order_number":"2969106","products":[{"product_id":5,"code":"7343358","name":"Laser Super Mouse","qty":4,"unit_price_wo_tax":33607.87,"unit_price_w_tax":41337.68,"product_subtotal":134431.48,"product_total":165350.72},{"product_id":13,"code":"6567024","name":"Ultra Modern Headphones","qty":8,"unit_price_wo_tax":11434.27,"unit_price_w_tax":14064.15,"product_subtotal":91474.16,"product_total":112513.2},{"product_id":33,"code":"5695198","name":"Smart Ultra Speakers","qty":3,"unit_price_wo_tax":14003.66,"unit_price_w_tax":17224.5,"product_subtotal":42010.98,"product_total":51673.5},{"product_id":40,"code":"7167560","name":"Elite Plastic Speakers","qty":10,"unit_price_wo_tax":14916.68,"unit_price_w_tax":18347.52,"product_subtotal":149166.8,"product_total":183475.2},{"product_id":43,"code":"1139920","name":"Smart Plastic Speakers","qty":7,"unit_price_wo_tax":55929.85,"unit_price_w_tax":68793.72,"product_subtotal":391508.95,"product_total":481556.04},{"product_id":41,"code":"3921967","name":"Universal Metal Speakers","qty":9,"unit_price_wo_tax":18127.17,"unit_price_w_tax":22296.42,"product_subtotal":163144.53,"product_total":200667.78},{"product_id":15,"code":"3402007","name":"Smart Slim Headphones","qty":7,"unit_price_wo_tax":43804.86,"unit_price_w_tax":53879.98,"product_subtotal":306634.02,"product_total":377159.86},{"product_id":3,"code":"6163073","name":"Sleek Gaming Mouse","qty":6,"unit_price_wo_tax":45253.36,"unit_price_w_tax":55661.63,"product_subtotal":271520.16,"product_total":333969.78}],"comment":"...","created_at":"2022-03-29T01:31:59.485Z","updated_at":"2022-05-12T02:20:06.263Z","user_id":2,"_id":30},{"billing_details":{"first_name":"Adam","last_name":"Pacocha","company":"Schiller LLC","tax_id":"97858-72116-19417-29661","street":"50048 Jalon Burgs","city":"Blacksburg","zip_code":"67163","phone_number":"(701) 805-1286 x77663","countr":"Luxembourg"},"package_tracking_code":null,"shipping_method":"DPD","shipping_status":"PREP","payment_method":"PayU","payment_status":"AWT","subtotal":662686.95,"total":815104.95,"total_to_pay":815114.95,"shipping_fee":"10.00","order_number":"1045295","products":[{"product_id":25,"code":"7219381","name":"Flexible Plastic Phone","qty":7,"unit_price_wo_tax":84666.95,"unit_price_w_tax":104140.35,"product_subtotal":592668.65,"product_total":728982.45},{"product_id":33,"code":"5695198","name":"Smart Ultra Speakers","qty":5,"unit_price_wo_tax":14003.66,"unit_price_w_tax":17224.5,"product_subtotal":70018.3,"product_total":86122.5}],"comment":"...","created_at":"2021-12-03T14:41:22.834Z","updated_at":"2022-05-12T17:58:44.069Z","user_id":3,"_id":31}]
+[
+  {
+    "billing_details": {
+      "first_name": "Adriana",
+      "last_name": "Conn",
+      "company": "Welch, Koelpin and Fisher",
+      "tax_id": "91959-97929-49373-77315",
+      "street": "97630 Rohan Curve",
+      "city": "Palmdale",
+      "zip_code": "43240-2529",
+      "phone_number": "948-688-1923",
+      "countr": "Pitcairn Islands"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "CXL",
+    "payment_method": "VISA",
+    "payment_status": "PD",
+    "subtotal": 1105060.43,
+    "total": 1359224.31,
+    "total_to_pay": 1359224.31,
+    "shipping_fee": "0.9",
+    "order_number": "2594900",
+    "products": [
+      {
+        "product_id": 4,
+        "code": "2662184",
+        "name": "Generic Modern Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 28195.61,
+        "unit_price_w_tax": 34680.6,
+        "product_subtotal": 281956.1,
+        "product_total": 346806
+      },
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 254000.85,
+        "product_total": 312421.05
+      },
+      {
+        "product_id": 32,
+        "code": "3242655",
+        "name": "Cheap Universal Phone",
+        "qty": 6,
+        "unit_price_wo_tax": 11423.96,
+        "unit_price_w_tax": 14051.47,
+        "product_subtotal": 68543.76,
+        "product_total": 84308.82
+      },
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 6,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 500559.72,
+        "product_total": 615688.44
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-04-07T16:25:50.916Z",
+    "updated_at": "2022-05-12T06:31:36.611Z",
+    "user_id": 10,
+    "_id": 1
+  },
+  {
+    "billing_details": {
+      "first_name": "Manley",
+      "last_name": "Bauch",
+      "company": "MacGyver - Runolfsson",
+      "tax_id": "20084-18421-37145-72527",
+      "street": "390 VonRueden Row",
+      "city": "Tonawanda",
+      "zip_code": "77161",
+      "phone_number": "794-742-7610 x91687",
+      "countr": "Jersey"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "PREP",
+    "payment_method": "bank transfer",
+    "payment_status": "CXL",
+    "subtotal": 1776227.26,
+    "total": 2184759.52,
+    "total_to_pay": 2184769.52,
+    "shipping_fee": "10.00",
+    "order_number": "8654005",
+    "products": [
+      {
+        "product_id": 17,
+        "code": "5711729",
+        "name": "Universal Slim Notebook",
+        "qty": 10,
+        "unit_price_wo_tax": 85445.79,
+        "unit_price_w_tax": 105098.32,
+        "product_subtotal": 854457.9,
+        "product_total": 1050983.2
+      },
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 8,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 416433.36,
+        "product_total": 512213.04
+      },
+      {
+        "product_id": 38,
+        "code": "9304348",
+        "name": "Unbranded Modern Speakers",
+        "qty": 8,
+        "unit_price_wo_tax": 63167,
+        "unit_price_w_tax": 77695.41,
+        "product_subtotal": 505336,
+        "product_total": 621563.28
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-07-02T20:23:22.043Z",
+    "updated_at": "2022-05-12T05:45:13.557Z",
+    "user_id": 26,
+    "_id": 2
+  },
+  {
+    "billing_details": {
+      "first_name": "Lafayette",
+      "last_name": "Bechtelar",
+      "company": "Schulist - Kuvalis",
+      "tax_id": "60729-88173-36327-84545",
+      "street": "04557 Reichel Path",
+      "city": "Burke",
+      "zip_code": "13189",
+      "phone_number": "1-254-345-7704",
+      "countr": "Malaysia"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "DELIV",
+    "payment_method": "Apple Pay",
+    "payment_status": "RFD",
+    "subtotal": 57171.35,
+    "total": 70320.75,
+    "total_to_pay": 70339.75,
+    "shipping_fee": "19.99",
+    "order_number": "2598548",
+    "products": [
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 5,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 57171.35,
+        "product_total": 70320.75
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-05-07T14:20:48.085Z",
+    "updated_at": "2022-05-12T07:47:54.629Z",
+    "user_id": 14,
+    "_id": 3
+  },
+  {
+    "billing_details": {
+      "first_name": "Amy",
+      "last_name": "Smith",
+      "company": "Fritsch Inc",
+      "tax_id": "48707-50511-38950-31510",
+      "street": "448 Doyle Avenue",
+      "city": "Broomfield",
+      "zip_code": "13707",
+      "phone_number": "862-223-3701",
+      "countr": "United Kingdom"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "bank transfer",
+    "payment_status": "PAR/P",
+    "subtotal": 675781.16,
+    "total": 831210.88,
+    "total_to_pay": 831220.88,
+    "shipping_fee": "10.00",
+    "order_number": "8265574",
+    "products": [
+      {
+        "product_id": 18,
+        "code": "1624005",
+        "name": "Licensed Modern Notebook",
+        "qty": 10,
+        "unit_price_wo_tax": 43689.82,
+        "unit_price_w_tax": 53738.48,
+        "product_subtotal": 436898.2,
+        "product_total": 537384.8
+      },
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 8,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 238882.96,
+        "product_total": 293826.08
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-05-07T11:19:36.262Z",
+    "updated_at": "2022-05-12T19:21:08.120Z",
+    "user_id": 6,
+    "_id": 4
+  },
+  {
+    "billing_details": {
+      "first_name": "Zita",
+      "last_name": "Roob",
+      "company": "Murphy - Yost",
+      "tax_id": "56920-33332-63480-91931",
+      "street": "81929 Novella Causeway",
+      "city": "University",
+      "zip_code": "04954-2491",
+      "phone_number": "1-899-585-8033 x027",
+      "countr": "Nicaragua"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "CXL",
+    "payment_method": "G2A Pay",
+    "payment_status": "PAR/P",
+    "subtotal": 3392711.85,
+    "total": 4173035.49,
+    "total_to_pay": 4173045.49,
+    "shipping_fee": "10.00",
+    "order_number": "4521196",
+    "products": [
+      {
+        "product_id": 2,
+        "code": "8505741",
+        "name": "Slim Modern Mouse",
+        "qty": 7,
+        "unit_price_wo_tax": 42571.52,
+        "unit_price_w_tax": 52362.97,
+        "product_subtotal": 298000.64,
+        "product_total": 366540.79
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 4,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 277921.44,
+        "product_total": 341843.36
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 318399.44,
+        "product_total": 391631.28
+      },
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 8,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 390539.92,
+        "product_total": 480364.08
+      },
+      {
+        "product_id": 4,
+        "code": "2662184",
+        "name": "Generic Modern Mouse",
+        "qty": 7,
+        "unit_price_wo_tax": 28195.61,
+        "unit_price_w_tax": 34680.6,
+        "product_subtotal": 197369.27,
+        "product_total": 242764.2
+      },
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 4,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 333706.48,
+        "product_total": 410458.96
+      },
+      {
+        "product_id": 38,
+        "code": "9304348",
+        "name": "Unbranded Modern Speakers",
+        "qty": 10,
+        "unit_price_wo_tax": 63167,
+        "unit_price_w_tax": 77695.41,
+        "product_subtotal": 631670,
+        "product_total": 776954.1
+      },
+      {
+        "product_id": 31,
+        "code": "9833802",
+        "name": "Flexible Elite Phone",
+        "qty": 4,
+        "unit_price_wo_tax": 40891.74,
+        "unit_price_w_tax": 50296.84,
+        "product_subtotal": 163566.96,
+        "product_total": 201187.36
+      },
+      {
+        "product_id": 17,
+        "code": "5711729",
+        "name": "Universal Slim Notebook",
+        "qty": 6,
+        "unit_price_wo_tax": 85445.79,
+        "unit_price_w_tax": 105098.32,
+        "product_subtotal": 512674.74,
+        "product_total": 630589.92
+      },
+      {
+        "product_id": 5,
+        "code": "7343358",
+        "name": "Laser Super Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 33607.87,
+        "unit_price_w_tax": 41337.68,
+        "product_subtotal": 268862.96,
+        "product_total": 330701.44
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-11-04T09:08:27.732Z",
+    "updated_at": "2022-05-11T22:58:15.514Z",
+    "user_id": 24,
+    "_id": 5
+  },
+  {
+    "billing_details": {
+      "first_name": "Lupe",
+      "last_name": "Schultz",
+      "company": "Hamill - Wiza",
+      "tax_id": "22306-89129-49631-79715",
+      "street": "829 Bryce Cape",
+      "city": "Haltom City",
+      "zip_code": "05315",
+      "phone_number": "1-858-216-4317 x91968",
+      "countr": "Guatemala"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "DELIV",
+    "payment_method": "Dotpay",
+    "payment_status": "RFD",
+    "subtotal": 521665.37,
+    "total": 641648.41,
+    "total_to_pay": 641648.41,
+    "shipping_fee": "0.9",
+    "order_number": "7478062",
+    "products": [
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 5,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 260270.85,
+        "product_total": 320133.15
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 2,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 118416.48,
+        "product_total": 145652.28
+      },
+      {
+        "product_id": 7,
+        "code": "5187950",
+        "name": "Aluminium Gaming Mouse",
+        "qty": 2,
+        "unit_price_wo_tax": 71489.02,
+        "unit_price_w_tax": 87931.49,
+        "product_subtotal": 142978.04,
+        "product_total": 175862.98
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-10-26T02:19:27.542Z",
+    "updated_at": "2022-05-12T15:11:05.075Z",
+    "user_id": 12,
+    "_id": 6
+  },
+  {
+    "billing_details": {
+      "first_name": "Ambrose",
+      "last_name": "Zemlak",
+      "company": "Davis - Borer",
+      "tax_id": "75392-37262-89054-56598",
+      "street": "8886 Zachariah Unions",
+      "city": "Gilroy",
+      "zip_code": "79387-7985",
+      "phone_number": "313-643-8103 x5698",
+      "countr": "El Salvador"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "DSPCH",
+    "payment_method": "G2A Pay",
+    "payment_status": "RFD",
+    "subtotal": 829496.1,
+    "total": 1020280.23,
+    "total_to_pay": 1020280.23,
+    "shipping_fee": "0.9",
+    "order_number": "4238072",
+    "products": [
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 10,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 298603.7,
+        "product_total": 367282.6
+      },
+      {
+        "product_id": 32,
+        "code": "3242655",
+        "name": "Cheap Universal Phone",
+        "qty": 5,
+        "unit_price_wo_tax": 11423.96,
+        "unit_price_w_tax": 14051.47,
+        "product_subtotal": 57119.8,
+        "product_total": 70257.35
+      },
+      {
+        "product_id": 6,
+        "code": "9171186",
+        "name": "Hybrid Wireless Mouse",
+        "qty": 3,
+        "unit_price_wo_tax": 24189.13,
+        "unit_price_w_tax": 29752.63,
+        "product_subtotal": 72567.39,
+        "product_total": 89257.89
+      },
+      {
+        "product_id": 36,
+        "code": "4011354",
+        "name": "Flexible Pro Speakers",
+        "qty": 4,
+        "unit_price_wo_tax": 10751.46,
+        "unit_price_w_tax": 13224.3,
+        "product_subtotal": 43005.84,
+        "product_total": 52897.2
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 9,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 358199.37,
+        "product_total": 440585.19
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-06-01T18:19:10.878Z",
+    "updated_at": "2022-05-12T12:43:57.736Z",
+    "user_id": 4,
+    "_id": 7
+  },
+  {
+    "billing_details": {
+      "first_name": "Manley",
+      "last_name": "Bauch",
+      "company": "MacGyver - Runolfsson",
+      "tax_id": "20084-18421-37145-72527",
+      "street": "390 VonRueden Row",
+      "city": "Tonawanda",
+      "zip_code": "77161",
+      "phone_number": "794-742-7610 x91687",
+      "countr": "Jersey"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "Apple Pay",
+    "payment_status": "RFD",
+    "subtotal": 987196.36,
+    "total": 1214251.52,
+    "total_to_pay": 1214261.52,
+    "shipping_fee": "10.00",
+    "order_number": "2173653",
+    "products": [
+      {
+        "product_id": 28,
+        "code": "4113938",
+        "name": "Hybrid Steel Phone",
+        "qty": 5,
+        "unit_price_wo_tax": 30089.9,
+        "unit_price_w_tax": 37010.58,
+        "product_subtotal": 150449.5,
+        "product_total": 185052.9
+      },
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 2,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 169333.9,
+        "product_total": 208280.7
+      },
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 667412.96,
+        "product_total": 820917.92
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-09-20T09:18:34.240Z",
+    "updated_at": "2022-05-12T15:24:12.970Z",
+    "user_id": 26,
+    "_id": 8
+  },
+  {
+    "billing_details": {
+      "first_name": "Manley",
+      "last_name": "Bauch",
+      "company": "MacGyver - Runolfsson",
+      "tax_id": "20084-18421-37145-72527",
+      "street": "390 VonRueden Row",
+      "city": "Tonawanda",
+      "zip_code": "77161",
+      "phone_number": "794-742-7610 x91687",
+      "countr": "Jersey"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "CXL",
+    "payment_method": "PayU",
+    "payment_status": "PD",
+    "subtotal": 1969367.16,
+    "total": 2422321.65,
+    "total_to_pay": 2422331.65,
+    "shipping_fee": "10.00",
+    "order_number": "5730517",
+    "products": [
+      {
+        "product_id": 24,
+        "code": "4777646",
+        "name": "Universal Aluminium Phone",
+        "qty": 8,
+        "unit_price_wo_tax": 26354.98,
+        "unit_price_w_tax": 32416.63,
+        "product_subtotal": 210839.84,
+        "product_total": 259333.04
+      },
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 1,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 29860.37,
+        "product_total": 36728.26
+      },
+      {
+        "product_id": 20,
+        "code": "3547106",
+        "name": "Awesome Modern Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 98453.43,
+        "unit_price_w_tax": 121097.72,
+        "product_subtotal": 393813.72,
+        "product_total": 484390.88
+      },
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 7,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 583986.34,
+        "product_total": 718303.18
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 6,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 355249.44,
+        "product_total": 436956.84
+      },
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 5,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 57171.35,
+        "product_total": 70320.75
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 10,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 338446.1,
+        "product_total": 416288.7
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-12-25T19:43:00.491Z",
+    "updated_at": "2022-05-12T10:23:40.711Z",
+    "user_id": 26,
+    "_id": 9
+  },
+  {
+    "billing_details": {
+      "first_name": "Kole",
+      "last_name": "Stoltenberg",
+      "company": "Johnston, Moen and Hyatt",
+      "tax_id": "36579-89532-76759-51908",
+      "street": "9055 Annette Lane",
+      "city": "Durham",
+      "zip_code": "80472-4389",
+      "phone_number": "595-422-5190 x98967",
+      "countr": "Austria"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "PREP",
+    "payment_method": "Apple Pay",
+    "payment_status": "CXL",
+    "subtotal": 1205201.21,
+    "total": 1482397.52,
+    "total_to_pay": 1482416.52,
+    "shipping_fee": "19.99",
+    "order_number": "7813424",
+    "products": [
+      {
+        "product_id": 20,
+        "code": "3547106",
+        "name": "Awesome Modern Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 98453.43,
+        "unit_price_w_tax": 121097.72,
+        "product_subtotal": 393813.72,
+        "product_total": 484390.88
+      },
+      {
+        "product_id": 36,
+        "code": "4011354",
+        "name": "Flexible Pro Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 10751.46,
+        "unit_price_w_tax": 13224.3,
+        "product_subtotal": 21502.92,
+        "product_total": 26448.6
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 3,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 177624.72,
+        "product_total": 218478.42
+      },
+      {
+        "product_id": 2,
+        "code": "8505741",
+        "name": "Slim Modern Mouse",
+        "qty": 3,
+        "unit_price_wo_tax": 42571.52,
+        "unit_price_w_tax": 52362.97,
+        "product_subtotal": 127714.56,
+        "product_total": 157088.91
+      },
+      {
+        "product_id": 6,
+        "code": "9171186",
+        "name": "Hybrid Wireless Mouse",
+        "qty": 5,
+        "unit_price_wo_tax": 24189.13,
+        "unit_price_w_tax": 29752.63,
+        "product_subtotal": 120945.65,
+        "product_total": 148763.15
+      },
+      {
+        "product_id": 32,
+        "code": "3242655",
+        "name": "Cheap Universal Phone",
+        "qty": 8,
+        "unit_price_wo_tax": 11423.96,
+        "unit_price_w_tax": 14051.47,
+        "product_subtotal": 91391.68,
+        "product_total": 112411.76
+      },
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 208216.68,
+        "product_total": 256106.52
+      },
+      {
+        "product_id": 21,
+        "code": "1078809",
+        "name": "Intelligent Aluminium Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 15997.82,
+        "unit_price_w_tax": 19677.32,
+        "product_subtotal": 63991.28,
+        "product_total": 78709.28
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-04-22T07:19:03.561Z",
+    "updated_at": "2022-05-12T09:27:43.023Z",
+    "user_id": 15,
+    "_id": 10
+  },
+  {
+    "billing_details": {
+      "first_name": "Adam",
+      "last_name": "Pacocha",
+      "company": "Schiller LLC",
+      "tax_id": "97858-72116-19417-29661",
+      "street": "50048 Jalon Burgs",
+      "city": "Blacksburg",
+      "zip_code": "67163",
+      "phone_number": "(701) 805-1286 x77663",
+      "countr": "Luxembourg"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "DELIV",
+    "payment_method": "Dotpay",
+    "payment_status": "CXL",
+    "subtotal": 1869368.73,
+    "total": 2299323.58,
+    "total_to_pay": 2299342.58,
+    "shipping_fee": "19.99",
+    "order_number": "1352117",
+    "products": [
+      {
+        "product_id": 5,
+        "code": "7343358",
+        "name": "Laser Super Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 33607.87,
+        "unit_price_w_tax": 41337.68,
+        "product_subtotal": 268862.96,
+        "product_total": 330701.44
+      },
+      {
+        "product_id": 20,
+        "code": "3547106",
+        "name": "Awesome Modern Notebook",
+        "qty": 6,
+        "unit_price_wo_tax": 98453.43,
+        "unit_price_w_tax": 121097.72,
+        "product_subtotal": 590720.58,
+        "product_total": 726586.32
+      },
+      {
+        "product_id": 4,
+        "code": "2662184",
+        "name": "Generic Modern Mouse",
+        "qty": 3,
+        "unit_price_wo_tax": 28195.61,
+        "unit_price_w_tax": 34680.6,
+        "product_subtotal": 84586.83,
+        "product_total": 104041.8
+      },
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 6,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 179162.22,
+        "product_total": 220369.56
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 318399.44,
+        "product_total": 391631.28
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 33844.61,
+        "product_total": 41628.87
+      },
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 9,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 102908.43,
+        "product_total": 126577.35
+      },
+      {
+        "product_id": 36,
+        "code": "4011354",
+        "name": "Flexible Pro Speakers",
+        "qty": 10,
+        "unit_price_wo_tax": 10751.46,
+        "unit_price_w_tax": 13224.3,
+        "product_subtotal": 107514.6,
+        "product_total": 132243
+      },
+      {
+        "product_id": 39,
+        "code": "7139144",
+        "name": "Sleek Steel Speakers",
+        "qty": 9,
+        "unit_price_wo_tax": 20374.34,
+        "unit_price_w_tax": 25060.44,
+        "product_subtotal": 183369.06,
+        "product_total": 225543.96
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-05-11T14:20:41.710Z",
+    "updated_at": "2022-05-12T09:47:29.748Z",
+    "user_id": 3,
+    "_id": 11
+  },
+  {
+    "billing_details": {
+      "first_name": "Adriana",
+      "last_name": "Conn",
+      "company": "Welch, Koelpin and Fisher",
+      "tax_id": "91959-97929-49373-77315",
+      "street": "97630 Rohan Curve",
+      "city": "Palmdale",
+      "zip_code": "43240-2529",
+      "phone_number": "948-688-1923",
+      "countr": "Pitcairn Islands"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "G2A Pay",
+    "payment_status": "PAR/P",
+    "subtotal": 2048968.97,
+    "total": 2520231.83,
+    "total_to_pay": 2520241.83,
+    "shipping_fee": "10.00",
+    "order_number": "5151427",
+    "products": [
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 9,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 358199.37,
+        "product_total": 440585.19
+      },
+      {
+        "product_id": 4,
+        "code": "2662184",
+        "name": "Generic Modern Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 28195.61,
+        "unit_price_w_tax": 34680.6,
+        "product_subtotal": 281956.1,
+        "product_total": 346806
+      },
+      {
+        "product_id": 24,
+        "code": "4777646",
+        "name": "Universal Aluminium Phone",
+        "qty": 9,
+        "unit_price_wo_tax": 26354.98,
+        "unit_price_w_tax": 32416.63,
+        "product_subtotal": 237194.82,
+        "product_total": 291749.67
+      },
+      {
+        "product_id": 40,
+        "code": "7167560",
+        "name": "Elite Plastic Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 14916.68,
+        "unit_price_w_tax": 18347.52,
+        "product_subtotal": 29833.36,
+        "product_total": 36695.04
+      },
+      {
+        "product_id": 3,
+        "code": "6163073",
+        "name": "Sleek Gaming Mouse",
+        "qty": 9,
+        "unit_price_wo_tax": 45253.36,
+        "unit_price_w_tax": 55661.63,
+        "product_subtotal": 407280.24,
+        "product_total": 500954.67
+      },
+      {
+        "product_id": 21,
+        "code": "1078809",
+        "name": "Intelligent Aluminium Notebook",
+        "qty": 7,
+        "unit_price_wo_tax": 15997.82,
+        "unit_price_w_tax": 19677.32,
+        "product_subtotal": 111984.74,
+        "product_total": 137741.24
+      },
+      {
+        "product_id": 27,
+        "code": "7616458",
+        "name": "Smart Metal Phone",
+        "qty": 9,
+        "unit_price_wo_tax": 47715,
+        "unit_price_w_tax": 58689.45,
+        "product_subtotal": 429435,
+        "product_total": 528205.05
+      },
+      {
+        "product_id": 28,
+        "code": "4113938",
+        "name": "Hybrid Steel Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 30089.9,
+        "unit_price_w_tax": 37010.58,
+        "product_subtotal": 90269.7,
+        "product_total": 111031.74
+      },
+      {
+        "product_id": 32,
+        "code": "3242655",
+        "name": "Cheap Universal Phone",
+        "qty": 9,
+        "unit_price_wo_tax": 11423.96,
+        "unit_price_w_tax": 14051.47,
+        "product_subtotal": 102815.64,
+        "product_total": 126463.23
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-07-31T14:30:05.061Z",
+    "updated_at": "2022-05-12T14:26:32.298Z",
+    "user_id": 10,
+    "_id": 12
+  },
+  {
+    "billing_details": {
+      "first_name": "Zita",
+      "last_name": "Roob",
+      "company": "Murphy - Yost",
+      "tax_id": "56920-33332-63480-91931",
+      "street": "81929 Novella Causeway",
+      "city": "University",
+      "zip_code": "04954-2491",
+      "phone_number": "1-899-585-8033 x027",
+      "countr": "Nicaragua"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "DSPCH",
+    "payment_method": "Dotpay",
+    "payment_status": "RFD",
+    "subtotal": 2885683.55,
+    "total": 3549390.86,
+    "total_to_pay": 3549409.86,
+    "shipping_fee": "19.99",
+    "order_number": "3422718",
+    "products": [
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 8,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 416433.36,
+        "product_total": 512213.04
+      },
+      {
+        "product_id": 12,
+        "code": "9163837",
+        "name": "Elite Hybrid Headphones",
+        "qty": 2,
+        "unit_price_wo_tax": 8950.74,
+        "unit_price_w_tax": 11009.41,
+        "product_subtotal": 17901.48,
+        "product_total": 22018.82
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 5,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 347401.8,
+        "product_total": 427304.2
+      },
+      {
+        "product_id": 35,
+        "code": "1785579",
+        "name": "Smart Modern Speakers",
+        "qty": 6,
+        "unit_price_wo_tax": 46907.85,
+        "unit_price_w_tax": 57696.66,
+        "product_subtotal": 281447.1,
+        "product_total": 346179.96
+      },
+      {
+        "product_id": 17,
+        "code": "5711729",
+        "name": "Universal Slim Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 85445.79,
+        "unit_price_w_tax": 105098.32,
+        "product_subtotal": 341783.16,
+        "product_total": 420393.28
+      },
+      {
+        "product_id": 30,
+        "code": "4657291",
+        "name": "Universal Hybrid Phone",
+        "qty": 9,
+        "unit_price_wo_tax": 78568.59,
+        "unit_price_w_tax": 96639.37,
+        "product_subtotal": 707117.31,
+        "product_total": 869754.33
+      },
+      {
+        "product_id": 11,
+        "code": "6085686",
+        "name": "Universal Gaming Headphones",
+        "qty": 9,
+        "unit_price_wo_tax": 64736.56,
+        "unit_price_w_tax": 79625.97,
+        "product_subtotal": 582629.04,
+        "product_total": 716633.73
+      },
+      {
+        "product_id": 10,
+        "code": "2943354",
+        "name": "Smart Solid Headphones",
+        "qty": 10,
+        "unit_price_wo_tax": 19097.03,
+        "unit_price_w_tax": 23489.35,
+        "product_subtotal": 190970.3,
+        "product_total": 234893.5
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-09-02T01:27:55.040Z",
+    "updated_at": "2022-05-12T09:09:06.857Z",
+    "user_id": 24,
+    "_id": 13
+  },
+  {
+    "billing_details": {
+      "first_name": "Chelsea",
+      "last_name": "O'Connell",
+      "company": "Ebert - Wilkinson",
+      "tax_id": "95381-44665-15450-59308",
+      "street": "506 Madeline Shore",
+      "city": "Temecula",
+      "zip_code": "63273",
+      "phone_number": "1-941-732-8654 x674",
+      "countr": "Jamaica"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "CXL",
+    "payment_method": "Apple Pay",
+    "payment_status": "CXL",
+    "subtotal": 1367408.77,
+    "total": 1681912.76,
+    "total_to_pay": 1681912.76,
+    "shipping_fee": "0.9",
+    "order_number": "1686366",
+    "products": [
+      {
+        "product_id": 27,
+        "code": "7616458",
+        "name": "Smart Metal Phone",
+        "qty": 1,
+        "unit_price_wo_tax": 47715,
+        "unit_price_w_tax": 58689.45,
+        "product_subtotal": 47715,
+        "product_total": 58689.45
+      },
+      {
+        "product_id": 17,
+        "code": "5711729",
+        "name": "Universal Slim Notebook",
+        "qty": 2,
+        "unit_price_wo_tax": 85445.79,
+        "unit_price_w_tax": 105098.32,
+        "product_subtotal": 170891.58,
+        "product_total": 210196.64
+      },
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 7,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 364379.19,
+        "product_total": 448186.41
+      },
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 3,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 34302.81,
+        "product_total": 42192.45
+      },
+      {
+        "product_id": 3,
+        "code": "6163073",
+        "name": "Sleek Gaming Mouse",
+        "qty": 4,
+        "unit_price_wo_tax": 45253.36,
+        "unit_price_w_tax": 55661.63,
+        "product_subtotal": 181013.44,
+        "product_total": 222646.52
+      },
+      {
+        "product_id": 36,
+        "code": "4011354",
+        "name": "Flexible Pro Speakers",
+        "qty": 5,
+        "unit_price_wo_tax": 10751.46,
+        "unit_price_w_tax": 13224.3,
+        "product_subtotal": 53757.3,
+        "product_total": 66121.5
+      },
+      {
+        "product_id": 14,
+        "code": "1413240",
+        "name": "Sleek Steel Headphones",
+        "qty": 4,
+        "unit_price_wo_tax": 18998.01,
+        "unit_price_w_tax": 23367.55,
+        "product_subtotal": 75992.04,
+        "product_total": 93470.2
+      },
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 9,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 439357.41,
+        "product_total": 540409.59
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-05-31T19:56:26.706Z",
+    "updated_at": "2022-05-12T11:54:04.040Z",
+    "user_id": 23,
+    "_id": 14
+  },
+  {
+    "billing_details": {
+      "first_name": "Irene",
+      "last_name": "Littel",
+      "company": "Bayer Group",
+      "tax_id": "75079-71503-99904-56269",
+      "street": "784 Padberg Shores",
+      "city": "Spring Valley",
+      "zip_code": "76550-6622",
+      "phone_number": "582-922-4255 x16234",
+      "countr": "Faroe Islands"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "G2A Pay",
+    "payment_status": "PD",
+    "subtotal": 1993950.57,
+    "total": 2452559.2,
+    "total_to_pay": 2452569.2,
+    "shipping_fee": "10.00",
+    "order_number": "4698165",
+    "products": [
+      {
+        "product_id": 11,
+        "code": "6085686",
+        "name": "Universal Gaming Headphones",
+        "qty": 6,
+        "unit_price_wo_tax": 64736.56,
+        "unit_price_w_tax": 79625.97,
+        "product_subtotal": 388419.36,
+        "product_total": 477755.82
+      },
+      {
+        "product_id": 38,
+        "code": "9304348",
+        "name": "Unbranded Modern Speakers",
+        "qty": 6,
+        "unit_price_wo_tax": 63167,
+        "unit_price_w_tax": 77695.41,
+        "product_subtotal": 379002,
+        "product_total": 466172.46
+      },
+      {
+        "product_id": 6,
+        "code": "9171186",
+        "name": "Hybrid Wireless Mouse",
+        "qty": 2,
+        "unit_price_wo_tax": 24189.13,
+        "unit_price_w_tax": 29752.63,
+        "product_subtotal": 48378.26,
+        "product_total": 59505.26
+      },
+      {
+        "product_id": 24,
+        "code": "4777646",
+        "name": "Universal Aluminium Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 26354.98,
+        "unit_price_w_tax": 32416.63,
+        "product_subtotal": 79064.94,
+        "product_total": 97249.89
+      },
+      {
+        "product_id": 41,
+        "code": "3921967",
+        "name": "Universal Metal Speakers",
+        "qty": 4,
+        "unit_price_wo_tax": 18127.17,
+        "unit_price_w_tax": 22296.42,
+        "product_subtotal": 72508.68,
+        "product_total": 89185.68
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 5,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 296041.2,
+        "product_total": 364130.7
+      },
+      {
+        "product_id": 22,
+        "code": "1977802",
+        "name": "Flexible Pro Notebook",
+        "qty": 7,
+        "unit_price_wo_tax": 10208.18,
+        "unit_price_w_tax": 12556.06,
+        "product_subtotal": 71457.26,
+        "product_total": 87892.42
+      },
+      {
+        "product_id": 42,
+        "code": "7211191",
+        "name": "Flexible Hybrid Speakers",
+        "qty": 5,
+        "unit_price_wo_tax": 73314.97,
+        "unit_price_w_tax": 90177.41,
+        "product_subtotal": 366574.85,
+        "product_total": 450887.05
+      },
+      {
+        "product_id": 12,
+        "code": "9163837",
+        "name": "Elite Hybrid Headphones",
+        "qty": 6,
+        "unit_price_wo_tax": 8950.74,
+        "unit_price_w_tax": 11009.41,
+        "product_subtotal": 53704.44,
+        "product_total": 66056.46
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 6,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 238799.58,
+        "product_total": 293723.46
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-01-22T02:41:47.599Z",
+    "updated_at": "2022-05-12T12:32:54.855Z",
+    "user_id": 22,
+    "_id": 15
+  },
+  {
+    "billing_details": {
+      "first_name": "Bettie",
+      "last_name": "Legros",
+      "company": "Smitham - Schmidt",
+      "tax_id": "14817-72007-82828-86523",
+      "street": "425 VonRueden Shoal",
+      "city": "Hutchinson",
+      "zip_code": "41980-4394",
+      "phone_number": "1-506-266-7215 x567",
+      "countr": "Gibraltar"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DELIV",
+    "payment_method": "VISA",
+    "payment_status": "AWT",
+    "subtotal": 1229914.22,
+    "total": 1512794.51,
+    "total_to_pay": 1512804.51,
+    "shipping_fee": "10.00",
+    "order_number": "4667683",
+    "products": [
+      {
+        "product_id": 36,
+        "code": "4011354",
+        "name": "Flexible Pro Speakers",
+        "qty": 9,
+        "unit_price_wo_tax": 10751.46,
+        "unit_price_w_tax": 13224.3,
+        "product_subtotal": 96763.14,
+        "product_total": 119018.7
+      },
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 2,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 169333.9,
+        "product_total": 208280.7
+      },
+      {
+        "product_id": 31,
+        "code": "9833802",
+        "name": "Flexible Elite Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 40891.74,
+        "unit_price_w_tax": 50296.84,
+        "product_subtotal": 122675.22,
+        "product_total": 150890.52
+      },
+      {
+        "product_id": 37,
+        "code": "4784913",
+        "name": "Universal Ultra Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 28374.51,
+        "unit_price_w_tax": 34900.65,
+        "product_subtotal": 56749.02,
+        "product_total": 69801.3
+      },
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 1,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 48817.49,
+        "product_total": 60045.51
+      },
+      {
+        "product_id": 38,
+        "code": "9304348",
+        "name": "Unbranded Modern Speakers",
+        "qty": 6,
+        "unit_price_wo_tax": 63167,
+        "unit_price_w_tax": 77695.41,
+        "product_subtotal": 379002,
+        "product_total": 466172.46
+      },
+      {
+        "product_id": 3,
+        "code": "6163073",
+        "name": "Sleek Gaming Mouse",
+        "qty": 7,
+        "unit_price_wo_tax": 45253.36,
+        "unit_price_w_tax": 55661.63,
+        "product_subtotal": 316773.52,
+        "product_total": 389631.41
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 1,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 39799.93,
+        "product_total": 48953.91
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-10-04T21:21:52.770Z",
+    "updated_at": "2022-05-12T00:34:12.200Z",
+    "user_id": 2,
+    "_id": 16
+  },
+  {
+    "billing_details": {
+      "first_name": "Okey",
+      "last_name": "Leannon",
+      "company": "Willms - Parisian",
+      "tax_id": "21812-85031-37960-85980",
+      "street": "154 Hassie Isle",
+      "city": "Fayetteville",
+      "zip_code": "14503",
+      "phone_number": "1-298-888-1691 x6753",
+      "countr": "New Zealand"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "G2A Pay",
+    "payment_status": "PAR/P",
+    "subtotal": 1165407.41,
+    "total": 1433451.13,
+    "total_to_pay": 1433461.13,
+    "shipping_fee": "10.00",
+    "order_number": "4153150",
+    "products": [
+      {
+        "product_id": 32,
+        "code": "3242655",
+        "name": "Cheap Universal Phone",
+        "qty": 4,
+        "unit_price_wo_tax": 11423.96,
+        "unit_price_w_tax": 14051.47,
+        "product_subtotal": 45695.84,
+        "product_total": 56205.88
+      },
+      {
+        "product_id": 5,
+        "code": "7343358",
+        "name": "Laser Super Mouse",
+        "qty": 7,
+        "unit_price_wo_tax": 33607.87,
+        "unit_price_w_tax": 41337.68,
+        "product_subtotal": 235255.09,
+        "product_total": 289363.76
+      },
+      {
+        "product_id": 43,
+        "code": "1139920",
+        "name": "Smart Plastic Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 55929.85,
+        "unit_price_w_tax": 68793.72,
+        "product_subtotal": 111859.7,
+        "product_total": 137587.44
+      },
+      {
+        "product_id": 28,
+        "code": "4113938",
+        "name": "Hybrid Steel Phone",
+        "qty": 10,
+        "unit_price_wo_tax": 30089.9,
+        "unit_price_w_tax": 37010.58,
+        "product_subtotal": 300899,
+        "product_total": 370105.8
+      },
+      {
+        "product_id": 31,
+        "code": "9833802",
+        "name": "Flexible Elite Phone",
+        "qty": 1,
+        "unit_price_wo_tax": 40891.74,
+        "unit_price_w_tax": 50296.84,
+        "product_subtotal": 40891.74,
+        "product_total": 50296.84
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 5,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 347401.8,
+        "product_total": 427304.2
+      },
+      {
+        "product_id": 2,
+        "code": "8505741",
+        "name": "Slim Modern Mouse",
+        "qty": 1,
+        "unit_price_wo_tax": 42571.52,
+        "unit_price_w_tax": 52362.97,
+        "product_subtotal": 42571.52,
+        "product_total": 52362.97
+      },
+      {
+        "product_id": 22,
+        "code": "1977802",
+        "name": "Flexible Pro Notebook",
+        "qty": 4,
+        "unit_price_wo_tax": 10208.18,
+        "unit_price_w_tax": 12556.06,
+        "product_subtotal": 40832.72,
+        "product_total": 50224.24
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-11-24T03:49:11.674Z",
+    "updated_at": "2022-05-12T08:58:10.179Z",
+    "user_id": 17,
+    "_id": 17
+  },
+  {
+    "billing_details": {
+      "first_name": "Adriana",
+      "last_name": "Conn",
+      "company": "Welch, Koelpin and Fisher",
+      "tax_id": "91959-97929-49373-77315",
+      "street": "97630 Rohan Curve",
+      "city": "Palmdale",
+      "zip_code": "43240-2529",
+      "phone_number": "948-688-1923",
+      "countr": "Pitcairn Islands"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "CXL",
+    "payment_method": "VISA",
+    "payment_status": "CXL",
+    "subtotal": 1153365.98,
+    "total": 1418640.2,
+    "total_to_pay": 1418640.2,
+    "shipping_fee": "0.9",
+    "order_number": "6292221",
+    "products": [
+      {
+        "product_id": 12,
+        "code": "9163837",
+        "name": "Elite Hybrid Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 8950.74,
+        "unit_price_w_tax": 11009.41,
+        "product_subtotal": 71605.92,
+        "product_total": 88075.28
+      },
+      {
+        "product_id": 30,
+        "code": "4657291",
+        "name": "Universal Hybrid Phone",
+        "qty": 1,
+        "unit_price_wo_tax": 78568.59,
+        "unit_price_w_tax": 96639.37,
+        "product_subtotal": 78568.59,
+        "product_total": 96639.37
+      },
+      {
+        "product_id": 39,
+        "code": "7139144",
+        "name": "Sleek Steel Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 20374.34,
+        "unit_price_w_tax": 25060.44,
+        "product_subtotal": 20374.34,
+        "product_total": 25060.44
+      },
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 2,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 104108.34,
+        "product_total": 128053.26
+      },
+      {
+        "product_id": 37,
+        "code": "4784913",
+        "name": "Universal Ultra Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 28374.51,
+        "unit_price_w_tax": 34900.65,
+        "product_subtotal": 28374.51,
+        "product_total": 34900.65
+      },
+      {
+        "product_id": 22,
+        "code": "1977802",
+        "name": "Flexible Pro Notebook",
+        "qty": 6,
+        "unit_price_wo_tax": 10208.18,
+        "unit_price_w_tax": 12556.06,
+        "product_subtotal": 61249.08,
+        "product_total": 75336.36
+      },
+      {
+        "product_id": 10,
+        "code": "2943354",
+        "name": "Smart Solid Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 19097.03,
+        "unit_price_w_tax": 23489.35,
+        "product_subtotal": 152776.24,
+        "product_total": 187914.8
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 2,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 118416.48,
+        "product_total": 145652.28
+      },
+      {
+        "product_id": 11,
+        "code": "6085686",
+        "name": "Universal Gaming Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 64736.56,
+        "unit_price_w_tax": 79625.97,
+        "product_subtotal": 517892.48,
+        "product_total": 637007.76
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-05-09T06:07:07.370Z",
+    "updated_at": "2022-05-12T00:00:40.488Z",
+    "user_id": 10,
+    "_id": 18
+  },
+  {
+    "billing_details": {
+      "first_name": "Audrey",
+      "last_name": "Trantow",
+      "company": "Braun Group",
+      "tax_id": "11553-55161-64805-52498",
+      "street": "586 Runolfsson Harbor",
+      "city": "Santa Clara",
+      "zip_code": "08553",
+      "phone_number": "827.502.8785 x67683",
+      "countr": "New Caledonia"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "PREP",
+    "payment_method": "bank transfer",
+    "payment_status": "AWT",
+    "subtotal": 708744.12,
+    "total": 871755.24,
+    "total_to_pay": 871765.24,
+    "shipping_fee": "10.00",
+    "order_number": "9928241",
+    "products": [
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 397999.3,
+        "product_total": 489539.1
+      },
+      {
+        "product_id": 11,
+        "code": "6085686",
+        "name": "Universal Gaming Headphones",
+        "qty": 2,
+        "unit_price_wo_tax": 64736.56,
+        "unit_price_w_tax": 79625.97,
+        "product_subtotal": 129473.12,
+        "product_total": 159251.94
+      },
+      {
+        "product_id": 41,
+        "code": "3921967",
+        "name": "Universal Metal Speakers",
+        "qty": 10,
+        "unit_price_wo_tax": 18127.17,
+        "unit_price_w_tax": 22296.42,
+        "product_subtotal": 181271.7,
+        "product_total": 222964.2
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-12-31T00:10:30.820Z",
+    "updated_at": "2022-05-12T03:33:02.203Z",
+    "user_id": 33,
+    "_id": 19
+  },
+  {
+    "billing_details": {
+      "first_name": "Kiara",
+      "last_name": "Beier",
+      "company": "Mueller - Wintheiser",
+      "tax_id": "77350-50096-54493-56568",
+      "street": "7769 Francisca Oval",
+      "city": "Trenton",
+      "zip_code": "39434-5885",
+      "phone_number": "419-958-4501 x683",
+      "countr": "Congo"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "Dotpay",
+    "payment_status": "AWT",
+    "subtotal": 263565.62,
+    "total": 324185.7,
+    "total_to_pay": 324195.7,
+    "shipping_fee": "10.00",
+    "order_number": "5101783",
+    "products": [
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 2,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 22868.54,
+        "product_total": 28128.3
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 4,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 159199.72,
+        "product_total": 195815.64
+      },
+      {
+        "product_id": 39,
+        "code": "7139144",
+        "name": "Sleek Steel Speakers",
+        "qty": 4,
+        "unit_price_wo_tax": 20374.34,
+        "unit_price_w_tax": 25060.44,
+        "product_subtotal": 81497.36,
+        "product_total": 100241.76
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-06-01T12:34:47.279Z",
+    "updated_at": "2022-05-12T02:00:21.190Z",
+    "user_id": 1,
+    "_id": 20
+  },
+  {
+    "billing_details": {
+      "first_name": "Rex",
+      "last_name": "Pouros",
+      "company": "Stamm Inc",
+      "tax_id": "40575-80363-18895-90051",
+      "street": "7381 Kuphal Cliffs",
+      "city": "Lancaster",
+      "zip_code": "86795-3822",
+      "phone_number": "(397) 780-8271 x5637",
+      "countr": "Switzerland"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "DSPCH",
+    "payment_method": "Dotpay",
+    "payment_status": "PAR/P",
+    "subtotal": 1540058.47,
+    "total": 1894271.87,
+    "total_to_pay": 1894271.87,
+    "shipping_fee": "0.9",
+    "order_number": "6890738",
+    "products": [
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 8,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 677335.6,
+        "product_total": 833122.8
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 33844.61,
+        "product_total": 41628.87
+      },
+      {
+        "product_id": 14,
+        "code": "1413240",
+        "name": "Sleek Steel Headphones",
+        "qty": 6,
+        "unit_price_wo_tax": 18998.01,
+        "unit_price_w_tax": 23367.55,
+        "product_subtotal": 113988.06,
+        "product_total": 140205.3
+      },
+      {
+        "product_id": 7,
+        "code": "5187950",
+        "name": "Aluminium Gaming Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 71489.02,
+        "unit_price_w_tax": 87931.49,
+        "product_subtotal": 714890.2,
+        "product_total": 879314.9
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-11-23T05:04:08.735Z",
+    "updated_at": "2022-05-12T15:46:31.825Z",
+    "user_id": 31,
+    "_id": 21
+  },
+  {
+    "billing_details": {
+      "first_name": "Samanta",
+      "last_name": "Corkery",
+      "company": "Torphy, Jenkins and Wehner",
+      "tax_id": "55967-66638-25543-38037",
+      "street": "341 Kenny Vista",
+      "city": "East Lansing",
+      "zip_code": "60558-1207",
+      "phone_number": "731.298.6878",
+      "countr": "United States"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "Inpost",
+    "shipping_status": "PREP",
+    "payment_method": "G2A Pay",
+    "payment_status": "CXL",
+    "subtotal": 499153.81,
+    "total": 613959.23,
+    "total_to_pay": 613959.23,
+    "shipping_fee": "0.9",
+    "order_number": "6301987",
+    "products": [
+      {
+        "product_id": 23,
+        "code": "8187074",
+        "name": "Elite Modern Notebook",
+        "qty": 5,
+        "unit_price_wo_tax": 52054.17,
+        "unit_price_w_tax": 64026.63,
+        "product_subtotal": 260270.85,
+        "product_total": 320133.15
+      },
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 8,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 238882.96,
+        "product_total": 293826.08
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-06-21T11:00:38.406Z",
+    "updated_at": "2022-05-12T03:03:26.174Z",
+    "user_id": 20,
+    "_id": 22
+  },
+  {
+    "billing_details": {
+      "first_name": "Allyson",
+      "last_name": "Pfeffer",
+      "company": "Kris, Braun and Rempel",
+      "tax_id": "34397-32221-84068-82398",
+      "street": "178 Pagac Meadows",
+      "city": "East Lansing",
+      "zip_code": "13084-0700",
+      "phone_number": "806.780.8622",
+      "countr": "Somalia"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DSPCH",
+    "payment_method": "G2A Pay",
+    "payment_status": "CXL",
+    "subtotal": 2763453.79,
+    "total": 3399048.2,
+    "total_to_pay": 3399058.2,
+    "shipping_fee": "10.00",
+    "order_number": "4375347",
+    "products": [
+      {
+        "product_id": 33,
+        "code": "5695198",
+        "name": "Smart Ultra Speakers",
+        "qty": 6,
+        "unit_price_wo_tax": 14003.66,
+        "unit_price_w_tax": 17224.5,
+        "product_subtotal": 84021.96,
+        "product_total": 103347
+      },
+      {
+        "product_id": 1,
+        "code": "3245223",
+        "name": "Fantastic Plastic Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 70605.91,
+        "unit_price_w_tax": 86845.27,
+        "product_subtotal": 706059.1,
+        "product_total": 868452.7
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 6,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 416882.16,
+        "product_total": 512765.04
+      },
+      {
+        "product_id": 15,
+        "code": "3402007",
+        "name": "Smart Slim Headphones",
+        "qty": 7,
+        "unit_price_wo_tax": 43804.86,
+        "unit_price_w_tax": 53879.98,
+        "product_subtotal": 306634.02,
+        "product_total": 377159.86
+      },
+      {
+        "product_id": 29,
+        "code": "2696884",
+        "name": "Intelligent Modern Phone",
+        "qty": 7,
+        "unit_price_wo_tax": 29860.37,
+        "unit_price_w_tax": 36728.26,
+        "product_subtotal": 209022.59,
+        "product_total": 257097.82
+      },
+      {
+        "product_id": 43,
+        "code": "1139920",
+        "name": "Smart Plastic Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 55929.85,
+        "unit_price_w_tax": 68793.72,
+        "product_subtotal": 111859.7,
+        "product_total": 137587.44
+      },
+      {
+        "product_id": 7,
+        "code": "5187950",
+        "name": "Aluminium Gaming Mouse",
+        "qty": 9,
+        "unit_price_wo_tax": 71489.02,
+        "unit_price_w_tax": 87931.49,
+        "product_subtotal": 643401.18,
+        "product_total": 791383.41
+      },
+      {
+        "product_id": 6,
+        "code": "9171186",
+        "name": "Hybrid Wireless Mouse",
+        "qty": 2,
+        "unit_price_wo_tax": 24189.13,
+        "unit_price_w_tax": 29752.63,
+        "product_subtotal": 48378.26,
+        "product_total": 59505.26
+      },
+      {
+        "product_id": 24,
+        "code": "4777646",
+        "name": "Universal Aluminium Phone",
+        "qty": 9,
+        "unit_price_wo_tax": 26354.98,
+        "unit_price_w_tax": 32416.63,
+        "product_subtotal": 237194.82,
+        "product_total": 291749.67
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-09-29T21:14:24.113Z",
+    "updated_at": "2022-05-11T23:52:27.844Z",
+    "user_id": 8,
+    "_id": 23
+  },
+  {
+    "billing_details": {
+      "first_name": "Jonah",
+      "last_name": "Wilkinson",
+      "company": "Beier - Collins",
+      "tax_id": "83690-95398-72830-38869",
+      "street": "74335 Orval Land",
+      "city": "South Whittier",
+      "zip_code": "19784",
+      "phone_number": "236.438.2908 x964",
+      "countr": "United Kingdom"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "DSPCH",
+    "payment_method": "Apple Pay",
+    "payment_status": "RFD",
+    "subtotal": 474918.3,
+    "total": 584149.5,
+    "total_to_pay": 584168.5,
+    "shipping_fee": "19.99",
+    "order_number": "9789565",
+    "products": [
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 4,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 333706.48,
+        "product_total": 410458.96
+      },
+      {
+        "product_id": 1,
+        "code": "3245223",
+        "name": "Fantastic Plastic Mouse",
+        "qty": 2,
+        "unit_price_wo_tax": 70605.91,
+        "unit_price_w_tax": 86845.27,
+        "product_subtotal": 141211.82,
+        "product_total": 173690.54
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-02-05T22:48:19.468Z",
+    "updated_at": "2022-05-12T06:03:48.192Z",
+    "user_id": 16,
+    "_id": 24
+  },
+  {
+    "billing_details": {
+      "first_name": "Jonah",
+      "last_name": "Wilkinson",
+      "company": "Beier - Collins",
+      "tax_id": "83690-95398-72830-38869",
+      "street": "74335 Orval Land",
+      "city": "South Whittier",
+      "zip_code": "19784",
+      "phone_number": "236.438.2908 x964",
+      "countr": "United Kingdom"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "PREP",
+    "payment_method": "G2A Pay",
+    "payment_status": "PAR/P",
+    "subtotal": 1295618.32,
+    "total": 1593610.55,
+    "total_to_pay": 1593620.55,
+    "shipping_fee": "10.00",
+    "order_number": "2659243",
+    "products": [
+      {
+        "product_id": 20,
+        "code": "3547106",
+        "name": "Awesome Modern Notebook",
+        "qty": 1,
+        "unit_price_wo_tax": 98453.43,
+        "unit_price_w_tax": 121097.72,
+        "product_subtotal": 98453.43,
+        "product_total": 121097.72
+      },
+      {
+        "product_id": 40,
+        "code": "7167560",
+        "name": "Elite Plastic Speakers",
+        "qty": 8,
+        "unit_price_wo_tax": 14916.68,
+        "unit_price_w_tax": 18347.52,
+        "product_subtotal": 119333.44,
+        "product_total": 146780.16
+      },
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 3,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 146452.47,
+        "product_total": 180136.53
+      },
+      {
+        "product_id": 8,
+        "code": "3519998",
+        "name": "Small Modern Mouse",
+        "qty": 9,
+        "unit_price_wo_tax": 83426.62,
+        "unit_price_w_tax": 102614.74,
+        "product_subtotal": 750839.58,
+        "product_total": 923532.66
+      },
+      {
+        "product_id": 28,
+        "code": "4113938",
+        "name": "Hybrid Steel Phone",
+        "qty": 6,
+        "unit_price_wo_tax": 30089.9,
+        "unit_price_w_tax": 37010.58,
+        "product_subtotal": 180539.4,
+        "product_total": 222063.48
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-08-03T05:20:07.104Z",
+    "updated_at": "2022-05-12T15:44:00.735Z",
+    "user_id": 16,
+    "_id": 25
+  },
+  {
+    "billing_details": {
+      "first_name": "Irene",
+      "last_name": "Littel",
+      "company": "Bayer Group",
+      "tax_id": "75079-71503-99904-56269",
+      "street": "784 Padberg Shores",
+      "city": "Spring Valley",
+      "zip_code": "76550-6622",
+      "phone_number": "582-922-4255 x16234",
+      "countr": "Faroe Islands"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "CXL",
+    "payment_method": "Apple Pay",
+    "payment_status": "AWT",
+    "subtotal": 1328313.93,
+    "total": 1633826.16,
+    "total_to_pay": 1633845.16,
+    "shipping_fee": "19.99",
+    "order_number": "4247943",
+    "products": [
+      {
+        "product_id": 35,
+        "code": "1785579",
+        "name": "Smart Modern Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 46907.85,
+        "unit_price_w_tax": 57696.66,
+        "product_subtotal": 46907.85,
+        "product_total": 57696.66
+      },
+      {
+        "product_id": 43,
+        "code": "1139920",
+        "name": "Smart Plastic Speakers",
+        "qty": 6,
+        "unit_price_wo_tax": 55929.85,
+        "unit_price_w_tax": 68793.72,
+        "product_subtotal": 335579.1,
+        "product_total": 412762.32
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 3,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 101533.83,
+        "product_total": 124886.61
+      },
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 3,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 146452.47,
+        "product_total": 180136.53
+      },
+      {
+        "product_id": 15,
+        "code": "3402007",
+        "name": "Smart Slim Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 43804.86,
+        "unit_price_w_tax": 53879.98,
+        "product_subtotal": 350438.88,
+        "product_total": 431039.84
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 5,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 347401.8,
+        "product_total": 427304.2
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-09-11T03:34:24.507Z",
+    "updated_at": "2022-05-12T02:45:06.215Z",
+    "user_id": 22,
+    "_id": 26
+  },
+  {
+    "billing_details": {
+      "first_name": "Michale",
+      "last_name": "Collier",
+      "company": "Thompson, Morissette and Hermiston",
+      "tax_id": "87318-18176-29332-98629",
+      "street": "3384 Griffin Forest",
+      "city": "Santa Maria",
+      "zip_code": "34028-8404",
+      "phone_number": "947.511.5879",
+      "countr": "Italy"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "CXL",
+    "payment_method": "bank transfer",
+    "payment_status": "RFD",
+    "subtotal": 1419895.11,
+    "total": 1746471,
+    "total_to_pay": 1746481,
+    "shipping_fee": "10.00",
+    "order_number": "3898023",
+    "products": [
+      {
+        "product_id": 33,
+        "code": "5695198",
+        "name": "Smart Ultra Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 14003.66,
+        "unit_price_w_tax": 17224.5,
+        "product_subtotal": 14003.66,
+        "product_total": 17224.5
+      },
+      {
+        "product_id": 42,
+        "code": "7211191",
+        "name": "Flexible Hybrid Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 73314.97,
+        "unit_price_w_tax": 90177.41,
+        "product_subtotal": 146629.94,
+        "product_total": 180354.82
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 33844.61,
+        "product_total": 41628.87
+      },
+      {
+        "product_id": 1,
+        "code": "3245223",
+        "name": "Fantastic Plastic Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 70605.91,
+        "unit_price_w_tax": 86845.27,
+        "product_subtotal": 706059.1,
+        "product_total": 868452.7
+      },
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 254000.85,
+        "product_total": 312421.05
+      },
+      {
+        "product_id": 35,
+        "code": "1785579",
+        "name": "Smart Modern Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 46907.85,
+        "unit_price_w_tax": 57696.66,
+        "product_subtotal": 46907.85,
+        "product_total": 57696.66
+      },
+      {
+        "product_id": 18,
+        "code": "1624005",
+        "name": "Licensed Modern Notebook",
+        "qty": 5,
+        "unit_price_wo_tax": 43689.82,
+        "unit_price_w_tax": 53738.48,
+        "product_subtotal": 218449.1,
+        "product_total": 268692.4
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-03-28T11:11:34.706Z",
+    "updated_at": "2022-05-12T14:17:55.162Z",
+    "user_id": 28,
+    "_id": 27
+  },
+  {
+    "billing_details": {
+      "first_name": "Jillian",
+      "last_name": "Towne",
+      "company": "Batz, Hayes and Bechtelar",
+      "tax_id": "13604-75009-30096-62221",
+      "street": "7917 Mann Passage",
+      "city": "Baldwin Park",
+      "zip_code": "12633",
+      "phone_number": "1-497-205-5462 x2794",
+      "countr": "China"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "DELIV",
+    "payment_method": "Amazon",
+    "payment_status": "AWT",
+    "subtotal": 1958064.89,
+    "total": 2408419.85,
+    "total_to_pay": 2408429.85,
+    "shipping_fee": "10.00",
+    "order_number": "6033117",
+    "products": [
+      {
+        "product_id": 28,
+        "code": "4113938",
+        "name": "Hybrid Steel Phone",
+        "qty": 3,
+        "unit_price_wo_tax": 30089.9,
+        "unit_price_w_tax": 37010.58,
+        "product_subtotal": 90269.7,
+        "product_total": 111031.74
+      },
+      {
+        "product_id": 16,
+        "code": "5170703",
+        "name": "Elite Modern Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 59208.24,
+        "unit_price_w_tax": 72826.14,
+        "product_subtotal": 473665.92,
+        "product_total": 582609.12
+      },
+      {
+        "product_id": 34,
+        "code": "7731727",
+        "name": "Awesome Aluminium Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 33844.61,
+        "unit_price_w_tax": 41628.87,
+        "product_subtotal": 67689.22,
+        "product_total": 83257.74
+      },
+      {
+        "product_id": 38,
+        "code": "9304348",
+        "name": "Unbranded Modern Speakers",
+        "qty": 4,
+        "unit_price_wo_tax": 63167,
+        "unit_price_w_tax": 77695.41,
+        "product_subtotal": 252668,
+        "product_total": 310781.64
+      },
+      {
+        "product_id": 2,
+        "code": "8505741",
+        "name": "Slim Modern Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 42571.52,
+        "unit_price_w_tax": 52362.97,
+        "product_subtotal": 425715.2,
+        "product_total": 523629.7
+      },
+      {
+        "product_id": 39,
+        "code": "7139144",
+        "name": "Sleek Steel Speakers",
+        "qty": 2,
+        "unit_price_wo_tax": 20374.34,
+        "unit_price_w_tax": 25060.44,
+        "product_subtotal": 40748.68,
+        "product_total": 50120.88
+      },
+      {
+        "product_id": 6,
+        "code": "9171186",
+        "name": "Hybrid Wireless Mouse",
+        "qty": 5,
+        "unit_price_wo_tax": 24189.13,
+        "unit_price_w_tax": 29752.63,
+        "product_subtotal": 120945.65,
+        "product_total": 148763.15
+      },
+      {
+        "product_id": 26,
+        "code": "6249204",
+        "name": "Elite Slim Phone",
+        "qty": 7,
+        "unit_price_wo_tax": 69480.36,
+        "unit_price_w_tax": 85460.84,
+        "product_subtotal": 486362.52,
+        "product_total": 598225.88
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-12-24T11:54:38.825Z",
+    "updated_at": "2022-05-12T21:06:46.610Z",
+    "user_id": 13,
+    "_id": 28
+  },
+  {
+    "billing_details": {
+      "first_name": "Bridgette",
+      "last_name": "Rutherford",
+      "company": "Kertzmann - Cruickshank",
+      "tax_id": "46429-41022-30470-40417",
+      "street": "216 Auer Centers",
+      "city": "Midland",
+      "zip_code": "30523",
+      "phone_number": "1-269-667-9097",
+      "countr": "French Southern Territories"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "PREP",
+    "payment_method": "Dotpay",
+    "payment_status": "PD",
+    "subtotal": 1885855.8,
+    "total": 2319602.58,
+    "total_to_pay": 2319612.58,
+    "shipping_fee": "10.00",
+    "order_number": "7867132",
+    "products": [
+      {
+        "product_id": 19,
+        "code": "2669931",
+        "name": "Gorgeous Ultra Notebook",
+        "qty": 1,
+        "unit_price_wo_tax": 48817.49,
+        "unit_price_w_tax": 60045.51,
+        "product_subtotal": 48817.49,
+        "product_total": 60045.51
+      },
+      {
+        "product_id": 33,
+        "code": "5695198",
+        "name": "Smart Ultra Speakers",
+        "qty": 1,
+        "unit_price_wo_tax": 14003.66,
+        "unit_price_w_tax": 17224.5,
+        "product_subtotal": 14003.66,
+        "product_total": 17224.5
+      },
+      {
+        "product_id": 4,
+        "code": "2662184",
+        "name": "Generic Modern Mouse",
+        "qty": 10,
+        "unit_price_wo_tax": 28195.61,
+        "unit_price_w_tax": 34680.6,
+        "product_subtotal": 281956.1,
+        "product_total": 346806
+      },
+      {
+        "product_id": 27,
+        "code": "7616458",
+        "name": "Smart Metal Phone",
+        "qty": 10,
+        "unit_price_wo_tax": 47715,
+        "unit_price_w_tax": 58689.45,
+        "product_subtotal": 477150,
+        "product_total": 586894.5
+      },
+      {
+        "product_id": 9,
+        "code": "9674420",
+        "name": "Slim Ultra Mouse",
+        "qty": 8,
+        "unit_price_wo_tax": 39799.93,
+        "unit_price_w_tax": 48953.91,
+        "product_subtotal": 318399.44,
+        "product_total": 391631.28
+      },
+      {
+        "product_id": 11,
+        "code": "6085686",
+        "name": "Universal Gaming Headphones",
+        "qty": 9,
+        "unit_price_wo_tax": 64736.56,
+        "unit_price_w_tax": 79625.97,
+        "product_subtotal": 582629.04,
+        "product_total": 716633.73
+      },
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 9,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 102908.43,
+        "product_total": 126577.35
+      },
+      {
+        "product_id": 22,
+        "code": "1977802",
+        "name": "Flexible Pro Notebook",
+        "qty": 5,
+        "unit_price_wo_tax": 10208.18,
+        "unit_price_w_tax": 12556.06,
+        "product_subtotal": 51040.9,
+        "product_total": 62780.3
+      },
+      {
+        "product_id": 12,
+        "code": "9163837",
+        "name": "Elite Hybrid Headphones",
+        "qty": 1,
+        "unit_price_wo_tax": 8950.74,
+        "unit_price_w_tax": 11009.41,
+        "product_subtotal": 8950.74,
+        "product_total": 11009.41
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-12-08T10:42:04.848Z",
+    "updated_at": "2022-05-12T14:19:34.099Z",
+    "user_id": 34,
+    "_id": 29
+  },
+  {
+    "billing_details": {
+      "first_name": "Bettie",
+      "last_name": "Legros",
+      "company": "Smitham - Schmidt",
+      "tax_id": "14817-72007-82828-86523",
+      "street": "425 VonRueden Shoal",
+      "city": "Hutchinson",
+      "zip_code": "41980-4394",
+      "phone_number": "1-506-266-7215 x567",
+      "countr": "Gibraltar"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "public mail service",
+    "shipping_status": "DELIV",
+    "payment_method": "bank transfer",
+    "payment_status": "CXL",
+    "subtotal": 1549891.08,
+    "total": 1906366.08,
+    "total_to_pay": 1906385.08,
+    "shipping_fee": "19.99",
+    "order_number": "2969106",
+    "products": [
+      {
+        "product_id": 5,
+        "code": "7343358",
+        "name": "Laser Super Mouse",
+        "qty": 4,
+        "unit_price_wo_tax": 33607.87,
+        "unit_price_w_tax": 41337.68,
+        "product_subtotal": 134431.48,
+        "product_total": 165350.72
+      },
+      {
+        "product_id": 13,
+        "code": "6567024",
+        "name": "Ultra Modern Headphones",
+        "qty": 8,
+        "unit_price_wo_tax": 11434.27,
+        "unit_price_w_tax": 14064.15,
+        "product_subtotal": 91474.16,
+        "product_total": 112513.2
+      },
+      {
+        "product_id": 33,
+        "code": "5695198",
+        "name": "Smart Ultra Speakers",
+        "qty": 3,
+        "unit_price_wo_tax": 14003.66,
+        "unit_price_w_tax": 17224.5,
+        "product_subtotal": 42010.98,
+        "product_total": 51673.5
+      },
+      {
+        "product_id": 40,
+        "code": "7167560",
+        "name": "Elite Plastic Speakers",
+        "qty": 10,
+        "unit_price_wo_tax": 14916.68,
+        "unit_price_w_tax": 18347.52,
+        "product_subtotal": 149166.8,
+        "product_total": 183475.2
+      },
+      {
+        "product_id": 43,
+        "code": "1139920",
+        "name": "Smart Plastic Speakers",
+        "qty": 7,
+        "unit_price_wo_tax": 55929.85,
+        "unit_price_w_tax": 68793.72,
+        "product_subtotal": 391508.95,
+        "product_total": 481556.04
+      },
+      {
+        "product_id": 41,
+        "code": "3921967",
+        "name": "Universal Metal Speakers",
+        "qty": 9,
+        "unit_price_wo_tax": 18127.17,
+        "unit_price_w_tax": 22296.42,
+        "product_subtotal": 163144.53,
+        "product_total": 200667.78
+      },
+      {
+        "product_id": 15,
+        "code": "3402007",
+        "name": "Smart Slim Headphones",
+        "qty": 7,
+        "unit_price_wo_tax": 43804.86,
+        "unit_price_w_tax": 53879.98,
+        "product_subtotal": 306634.02,
+        "product_total": 377159.86
+      },
+      {
+        "product_id": 3,
+        "code": "6163073",
+        "name": "Sleek Gaming Mouse",
+        "qty": 6,
+        "unit_price_wo_tax": 45253.36,
+        "unit_price_w_tax": 55661.63,
+        "product_subtotal": 271520.16,
+        "product_total": 333969.78
+      }
+    ],
+    "comment": "...",
+    "created_at": "2022-03-29T01:31:59.485Z",
+    "updated_at": "2022-05-12T02:20:06.263Z",
+    "user_id": 2,
+    "_id": 30
+  },
+  {
+    "billing_details": {
+      "first_name": "Adam",
+      "last_name": "Pacocha",
+      "company": "Schiller LLC",
+      "tax_id": "97858-72116-19417-29661",
+      "street": "50048 Jalon Burgs",
+      "city": "Blacksburg",
+      "zip_code": "67163",
+      "phone_number": "(701) 805-1286 x77663",
+      "countr": "Luxembourg"
+    },
+    "package_tracking_code": null,
+    "shipping_method": "DPD",
+    "shipping_status": "PREP",
+    "payment_method": "PayU",
+    "payment_status": "AWT",
+    "subtotal": 662686.95,
+    "total": 815104.95,
+    "total_to_pay": 815114.95,
+    "shipping_fee": "10.00",
+    "order_number": "1045295",
+    "products": [
+      {
+        "product_id": 25,
+        "code": "7219381",
+        "name": "Flexible Plastic Phone",
+        "qty": 7,
+        "unit_price_wo_tax": 84666.95,
+        "unit_price_w_tax": 104140.35,
+        "product_subtotal": 592668.65,
+        "product_total": 728982.45
+      },
+      {
+        "product_id": 33,
+        "code": "5695198",
+        "name": "Smart Ultra Speakers",
+        "qty": 5,
+        "unit_price_wo_tax": 14003.66,
+        "unit_price_w_tax": 17224.5,
+        "product_subtotal": 70018.3,
+        "product_total": 86122.5
+      }
+    ],
+    "comment": "...",
+    "created_at": "2021-12-03T14:41:22.834Z",
+    "updated_at": "2022-05-12T17:58:44.069Z",
+    "user_id": 3,
+    "_id": 31
+  }
+]

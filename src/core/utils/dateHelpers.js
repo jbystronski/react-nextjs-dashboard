@@ -1,73 +1,3 @@
-// const months = (int) =>
-//   [
-//     "Jan",
-//     "Feb",
-//     "Mar",
-//     "Apr",
-//     "May",
-//     "Jun",
-//     "Jul",
-//     "Aug",
-//     "Sep",
-//     "Oct",
-//     "Nov",
-//     "Dec"
-//   ][int];
-
-// const date = () => new Date();
-
-// const padDate = (num) => {
-//   const str = num.toString();
-
-//   return str.length < 2 ? str.slice().padStart(2, 0) : str;
-// };
-
-// export const getYearFirstDay = (sep = "-") => date().getFullYear() + "-01-01";
-// const getYear = () => date().getFullYear();
-// const getMonth = (int) => months(date(int).getMonth());
-// const getDay = () => date().getDate();
-// const getHour = () => date().getHours() + ".00";
-
-// const getMonthFirstDay = (sep = "-") =>
-//   date().getFullYear() + sep + padDate(date().getMonth() + 1) + "-01";
-
-// export const getToday = (sep = "-") =>
-//   [
-//     date().getFullYear(),
-//     padDate(date().getMonth() + 1),
-//     padDate(date().getDate())
-//   ].join(sep);
-
-// const formatDate = (sep = "/") => {
-//   const d = date();
-
-//   return [
-//     d.getFullYear(),
-//     padDate(d.getMonth() + 1),
-//     padDate(d.getDate())
-//   ].join(sep);
-// };
-
-// const addDaysToDate = (str, days) =>
-//   date(str).setDate(date(str).getDate() + days);
-
-// const isTodayBetween = (startAt, endAt) =>
-//   date().getTime() >= date(startAt).getTime() && date(endAt).getTime();
-
-// export const setTimeRange = (str, timeRange = "month", sep = ":") => {
-//   const y = getYear(str);
-//   const m = getMonth(str);
-//   const d = getDay(str);
-//   const h = getHour(str);
-
-//   return {
-//     year: y,
-//     month: [m, y].join(sep),
-//     day: [d, m, y].join(sep),
-//     hour: [d, m, y, h].join(sep)
-//   };
-// };
-
 export function formatDate(
   date,
   separator = "/",
@@ -142,7 +72,7 @@ export function mapMonths(int) {
     "Sep",
     "Oct",
     "Nov",
-    "Dec"
+    "Dec",
   ][int];
 }
 

@@ -1,17 +1,14 @@
-import dynamic from "next/dynamic";
-import { Stack, Text, Box } from "core/ui/_libs";
+import { Stack, Box, Typography } from "@mui/material";
 
-export const SectionHeader = ({ text, bg, children }) => (
+export const SectionHeader = ({ text, children }) => (
   <Stack
     sx={{
       bgcolor: "header",
       fontWeight: "bold",
       p: 2,
 
-      // pl: 1,
-      // pr: 2,
       height: "48px",
-      color: "#fff"
+      color: "#fff",
     }}
     direction="row"
     justifyContent="space-between"
@@ -22,7 +19,7 @@ export const SectionHeader = ({ text, bg, children }) => (
       spacing={1}
       sx={{ display: "flex", alignItems: "center", height: "64px" }}
     >
-      <Text variant="body">{text}</Text>
+      <Typography variant="body">{text}</Typography>
     </Stack>
     <Box> {children}</Box>
   </Stack>

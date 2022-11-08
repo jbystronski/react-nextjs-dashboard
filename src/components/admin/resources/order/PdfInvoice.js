@@ -1,5 +1,4 @@
 import React from "react";
-import { lazily } from "react-lazily";
 import {
   Page,
   Text,
@@ -8,23 +7,16 @@ import {
   StyleSheet,
   Image,
   PDFViewer,
-  Font,
-  LinearGradient,
-  Svg,
-  Path,
-  Stop,
-  Defs,
-  Circle
 } from "@react-pdf/renderer";
-import { Box, Stack } from "core/ui/_libs";
-import { UiButton } from "core/ui";
+import { Stack } from "@mui/material";
+import Button from "core/ui/Button";
 
 export default function PdfInvoice({ close, logoUrl, data }) {
   const {
     vendor,
     client,
     items: { names, taxes, qts, unit_prices, totals, codes },
-    summary
+    summary,
   } = data;
 
   const styles = StyleSheet.create({
@@ -33,37 +25,37 @@ export default function PdfInvoice({ close, logoUrl, data }) {
       backgroundColor: "#FFF",
       color: "rgba(0, 0, 0, 0.87)",
       fontSize: 10,
-      padding: 24
+      padding: 24,
     },
 
     middleSection: {
-      backgroundColor: "#f2f5f7"
+      backgroundColor: "#f2f5f7",
     },
 
     w30: {
-      width: "30%"
+      width: "30%",
     },
 
     w15: {
-      width: "15%"
+      width: "15%",
     },
     w5: {
-      width: "5%"
+      width: "5%",
     },
 
     w20: {
-      width: "20%"
+      width: "20%",
     },
 
     colRight: {
-      alignItems: "flex-end"
+      alignItems: "flex-end",
     },
     colLeft: {
-      alignItems: "flex-start"
+      alignItems: "flex-start",
     },
 
     padded: {
-      padding: 16
+      padding: 16,
     },
 
     header: {
@@ -71,49 +63,49 @@ export default function PdfInvoice({ close, logoUrl, data }) {
       fontSize: 10,
       textTransform: "uppercase",
       marginBottom: 4,
-      fontWeight: "bold"
+      fontWeight: "bold",
     },
 
     col: {
       display: "flex",
-      flexDirection: "column"
+      flexDirection: "column",
     },
 
     marginBottom: {
-      marginBottom: 16
+      marginBottom: 16,
     },
 
     row: {
       display: "flex",
-      flexDirection: "row"
+      flexDirection: "row",
     },
 
     rowStart: {
-      justifyContent: "flex-start"
+      justifyContent: "flex-start",
     },
 
     rowEnd: {
-      justifyContent: "flex-end"
+      justifyContent: "flex-end",
     },
 
     fw: {
       width: "100%",
-      textAlign: "right"
+      textAlign: "right",
     },
 
     item: {
       width: "100%",
       paddingBottom: 4,
       paddingTop: 4,
-      borderBottom: "1px solid #666"
+      borderBottom: "1px solid #666",
     },
 
     right: {
-      textAlign: "right"
+      textAlign: "right",
     },
 
     left: {
-      textAlign: "left"
+      textAlign: "left",
     },
 
     divider: {
@@ -124,14 +116,14 @@ export default function PdfInvoice({ close, logoUrl, data }) {
       borderLeft: "none",
       borderRight: "none",
       display: "flex",
-      flexDirection: "row"
+      flexDirection: "row",
     },
 
     logoImg: {
       width: 40,
       height: 40,
-      marginBottom: 16
-    }
+      marginBottom: 16,
+    },
   });
 
   const parseSvg = async (url) => {
@@ -162,9 +154,9 @@ export default function PdfInvoice({ close, logoUrl, data }) {
           ["x2"]: matchAll(svg, "x2")[0],
           ["y2"]: matchAll(svg, "y2")[0],
           colors: matchAll(svg, "stop stop-color"),
-          offsets: matchAll(svg, "offset")
-        }
-      }
+          offsets: matchAll(svg, "offset"),
+        },
+      },
     };
 
     return container;
@@ -188,11 +180,11 @@ export default function PdfInvoice({ close, logoUrl, data }) {
         left: 0,
         top: 0,
         width: "100%",
-        height: "100%"
+        height: "100%",
       }}
     >
       <Stack direction="row" justifyContent="center" sx={{ my: 2 }}>
-        <UiButton label="Back" onClick={close} />
+        <Button label="Back" onClick={close} />
       </Stack>
 
       <PDFViewer style={{ width: "100%", height: "100%" }}>

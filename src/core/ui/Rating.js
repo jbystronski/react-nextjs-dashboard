@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Rating as UiRating } from "core/ui/_libs";
+import { Rating as UiRating } from "@mui/material";
 
 import { IconMapper } from ".";
 

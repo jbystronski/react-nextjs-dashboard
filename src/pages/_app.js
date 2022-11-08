@@ -1,4 +1,4 @@
-import { FullScreenLoader } from "core/ui";
+import FullScreenLoader from "core/ui/FullScreenLoader";
 
 import { useState, useEffect } from "react";
 

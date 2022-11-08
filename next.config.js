@@ -47,6 +47,24 @@ const options = {
     if (!isServer) {
       config.resolve.fallback.fs = false;
     }
+
+    [
+      "react-is",
+      "@emotion/unitless",
+      "@babel/runtime",
+      "@react-pdf/pdfkit",
+      "restructure",
+      "clone",
+      "scheduler",
+      "unicode-trie",
+    ].forEach(
+      (mod) =>
+        (config.resolve.alias[mod] = path.resolve(
+          __dirname,
+          `node_modules/${mod}`
+        ))
+    );
+
     config.resolve.alias["iconv-lite"] = false;
 
     // if (ANALYZE) {
@@ -75,21 +93,17 @@ const options = {
     domain: envVars.DOMAIN,
     port: envVars.PORT,
     baseUrl: "http://" + envVars.DOMAIN + ":" + envVars.PORT + "/",
-    storagePath: "./app/public/",
-    seedersPath: envVars.SEEDERS_PATH,
-  },
-  isTest: envVars.NODE_ENV === "test",
-  isDevelopment: envVars.NODE_ENV === "development",
-  domain: envVars.DOMAIN,
-  port: envVars.PORT,
 
-  db: {
-    client: envVars.DB_CLIENT,
-    host: envVars.DB_HOST,
-    database: envVars.DB_DATABASE,
-    resourceParam: "model",
+    seedersPath: envVars.SEEDERS_PATH,
+    isDevelopment: envVars.NODE_ENV === "development",
+
+    db: {
+      client: envVars.DB_CLIENT,
+      host: envVars.DB_HOST,
+      database: envVars.DB_DATABASE,
+      resourceParam: "model",
+    },
   },
-  storagePath: "./app/public/",
 };
 
 module.exports = {

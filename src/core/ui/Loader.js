@@ -1,14 +1,10 @@
 import * as React from "react";
-import { styled } from "@mui/material/styles";
+
 import Box from "@mui/material/Box";
 import CircularProgress, {
-  circularProgressClasses
+  circularProgressClasses,
 } from "@mui/material/CircularProgress";
-import LinearProgress, {
-  linearProgressClasses
-} from "@mui/material/LinearProgress";
 
-// Inspired by the former Facebook spinners.
 export default function Loader(props) {
   return (
     <Box sx={{ position: "relative" }}>
@@ -16,7 +12,7 @@ export default function Loader(props) {
         variant="determinate"
         sx={{
           color: (theme) =>
-            theme.palette.grey[theme.palette.mode === "light" ? 200 : 800]
+            theme.palette.grey[theme.palette.mode === "light" ? 200 : 800],
         }}
         size={100}
         thickness={4}
@@ -35,8 +31,8 @@ export default function Loader(props) {
           position: "absolute",
           left: 0,
           [`& .${circularProgressClasses.circle}`]: {
-            strokeLinecap: "round"
-          }
+            strokeLinecap: "round",
+          },
         }}
         size={100}
         thickness={4}

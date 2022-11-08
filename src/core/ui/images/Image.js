@@ -1,6 +1,6 @@
 import React from "react";
-import { Box } from "core/ui/_libs";
-import { IconMapper } from "core/ui";
+import { Box } from "@mui/material";
+import IconMapper from "core/ui/icons/IconMapper";
 
 const Image = ({ path, size, bg, ...props }) => {
   const calculateImageSize = (dimensions) => {
@@ -17,32 +17,32 @@ const Image = ({ path, size, bg, ...props }) => {
   const dimensions = {
     tiny: {
       width: {
-        xs: 68
+        xs: 68,
       },
       height: {
-        xs: 68
-      }
+        xs: 68,
+      },
     },
     small: {
       width: {
-        xs: 84
+        xs: 84,
       },
       height: {
-        xs: 84
-      }
+        xs: 84,
+      },
     },
     medium: {
       width: {
-        xs: 94
+        xs: 94,
       },
       height: {
-        xs: 94
-      }
+        xs: 94,
+      },
     },
     default: {
       width: { xs: 170 },
-      height: { xs: 170 }
-    }
+      height: { xs: 170 },
+    },
   };
 
   return (
@@ -55,7 +55,7 @@ const Image = ({ path, size, bg, ...props }) => {
         bgcolor: bg || "background.dark",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
       }}
       {...props}
     >
@@ -66,7 +66,7 @@ const Image = ({ path, size, bg, ...props }) => {
             component="img"
             sx={{
               height: "auto",
-              maxWidth: calculateImageSize(dimensions[size || "default"])
+              maxWidth: calculateImageSize(dimensions[size || "default"]),
             }}
             src={path}
           />
@@ -74,7 +74,7 @@ const Image = ({ path, size, bg, ...props }) => {
           <Box
             sx={{
               height: "auto",
-              maxWidth: calculateImageSize(dimensions[size || "default"])
+              maxWidth: calculateImageSize(dimensions[size || "default"]),
             }}
           >
             <IconMapper icon="image_file" />

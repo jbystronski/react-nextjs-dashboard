@@ -1,22 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useChunk } from "core/hooks";
 import BestsellersChart from "./BestsellersChart";
 
 import {
   List,
   ListItem,
-  ListItemText,
-  Text,
+  Typography,
   ListItemAvatar,
   Box,
-  Divider,
-  Stack
-} from "core/ui/_libs";
+  Stack,
+} from "@mui/material";
 
-import { formatDate } from "core/utils/dateHelpers";
+import Avatar from "core/ui/Avatar";
 
-import { SectionHeader } from ".";
-import { IconButton, LinkIconButton, IconMapper, UiAvatar } from "core/ui";
+import { SectionHeader } from "./SectionHeader";
+
+import IconMapper from "core/ui/icons/IconMapper";
+import LinkIconButton from "core/ui/LinkIconButton";
+import IconButton from "core/ui/IconButton";
 
 import { useRouter } from "next/router";
 
@@ -44,7 +45,7 @@ export default function BestsellersList() {
               justifyContent: "center",
               p: 2,
               mb: 2,
-              mt: 2
+              mt: 2,
             }}
           >
             <BestsellersChart data={chunk} limit={limit} />
@@ -59,7 +60,7 @@ export default function BestsellersList() {
                       mb: 2,
                       bgcolor: "background.dark",
                       py: 2,
-                      borderRadius: "8px"
+                      borderRadius: "8px",
                     }}
                     secondaryAction={
                       <LinkIconButton
@@ -68,14 +69,14 @@ export default function BestsellersList() {
                         onClick={() =>
                           router.push({
                             pathname: "/admin/forms/edit/[model]/[id]",
-                            query: { model: "products", id: product._id }
+                            query: { model: "products", id: product._id },
                           })
                         }
                       />
                     }
                   >
                     <ListItemAvatar>
-                      <UiAvatar
+                      <Avatar
                         size={[42, 42]}
                         path={
                           product.primary_image
@@ -90,9 +91,9 @@ export default function BestsellersList() {
                     </ListItemAvatar>
                     {/* <ListItemText> */}
                     <Stack direction="column">
-                      <Text variant="body1">{product.name}</Text>
+                      <Typography variant="body1">{product.name}</Typography>
 
-                      <Text variant="body2">{`${product.sold} units sold`}</Text>
+                      <Typography variant="body2">{`${product.sold} units sold`}</Typography>
                     </Stack>
                     {/* </ListItemText> */}
                   </ListItem>
@@ -103,17 +104,19 @@ export default function BestsellersList() {
           <Box sx={{ p: 1, display: "flex", justifyContent: "space-between" }}>
             {[
               {
-                icon: <IconMapper icon="paginate_prev" color="icons.primary" />,
+                icon: "paginate_prev",
                 tooltip: "Previous users",
-                onClick: prev
+                onClick: prev,
               },
               {
-                icon: <IconMapper icon="paginate_next" color="icons.primary" />,
+                icon: "paginate_next",
                 tooltip: "Next users",
-                onClick: next
-              }
-            ].map((props) => (
-              <IconButton key={props.tooltip} {...props} />
+                onClick: next,
+              },
+            ].map(({ icon, tooltip, ...props }) => (
+              <IconButton key={tooltip} tooltip={tooltip} {...props}>
+                <IconMapper icon={icon} color="icons.primary" />
+              </IconButton>
             ))}
           </Box>
         </Box>

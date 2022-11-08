@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-
-import { Collapse, List, ListItemButton, ListItemIcon } from "core/ui/_libs";
-import { IconMapper } from "..";
-
+import { Collapse, List, ListItemButton, ListItemIcon } from "@mui/material";
+import IconMapper from "core/ui/icons/IconMapper";
 import { usePrevious } from "core/hooks";
 
 export default function DeepNestedList({
@@ -11,7 +9,7 @@ export default function DeepNestedList({
   listItemProps,
   expansionIndicatorProps,
   onClickCallback,
-  getIcon
+  getIcon,
 }) {
   const [nestedListIds, setNestedListIds] = useState([]);
   const prevListIds = usePrevious(prevListIds || nestedListIds);

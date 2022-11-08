@@ -1,8 +1,8 @@
-import { IconButton, IconMapper } from "core/ui";
+import IconMapper from "core/ui/icons/IconMapper";
+import IconButton from "core/ui/IconButton";
 
 export const RefreshButton = ({ handleClick }) => (
-  <IconButton
-    icon={<IconMapper icon="chart_search" color="icons.primary" />}
-    onClick={handleClick}
-  />
+  <IconButton onClick={handleClick}>
+    <IconMapper icon="chart_search" color="icons.primary" />
+  </IconButton>
 );

@@ -1,4 +1,4 @@
-import { Paper, Box, Stack } from "core/ui/_libs";
+import { Paper, Box, Stack } from "@mui/material";
 
 import { addProps } from "core/utils/addProps";
 import { getToday } from "core/utils/dateHelpers";
@@ -20,7 +20,7 @@ const CreateForm = ({ model }) => {
 
   const forms = {
     products: <Product />,
-    mailing_lists: <MailingList />
+    mailing_lists: <MailingList />,
   };
 
   const handleSubmit = async (data) => {
@@ -34,16 +34,16 @@ const CreateForm = ({ model }) => {
                 ...getDefaultModelData(model),
                 ...data,
                 created_at: getToday(),
-                updated_at: getToday()
-              }
-            })
+                updated_at: getToday(),
+              },
+            }),
           }));
         info.set("New entry created", "success");
       } else {
         info.set("You've got some errors in your form", "error");
       }
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   };
 
@@ -51,11 +51,11 @@ const CreateForm = ({ model }) => {
     <Box component={Paper} sx={{ borderRadius: 2, width: 1, pb: 2 }}>
       <Stack spacing={2}>
         {addProps(forms[model], {
-          handleSubmit: handleSubmit,
+          handleSubmit,
           data: getDefaultModelData(model),
           id: "id",
-          getError: getError,
-          isValid: isValid
+          getError,
+          isValid,
         })}
       </Stack>
       {info.component}

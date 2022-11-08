@@ -1,4 +1,4 @@
-const { upload } = require("jb-fm-node-utils");
+const { upload } = require("@jb_fmanager/node-utils");
 
 export const config = {
   api: {

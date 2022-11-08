@@ -1,4 +1,5 @@
-import { LineChartButton, BarChartButton } from "../";
+import LineChartButton from "./LineChartButton";
+import BarChartButton from "./BarChartButton";
 
 const Buttons = ({ handleSetType }) => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
-
-import { TextField } from "core/ui/_libs";
+import { TextField } from "@mui/material";
 
 const TextInput = ({ init, type = "text", ...props }) => {
   const [val, setVal] = React.useState(init);

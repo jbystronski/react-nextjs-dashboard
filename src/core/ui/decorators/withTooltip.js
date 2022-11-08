@@ -1,5 +1,5 @@
 import React from "react";
-import { Tooltip } from "core/ui/_libs";
+import { Tooltip } from "@mui/material";
 
 const withTooltip = (Component) => (props) => {
   return (

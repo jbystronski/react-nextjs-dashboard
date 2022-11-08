@@ -2,17 +2,11 @@ import { useState } from "react";
 
 import { getYearFirstDay, getToday } from "core/utils/dateHelpers";
 
-import {
-  Fade,
-  Popper,
-  Box,
-  IconButton,
-  Stack,
-  TextField,
-  Text
-} from "core/ui/_libs";
-import { UiButton, IconMapper } from "core/ui";
-import { useTheme } from "core/ui/_libs";
+import { Fade, Popper, Box, Stack, TextField, Typography } from "@mui/material";
+import IconMapper from "core/ui/icons/IconMapper";
+import IconButton from "../IconButton";
+import { useTheme } from "@mui/material/styles";
+import Button from "core/ui/Button";
 
 export default function DateSortMenu({ handleSort }) {
   const [from, setFrom] = useState(getYearFirstDay);
@@ -20,7 +14,7 @@ export default function DateSortMenu({ handleSort }) {
   const [open, setOpen] = useState(false);
 
   const {
-    palette: { mode }
+    palette: { mode },
   } = useTheme();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -33,7 +27,7 @@ export default function DateSortMenu({ handleSort }) {
   const onHandleSort = () => {
     handleSort({
       from: from,
-      to: to
+      to: to,
     });
     setOpen(false);
   };
@@ -58,10 +52,10 @@ export default function DateSortMenu({ handleSort }) {
                 borderColor: mode === "dark" ? "primary.main" : "#e9ecef",
                 borderWidth: 1,
                 minWidth: "350px",
-                borderStyle: "solid"
+                borderStyle: "solid",
               }}
             >
-              <Text sx={{ mb: 2 }}>Filter by dates</Text>
+              <Typography sx={{ mb: 2 }}>Filter by dates</Typography>
               <TextField
                 sx={{ mb: 1 }}
                 type="date"
@@ -80,7 +74,7 @@ export default function DateSortMenu({ handleSort }) {
               <Box
                 sx={{ display: "flex", justifyContent: "center", p: 2, pb: 1 }}
               >
-                <UiButton label="Sort" onClick={onHandleSort} />
+                <Button label="Sort" onClick={onHandleSort} />
               </Box>
             </Stack>
           </Fade>

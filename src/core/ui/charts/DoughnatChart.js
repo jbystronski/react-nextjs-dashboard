@@ -11,19 +11,17 @@ const DoughnatChart = ({ data }) => {
         plugins: {
           legend: {
             title: {
-              display: false
+              display: false,
             },
             display: false,
             position: "bottom",
             labels: {
               usePointStyle: true,
-              textAlign: "left"
-            }
-          }
+              textAlign: "left",
+            },
+          },
         },
-        aspectRatio: 1
-        // responsive: true
-        // maintainAspectRatio: true
+        aspectRatio: 1,
       }}
     />
   );

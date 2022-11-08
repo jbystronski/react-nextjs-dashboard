@@ -1,7 +1,7 @@
 import React from "react";
 
-import { DialogTitle, Dialog, DialogActions, Text } from "core/ui/_libs";
-import { UiButton } from "core/ui";
+import { Typography, DialogActions, DialogTitle, Dialog } from "@mui/material";
+import Button from "core/ui/Button";
 
 const ConfirmationDialog = ({ title, accept, decline, open, handleClose }) => {
   const onAccept = () => {
@@ -11,12 +11,14 @@ const ConfirmationDialog = ({ title, accept, decline, open, handleClose }) => {
 
   return (
     <Dialog onClose={handleClose} open={open}>
-      <DialogTitle>{<Text variant="body1">{title}</Text>}</DialogTitle>
+      <DialogTitle>
+        {<Typography variant="body1">{title}</Typography>}
+      </DialogTitle>
 
       <DialogActions>
-        <UiButton label="Ok" onClick={onAccept} />
+        <Button label="Ok" onClick={onAccept} />
 
-        <UiButton variant="outlined" label="Cancel" onClick={decline} />
+        <Button variant="outlined" label="Cancel" onClick={decline} />
       </DialogActions>
     </Dialog>
   );

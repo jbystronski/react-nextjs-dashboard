@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
-import { getLayout } from "components";
+
+import { getLayout } from "components/admin/layout/Layout";
+
 import dynamic from "next/dynamic";
 const CreateForm = dynamic(() => import("components/admin/forms/CreateForm"));
 

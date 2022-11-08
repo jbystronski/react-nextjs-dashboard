@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import { useFetch } from "core/hooks";
-import { UiAvatar, LinkIconButton, IconButton, IconMapper } from "core/ui";
+
+import IconMapper from "core/ui/icons/IconMapper";
+import LinkIconButton from "core/ui/LinkIconButton";
+import IconButton from "core/ui/IconButton";
+
 import {
-  Text,
+  Typography,
   TableBody,
   TableCell,
   TableContainer,
   Table,
   TableHead,
   TableRow,
-  Box,
-  Divider,
-  TextField
-} from "core/ui/_libs";
+} from "@mui/material";
+
+import Avatar from "core/ui/Avatar";
 
 export default function ProductList({ orderProducts, productIds }) {
   const router = useRouter();
@@ -29,13 +32,13 @@ export default function ProductList({ orderProducts, productIds }) {
     "Unit price",
     "Amount",
     "Link",
-    "Delete"
+    "Delete",
   ];
 
   const getHeader = (innerText) => {
     return (
       <TableCell key={innerText}>
-        <Text variant="body1">{innerText}</Text>
+        <Typography variant="body1">{innerText}</Typography>
       </TableCell>
     );
   };
@@ -43,7 +46,7 @@ export default function ProductList({ orderProducts, productIds }) {
   const getCell = (innerText) => {
     return (
       <TableCell>
-        <Text variant="body1">{innerText}</Text>
+        <Typography variant="body1">{innerText}</Typography>
       </TableCell>
     );
   };
@@ -52,7 +55,7 @@ export default function ProductList({ orderProducts, productIds }) {
     const img = images.find((el) => el._id === product_id);
 
     return img ? (
-      <UiAvatar
+      <Avatar
         styling={{ borderRadius: "8px" }}
         size={[46, 46]}
         path={img.primary_image ? img.primary_image : null}
@@ -65,20 +68,20 @@ export default function ProductList({ orderProducts, productIds }) {
     <TableContainer sx={{ overflow: "auto" }}>
       <Table>
         <colgroup>
-          <col style={{ width: "10%" }} />
-          <col style={{ width: "20%" }} />
-          <col style={{ width: "20%" }} />
-          <col style={{ width: "20%" }} />
-          <col style={{ width: "20%" }} />
-          <col style={{ width: "5%" }} />
-          <col style={{ width: "5%" }} />
+          {[10, 20, 20, 20, 20, 5, 5].map((percent, i) => (
+            <col key={i + percent / 2 + ""} style={{ width: percent + "%" }} />
+          ))}
         </colgroup>
         <TableHead>
-          <TableRow>{headers.map((el) => getHeader(el))}</TableRow>
+          <TableRow>
+            {headers.map((el, i) => (
+              <React.Fragment key={el + i}>{getHeader(el)}</React.Fragment>
+            ))}
+          </TableRow>
         </TableHead>
         <TableBody>
           {orderProducts.map((product) => (
-            <TableRow key={product.product_id}>
+            <TableRow key={product.product_id + product.name}>
               <TableCell>
                 {images && getImage(images, product.product_id)}
               </TableCell>
@@ -92,22 +95,15 @@ export default function ProductList({ orderProducts, productIds }) {
                   onClick={() =>
                     router.push({
                       pathname: "/admin/forms/edit/[model]/[id]",
-                      query: { id: product.product_id, model: "products" }
+                      query: { id: product.product_id, model: "products" },
                     })
                   }
                 />
               </TableCell>
               <TableCell>
-                <IconButton
-                  icon={
-                    <IconMapper
-                      icon="x"
-                      fontSize="small"
-                      color="icons.primary"
-                    />
-                  }
-                  onClick={() => alert("delete")}
-                />
+                <IconButton onClick={() => alert("delete")}>
+                  <IconMapper icon="x" fontSize="small" color="icons.primary" />
+                </IconButton>
               </TableCell>
             </TableRow>
           ))}

@@ -1,1 +1,34 @@
-[{"name":"Paypal","image":null,"priority":1,"enabled":false,"_id":1},{"name":"Amazon","image":null,"priority":1,"enabled":true,"_id":2},{"name":"Przelew","image":null,"priority":1,"enabled":true,"_id":3},{"name":"Apple Pay","image":null,"priority":1,"enabled":true,"_id":4},{"name":"VISA","image":null,"priority":1,"enabled":true,"_id":5},{"name":"G2A Pay","image":null,"priority":1,"enabled":true,"_id":6},{"name":"Dotpay","image":null,"priority":1,"enabled":true,"_id":7},{"name":"PayU","image":null,"priority":1,"enabled":true,"_id":8}]
+[
+  {
+    "name": "Paypal",
+    "image": null,
+    "priority": 1,
+    "enabled": false,
+    "_id": 1
+  },
+  { "name": "Amazon", "image": null, "priority": 1, "enabled": true, "_id": 2 },
+  {
+    "name": "bank transfer",
+    "image": null,
+    "priority": 1,
+    "enabled": true,
+    "_id": 3
+  },
+  {
+    "name": "Apple Pay",
+    "image": null,
+    "priority": 1,
+    "enabled": true,
+    "_id": 4
+  },
+  { "name": "VISA", "image": null, "priority": 1, "enabled": true, "_id": 5 },
+  {
+    "name": "G2A Pay",
+    "image": null,
+    "priority": 1,
+    "enabled": true,
+    "_id": 6
+  },
+  { "name": "Dotpay", "image": null, "priority": 1, "enabled": true, "_id": 7 },
+  { "name": "PayU", "image": null, "priority": 1, "enabled": true, "_id": 8 }
+]

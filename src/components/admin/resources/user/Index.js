@@ -1,58 +1,45 @@
 import React, { useState } from "react";
-import {
-  IconMapper,
-  UiButton,
-  LinkIconButton,
-  IconButton,
-  ColumnHeader,
-  GridSection,
-  UiAvatar
-} from "core/ui";
+
+import IconMapper from "core/ui/icons/IconMapper";
+import ColumnHeader from "core/ui/typography/ColumnHeader";
+import GridSection from "core/ui/containers/GridSection";
+import LinkIconButton from "core/ui/LinkIconButton";
+import IconButton from "core/ui/IconButton";
+
 import {
   Stack,
   Box,
   Paper,
   Grid,
-  Text,
-  Avatar,
-  Divider,
+  Typography,
   List,
   ListItem,
   Chip,
-  Select,
-  MenuItem,
-  InputLabel,
-  FormControl
-} from "core/ui/_libs";
-import { useFetch, useChunk } from "core/hooks";
+} from "@mui/material";
+import Button from "core/ui/Button";
+import Avatar from "core/ui/Avatar";
+import { useFetch, useChunk, useNotification } from "core/hooks";
 import { formatDate } from "core/utils/dateHelpers";
 import { useRouter } from "next/router";
 const arrayRand = require("core/utils/arrayRand");
 import { useTheme } from "@mui/styles";
 
-import { useNotification } from "core/hooks";
-
 function Index({ id }) {
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
 
   const notification = useNotification();
 
-  const [accountAction, setAccountAction] = useState("");
   const router = useRouter();
   const { data: user, error } = useFetch(`/api/db/find_one/users?_id=${id}`, {
-    init: null
+    init: null,
   });
-
-  const handleAccountActionChange = (event) => {
-    setAccountAction(event.target.value);
-  };
 
   const {
     chunk: orders,
     next: nextOrders,
-    prev: prevOrders
+    prev: prevOrders,
   } = useChunk(
     `/api/db/find/orders?user_id=${id}&_sort.created_at=-1&_limit=5`
   );
@@ -66,14 +53,9 @@ function Index({ id }) {
               <Stack
                 key="user_top"
                 flexDirection={{ xs: "column", sm: "column", md: "row" }}
-                // justifyContent={{
-                //   xs: "center",
-                //   sm: "center",
-                //   md: "flex-start"
-                // }}
                 alignItems="center"
               >
-                <UiAvatar
+                <Avatar
                   size={[128, 128]}
                   styling={{ borderRadius: 2, mr: { xs: 0, md: 2 } }}
                   path={user.img || undefined}
@@ -87,179 +69,123 @@ function Index({ id }) {
                 />
                 <Stack
                   direction={{ xs: "column" }}
-                  // justifyContent="center"
                   alignItems={{ xs: "center", md: "flex-start" }}
-                  spacing={{ xs: 1, md: 1 }}
+                  spacing={1}
                 >
-                  <Text variant="h6">
+                  <Typography variant="h6">
                     {user ? user.email : "default email"}
-                  </Text>
+                  </Typography>
                   <Chip
                     sx={{ minWidth: "50px" }}
                     color="primary"
                     label={id ? user._id : null}
                     size="small"
                   />
-                  <Text
+                  <Typography
                     variant="button"
                     sx={{
-                      fontWeight: "600"
+                      fontWeight: "600",
                     }}
                   >
                     {user.logged_in ? "online" : "offline"}
-                  </Text>
+                  </Typography>
                 </Stack>
-              </Stack>
+              </Stack>,
             ]}
-            sizing={[{ xs: 12 }]}
+            sizing={{ xs: 12 }}
           />
-          <Grid item container xs={12} spacing={{ xs: 2, md: 0 }}>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              sx={{
-                flexDirection: "column",
-                display: "flex",
-                justifyContent: { xs: "center", md: "flex-start" },
-                alignItems: { xs: "center", md: "flex-start" }
-              }}
-            >
-              <ColumnHeader>Details</ColumnHeader>
+          <Grid container spacing={{ xs: 2, md: 0 }}>
+            <Grid item container xs={12}>
+              <Grid
+                item
+                xs={12}
+                md={4}
+                sx={{
+                  flexDirection: "column",
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  alignItems: { xs: "center", md: "flex-start" },
+                }}
+              >
+                <ColumnHeader>Details</ColumnHeader>
 
-              {[
-                {
-                  v: user.first_name + " " + user.last_name
-                },
-                {
-                  v: user.email,
-                  styling: {
-                    fontStyle: "oblique"
-                  }
-                },
-                {
-                  v: user.phone_number
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
-                  {el.v}
-                </Text>
-              ))}
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              sx={{
-                flexDirection: "column",
-                display: "flex",
-                justifyContent: { xs: "center", md: "flex-start" },
-                alignItems: { xs: "center", md: "flex-start" }
-              }}
-            >
-              <ColumnHeader>Address</ColumnHeader>
-
-              {[
-                {
-                  v: user.company || null
-                },
-                {
-                  v: user.tax_id || null
-                },
-                {
-                  v: user.street
-                },
-                {
-                  v: user.city + " ," + user.zip_code
-                },
-                {
-                  v: user.country
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
-                  {el.v}
-                </Text>
-              ))}
-            </Grid>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              sx={{
-                flexDirection: "column",
-                display: "flex",
-                justifyContent: { xs: "center", md: "flex-start" },
-                alignItems: { xs: "center", md: "flex-start" }
-              }}
-            >
-              <ColumnHeader>Joined</ColumnHeader>
-              <Text>{formatDate(user.created_at, ".").slice(0, 10)}</Text>
-              <Text variant="body2" sx={{ fontStyle: "oblique" }}>
-                {formatDate(user.created_at, ".").slice(10)}
-              </Text>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} sx={{ mt: 2 }}>
-            <Divider />
-          </Grid>
-          <Grid
-            item
-            container
-            xs={12}
-            direction="column"
-            justifyContent={{ xs: "center", md: "flex-start" }}
-            alignItems={{ xs: "center", md: "flex-start" }}
-          >
-            <Box sx={{ mb: 2, mt: 2 }}>
-              <ColumnHeader>Account management</ColumnHeader>
-            </Box>
-            <Stack direction={{ xs: "column", md: "row" }} spacing={{ xs: 2 }}>
-              <FormControl fullWidth sx={{ mr: 2 }}>
-                <InputLabel id="demo-simple-select-label">
-                  Select action
-                </InputLabel>
-                <Select
-                  sx={{ minWidth: 230 }}
-                  size="small"
-                  value={accountAction}
-                  onChange={handleAccountActionChange}
-                  inputProps={{ fontSize: "1rem" }}
-                >
-                  {[
-                    {
-                      v: "resendToken",
-                      label: "Resend activation token"
-                    },
-                    {
-                      v: "blockUser",
-                      label: "Block user"
-                    }
-                  ].map((el) => (
-                    <MenuItem key={el.v} value={el.v}>
-                      {el.label}
-                    </MenuItem>
-                  ))}
-                </Select>
-              </FormControl>
-              <UiButton
-                label="Submit"
-                onClick={
+                {[
                   {
-                    resendToken: () =>
-                      notification.set(
-                        "Token has been sent, please check your email",
-                        "success"
-                      ),
-                    blockUser: () =>
-                      notification.set("User has been blocked", "success")
-                  }[accountAction]
-                }
-              />
-            </Stack>
+                    v: user.first_name + " " + user.last_name,
+                  },
+                  {
+                    v: user.email,
+                    styling: {
+                      fontStyle: "oblique",
+                    },
+                  },
+                  {
+                    v: user.phone_number,
+                  },
+                ].map((el) => (
+                  <Typography key={el.v} sx={{ ...el.styling }}>
+                    {el.v}
+                  </Typography>
+                ))}
+              </Grid>
+
+              <Grid
+                item
+                xs={12}
+                md={4}
+                sx={{
+                  flexDirection: "column",
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  alignItems: { xs: "center", md: "flex-start" },
+                }}
+              >
+                <ColumnHeader>Address</ColumnHeader>
+
+                {[
+                  {
+                    v: user.company || null,
+                  },
+                  {
+                    v: user.tax_id || null,
+                  },
+                  {
+                    v: user.street,
+                  },
+                  {
+                    v: user.city + " ," + user.zip_code,
+                  },
+                  {
+                    v: user.country,
+                  },
+                ].map((el) => (
+                  <Typography key={el.v} sx={{ ...el.styling }}>
+                    {el.v}
+                  </Typography>
+                ))}
+              </Grid>
+              <Grid
+                item
+                xs={12}
+                md={4}
+                sx={{
+                  flexDirection: "column",
+                  display: "flex",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  alignItems: { xs: "center", md: "flex-start" },
+                }}
+              >
+                <ColumnHeader>Joined</ColumnHeader>
+                <Typography>
+                  {formatDate(user.created_at, ".").slice(0, 10)}
+                </Typography>
+                <Typography variant="body2" sx={{ fontStyle: "oblique" }}>
+                  {formatDate(user.created_at, ".").slice(10)}
+                </Typography>
+              </Grid>
+            </Grid>
           </Grid>
-          <Grid item xs={12} sx={{ mt: 3, mb: 2 }}>
-            <Divider />
-          </Grid>
+
           <GridSection
             sizing={[{ xs: 12 }]}
             divider={false}
@@ -281,7 +207,7 @@ function Index({ id }) {
                             borderRadius: 0,
                             borderLeftColor: arrayRand(colors),
                             borderLeftWidth: 5,
-                            borderLeftStyle: "solid"
+                            borderLeftStyle: "solid",
                           }}
                         >
                           <Stack
@@ -291,10 +217,10 @@ function Index({ id }) {
                             sx={{ width: "100%" }}
                           >
                             <Box>
-                              <Text>#{order.order_number}</Text>
-                              <Text variant="caption">{`Created on ${formatDate(
+                              <Typography>#{order.order_number}</Typography>
+                              <Typography variant="caption">{`Created on ${formatDate(
                                 order.created_at
-                              )}`}</Text>
+                              )}`}</Typography>
                             </Box>
                             <Chip
                               color={
@@ -303,7 +229,7 @@ function Index({ id }) {
                                   ["PAR/P"]: "info",
                                   PD: "success",
                                   RFD: "warning",
-                                  CXL: "error"
+                                  CXL: "error",
                                 }[order.payment_status]
                               }
                               label={
@@ -312,7 +238,7 @@ function Index({ id }) {
                                   ["PAR/P"]: "partial payment",
                                   PD: "paid",
                                   RFD: "refund",
-                                  CXL: "cancelled"
+                                  CXL: "cancelled",
                                 }[order.payment_status]
                               }
                             />
@@ -322,7 +248,7 @@ function Index({ id }) {
                               onClick={() =>
                                 router.push({
                                   pathname: "/admin/resources/[model]/[id]",
-                                  query: { model: "orders", id: order._id }
+                                  query: { model: "orders", id: order._id },
                                 })
                               }
                             />
@@ -334,7 +260,7 @@ function Index({ id }) {
                       sx={{
                         p: 1,
                         display: "flex",
-                        justifyContent: "space-between"
+                        justifyContent: "space-between",
                       }}
                     >
                       {[
@@ -346,7 +272,7 @@ function Index({ id }) {
                             />
                           ),
                           tooltip: "Previous orders",
-                          onClick: prevOrders
+                          onClick: prevOrders,
                         },
                         {
                           icon: (
@@ -356,8 +282,8 @@ function Index({ id }) {
                             />
                           ),
                           tooltip: "Next orders",
-                          onClick: nextOrders
-                        }
+                          onClick: nextOrders,
+                        },
                       ].map((props) => (
                         <IconButton
                           key={props.tooltip}
@@ -368,14 +294,14 @@ function Index({ id }) {
                     </Box>
                   </>
                 ) : (
-                  <Text>No orders yet...</Text>
+                  <Typography>No orders yet...</Typography>
                 )}
-              </React.Fragment>
+              </React.Fragment>,
             ]}
           />
           <Grid item xs={12}>
             <Stack flexDirection="row" justifyContent="center" sx={{ p: 3 }}>
-              <UiButton
+              <Button
                 onClick={() =>
                   notification.set("User account has been deleted", "info")
                 }
@@ -386,7 +312,7 @@ function Index({ id }) {
           </Grid>
         </Grid>
       ) : (
-        <Text>No user found</Text>
+        <Typography>No user found</Typography>
       )}
 
       {notification.component}

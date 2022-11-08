@@ -1,33 +1,18 @@
-import { React, useState, useEffect } from "react";
-import { Box, Stack, Divider, Text } from "core/ui/_libs";
-
-import { Product, Images, Reviews } from ".";
-import { IconButton, Image, IconMapper, UiAvatar } from "core/ui";
+import { React, useState } from "react";
+import { Box, Stack, Typography } from "@mui/material";
+import Product from "./Product";
+import Images from "./Images";
+import Reviews from "./Reviews";
+import IconMapper from "core/ui/icons/IconMapper";
+import IconButton from "core/ui/IconButton";
+import Avatar from "core/ui/Avatar";
 
 const Main = ({ data, handleSubmit, id, getError, isValid }) => {
-  const [view, setView] = useState(0);
+  const [view, setView] = useState("general");
   const [primary, setPrimary] = useState(data?.primary_image || null);
 
-  const actions = [
-    {
-      icon: <IconMapper icon="list" fontSize="small" />,
-      onClick: () => setView(0),
-      tooltip: "General details"
-    },
-    {
-      icon: <IconMapper icon="star_empty" fontSize="small" />,
-      onClick: () => setView(1),
-      tooltip: "Reviews"
-    },
-    {
-      icon: <IconMapper icon="image_file" fontSize="small" />,
-      onClick: () => setView(2),
-      tooltip: "Images"
-    }
-  ];
-
   const views = {
-    0: (
+    general: (
       <Product
         data={data}
         id={id}
@@ -36,13 +21,13 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
         isValid={isValid}
       />
     ),
-    1: id && <Reviews id={id} />,
-    2: (
+    reviews: id && <Reviews id={id} />,
+    images: (
       <Images
         key={id}
         productImages={{
           primary_image: data["primary_image"],
-          secondary_images: data["secondary_images"]
+          secondary_images: data["secondary_images"],
         }}
         id={id}
         primary={primary}
@@ -51,7 +36,7 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
         }}
         handleSubmit={handleSubmit}
       />
-    )
+    ),
   };
 
   return (
@@ -63,36 +48,42 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
         sx={{ width: 1, p: 2, backgroundColor: "background.dark" }}
       >
         <Box sx={{ pl: 1, py: 1 }}>
-          <UiAvatar
+          <Avatar
             styling={{ borderRadius: "8px" }}
             size={[64, 64]}
             path={primary ? primary : null}
             fallback={<IconMapper icon="image_file" color="primary.light" />}
           />
         </Box>
-        <Text variant="header5">
+        <Typography variant="header5">
           {
             {
               0: "Product information",
               1: "Product reviews",
-              2: "Product images"
+              2: "Product images",
             }[view]
           }
-        </Text>
+        </Typography>
 
         <Box>
-          {actions.map((a, k) => (
+          {[
+            ["list", "General details", "general"],
+            ["star_empty", "Reviews", "reviews"],
+            ["image_file", "Images", "images"],
+          ].map((a, index) => (
             <IconButton
               sx={{ color: "icons.primary" }}
               size="medium"
-              key={k}
-              {...a}
-            />
+              key={index}
+              onClick={() => setView(a[2])}
+              tooltip={a[1]}
+            >
+              <IconMapper icon={a[0]} fontSize="small" />
+            </IconButton>
           ))}
         </Box>
       </Stack>
 
-      {/* <Stack direction="row"></Stack> */}
       <Box sx={{ p: 2 }}>{views[view]}</Box>
     </Box>
   );

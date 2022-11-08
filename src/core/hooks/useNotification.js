@@ -3,7 +3,8 @@ import { useState, forwardRef } from "react";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import Slide from "@mui/material/Slide";
-import { IconMapper } from "core/ui";
+
+import IconMapper from "core/ui/icons/IconMapper";
 
 const Alert = forwardRef(function Alert(props, ref) {
   const setIcon = (type) => <IconMapper icon={type} color="#fff" />;
@@ -16,14 +17,14 @@ const Alert = forwardRef(function Alert(props, ref) {
         success: setIcon("ok"),
         error: setIcon("info"),
         info: setIcon("info"),
-        warning: setIcon("info")
+        warning: setIcon("info"),
       }}
       {...props}
       sx={{
         borderRadius: "8px",
         color: "#fff",
         minWidth: "250px",
-        boxShadow: "none"
+        boxShadow: "none",
       }}
     />
   );
@@ -70,7 +71,7 @@ const useNotification = (alertDuration = 6000) => {
           {msg}
         </Alert>
       </Snackbar>
-    )
+    ),
   };
 
   return notification;

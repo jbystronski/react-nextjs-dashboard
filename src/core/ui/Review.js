@@ -1,14 +1,11 @@
 import React from "react";
-
-import { Paper, Stack, Text, Box } from "core/ui/_libs";
-
-import { Rating } from "core/ui";
+import { Paper, Stack, Typography, Box, Rating } from "@mui/material";
 
 const Review = ({ rate, text, readOnly }) => (
   <Stack component={Box} sx={{ p: 2 }} direction="column">
     <Rating value={rate} readOnly={readOnly} />
     <br />
-    <Text variant="body">{text}</Text>
+    <Typography variant="body">{text}</Typography>
   </Stack>
 );
 

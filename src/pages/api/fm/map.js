@@ -1,4 +1,4 @@
-const { map } = require("jb-fm-node-utils");
+const { map } = require("@jb_fmanager/node-utils");
 
 export default async (req, res) => {
   try {

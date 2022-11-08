@@ -1,17 +1,16 @@
 import { useState } from "react";
-import { TextField, Stack } from "core/ui/_libs";
+import { TextField, Stack } from "@mui/material";
+import { RefreshButton } from "./RefreshButton";
 
 import MuiSelect from "core/ui/MuiSelect";
 
 import {
   getYearFirstDay,
   getToday,
-  calculateDaysBetween
+  calculateDaysBetween,
 } from "core/utils/dateHelpers";
 
-import { RefreshButton } from "../";
 import { useNotification } from "core/hooks";
-import { IconButton } from "core/ui";
 
 export default function TimeRange({ refresh }) {
   const [timeUnit, setTimeUnit] = useState("day");
@@ -43,6 +42,13 @@ export default function TimeRange({ refresh }) {
     return true;
   };
 
+  const handleSetTime = (e) => {
+    console.log(e);
+    return;
+
+    setTimeUnit(e.target.value);
+  };
+
   return (
     <>
       <Stack direction="row" alignItems="center" spacing={1} sx={{ pt: 2 }}>
@@ -58,7 +64,7 @@ export default function TimeRange({ refresh }) {
           label="Set time unit"
           selected={timeUnit}
           options={["hour", "day", "month", "year"]}
-          handleChange={(e) => setTimeUnit(e.target.value)}
+          handleChange={setTimeUnit}
         />
         <RefreshButton handleClick={() => refresh(from, to, timeUnit)} />
       </Stack>

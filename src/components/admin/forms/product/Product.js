@@ -1,12 +1,10 @@
 import { React } from "react";
 import { urlFromString } from "core/utils";
-
-import { getToday } from "core/utils/dateHelpers";
-
-import { useFetch, useValidation } from "core/hooks";
-import { Select, Checkbox, TextInput, UiButton } from "core/ui";
-
-import { Stack, Box } from "core/ui/_libs";
+import { useFetch } from "core/hooks";
+import TextInput from "core/ui/TextInput";
+import { Stack, Box, Checkbox } from "@mui/material";
+import Button from "core/ui/Button";
+import Select from "core/ui/Select";
 
 const Product = ({ data, handleSubmit, id, getError, isValid }) => {
   const { data: categories, error: categoriesError } = useFetch(
@@ -42,9 +40,45 @@ const Product = ({ data, handleSubmit, id, getError, isValid }) => {
 
   const styling = {
     sx: {
-      mb: 2
-    }
+      mb: 2,
+    },
   };
+
+  const textInputs = [
+    {
+      value: "name",
+      placeholder: "Product name",
+      init: data.name,
+    },
+    {
+      value: "description",
+      placeholder: "Product description",
+      minRows: 6,
+      multiline: true,
+      init: data.description,
+    },
+    {
+      value: "in_stock",
+      placeholder: "In stock",
+      init: data.in_stock,
+    },
+    {
+      value: "code",
+      placeholder: "SKU",
+      init: data.code,
+    },
+    {
+      value: "priority",
+      placeholder: "Priority",
+      type: "number",
+      init: data.priority,
+    },
+    {
+      value: "price_wo_tax",
+      placeholder: "Net price",
+      init: data.price_wo_tax,
+    },
+  ];
 
   return (
     <Box
@@ -52,58 +86,17 @@ const Product = ({ data, handleSubmit, id, getError, isValid }) => {
       onSubmit={handleFormSubmit}
       sx={{ display: "flex", flexDirection: "column" }}
     >
-      <TextInput
-        error={isValid("name")}
-        helperText={getError("name")}
-        name="name"
-        init={data.name}
-        placeholder="Product name"
-        {...styling}
-      />
-      <TextInput
-        error={isValid("description")}
-        helperText={getError("description")}
-        name="description"
-        placeholder="Product description"
-        multiline={true}
-        minRows={6}
-        init={data.description}
-        {...styling}
-      />
-      <TextInput
-        error={isValid("in_stock")}
-        helperText={getError("in_stock")}
-        name="in_stock"
-        init={data.in_stock}
-        placeholder="In stock"
-        {...styling}
-      />
-      <TextInput
-        error={isValid("code")}
-        helperText={getError("code")}
-        name="code"
-        init={data.code}
-        placeholder="SKU"
-        {...styling}
-      />
+      {textInputs.map(({ value, ...props }) => (
+        <TextInput
+          key={value}
+          error={isValid(value)}
+          helperText={getError(value)}
+          name={value}
+          {...props}
+          {...styling}
+        />
+      ))}
 
-      <TextInput
-        error={isValid("priority")}
-        helperText={getError("priority")}
-        name="priority"
-        placeholder="Priority"
-        type="number"
-        init={data.priority}
-        {...styling}
-      />
-      <TextInput
-        error={isValid("price_wo_tax")}
-        helperText={getError("price_wo_tax")}
-        name="price_wo_tax"
-        init={data.price_wo_tax}
-        placeholder="Net price"
-        {...styling}
-      />
       {categories && (
         <Select
           label="Category"
@@ -122,7 +115,7 @@ const Product = ({ data, handleSubmit, id, getError, isValid }) => {
           label="Published"
           initial={data.published ? 1 : 0}
         />
-        <UiButton label="Save" type="submit" />
+        <Button label="Save" type="submit" />
       </Stack>
     </Box>
   );

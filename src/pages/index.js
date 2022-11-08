@@ -1,8 +1,7 @@
-import { charts, getLayout } from "components";
+import { getLayout } from "components/admin/layout/Layout";
+import ChartsLayout from "components/admin/charts/ChartsLayout";
 
 export default function ChartsPage() {
-  const { ChartsLayout } = charts;
-
   return <ChartsLayout />;
 }
 ChartsPage.getLayout = getLayout;

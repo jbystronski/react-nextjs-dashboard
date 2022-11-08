@@ -4,16 +4,17 @@ import {
   Fade,
   Popper,
   Box,
-  IconButton,
   List,
   ListItem,
   ListItemText,
   ListItemSecondaryAction,
-  Text,
-  Stack
-} from "core/ui/_libs";
-import { UiButton, IconMapper } from "core/ui";
-import { useTheme } from "core/ui/_libs";
+  Typography,
+  Stack,
+} from "@mui/material";
+import Button from "core/ui/Button";
+import IconMapper from "core/ui/icons/IconMapper";
+import { useTheme } from "@mui/material/styles";
+import IconButton from "../IconButton";
 
 const SortOptions = ({ keyProp, getSort, initial }) => {
   const [sort, setSort] = React.useState(initial);
@@ -56,7 +57,7 @@ export default function TableSortMenu({
   handleSort,
   keyProp,
   valueProp,
-  initialProp
+  initialProp,
 }) {
   const [open, setOpen] = React.useState(false);
 
@@ -65,7 +66,7 @@ export default function TableSortMenu({
   const [sortObject, setSortObject] = React.useState({});
 
   const {
-    palette: { mode }
+    palette: { mode },
   } = useTheme();
 
   const handleClick = (event) => {
@@ -108,7 +109,7 @@ export default function TableSortMenu({
                 borderColor: mode === "dark" ? "primary.main" : "#e9ecef",
                 borderWidth: 1,
                 borderStyle: "solid",
-                minWidth: "300px"
+                minWidth: "300px",
               }}
             >
               <List>
@@ -116,7 +117,9 @@ export default function TableSortMenu({
                   <ListItem key={JSON.stringify(option)} disablePadding>
                     <ListItemText
                       primary={
-                        <Text>{valueProp ? option[valueProp] : option}</Text>
+                        <Typography>
+                          {valueProp ? option[valueProp] : option}
+                        </Typography>
                       }
                     />
                     <ListItemSecondaryAction>
@@ -132,7 +135,7 @@ export default function TableSortMenu({
               <Box
                 sx={{ display: "flex", justifyContent: "center", p: 2, pb: 1 }}
               >
-                <UiButton label="Sort" onClick={onHandleSort} />
+                <Button label="Sort" onClick={onHandleSort} />
               </Box>
             </Box>
           </Fade>

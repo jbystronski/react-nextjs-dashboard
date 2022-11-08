@@ -1,10 +1,10 @@
-const { remove } = require("jb-fm-node-utils");
+const { remove } = require("@jb_fmanager/node-utils");
 
 export default async (req, res) => {
   try {
-    const result = await remove(req.body);
+    await remove(req.body);
 
-    return res.status(200).json(result);
+    return res.status(200).json({});
   } catch (error) {
     console.error(error);
     return res.status(500);

@@ -1,4 +1,4 @@
-import { createTheme, styled } from "core/ui/_libs";
+import { createTheme } from "@mui/material/styles";
 
 import createBreakpoints from "@mui/system/createTheme/createBreakpoints";
 
@@ -29,7 +29,6 @@ const mountTheme = (values) => {
       action: {
         active: values.primary.main,
         activatedOpacity: 1,
-        // hover: values.highlight,
       },
     },
 
@@ -82,23 +81,9 @@ const mountTheme = (values) => {
               m: 0,
               borderBottom: "1px solid " + values.divider,
             },
-
-            // xs: {
-            //   borderRadius: 0,
-            //   borderBottom: "1px solid " + values.divider,
-            //   m: 0
-            // }
           },
         },
       },
-
-      // MuiSvgIcon: {
-      //   styleOverrides: {
-      //     root: {
-      //       color: values.primary.light
-      //     }
-      //   }
-      // },
 
       MuiSwitch: {
         styleOverrides: {
@@ -158,36 +143,6 @@ const mountTheme = (values) => {
           },
         },
       },
-
-      // MuiChip: {
-      //   styleOverrides: {
-      //     root: {
-      //        fontSize: "0.75rem",
-      //        borderRadius: "8px",
-      //       fontWeight: 400,
-      //        color: values.primary.contrastText || "#fff"
-      //     },
-      //     filled: {
-      //        color: "#fff"
-      //     }
-      //   }
-      // },
-
-      // MuiListItem: {
-      //   styleOverrides: {
-      //     root: {
-      //       color: values.text.primary,
-      //       borderRadius: "8px",
-      //       "&:hover": {
-      //         backgroundColor: values.primary.main,
-      //         color: "white",
-      //         "& .MuiListItemIcon-root": {
-      //           color: values.primary.contrastText
-      //         }
-      //       }
-      //     }
-      //   }
-      // },
 
       MuiMenuItem: {
         styleOverrides: {
@@ -262,21 +217,10 @@ const mountTheme = (values) => {
       MuiIconButton: {
         styleOverrides: {
           root: {
-            // color: values.primary.light,
             borderRadius: "8px",
           },
         },
       },
-      // MuiButton: {
-      //   root: {
-      //     color: values.text.secondary
-      //   }
-      // },
-      // MuiButtonBase: {
-      //   root: {
-      //     color: values.text.secondary
-      //   }
-      // }
     },
   });
 };

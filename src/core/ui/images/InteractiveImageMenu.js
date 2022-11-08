@@ -1,8 +1,7 @@
-import { IconButton } from "core/ui";
+import { Stack } from "@mui/material";
+import IconButton from "../IconButton";
 
-import { Box, Stack } from "core/ui/_libs";
-
-function InteractiveImageMenu({ menu, props }) {
+function InteractiveImageMenu({ menu, ...props }) {
   return (
     <Stack
       direction="row"
@@ -12,11 +11,13 @@ function InteractiveImageMenu({ menu, props }) {
         width: "100%",
         bottom: 0,
         left: 0,
-        justifyContent: "flex-end"
+        justifyContent: "flex-end",
       }}
     >
       {menu &&
-        menu.map((props, index) => <IconButton key={index} {...props} />)}
+        menu.map((props, index) => (
+          <IconButton key={index}>{props}</IconButton>
+        ))}
     </Stack>
   );
 }

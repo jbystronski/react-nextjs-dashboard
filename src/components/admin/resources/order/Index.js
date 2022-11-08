@@ -1,27 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 
-import {
-  GridSection,
-  ColumnHeader,
-  UiButton,
-  Select,
-  IconMapper,
-  IconButton
-} from "core/ui";
-
-import { useTheme } from "@mui/styles";
-
 import { formatDate } from "core/utils/dateHelpers";
-
 import ProductList from "./ProductList";
+
+import IconMapper from "core/ui/icons/IconMapper";
+import ColumnHeader from "core/ui/typography/ColumnHeader";
+import GridSection from "core/ui/containers/GridSection";
 
 const Invoice = dynamic(() => import("./Invoice"));
 
 import { useFetch, useNotification } from "core/hooks";
 import { useRouter } from "next/router";
 
-import { Paper, Text, Box, Stack, Grid, Chip, Divider } from "core/ui/_libs";
+import {
+  Paper,
+  Typography,
+  Box,
+  Stack,
+  Grid,
+  Chip,
+  Divider,
+} from "@mui/material";
+
+import Button from "core/ui/Button";
+
+import IconButton from "core/ui/IconButton";
+
+import MuiSelect from "core/ui/MuiSelect";
 
 function Index({ id }) {
   const router = useRouter();
@@ -35,7 +41,7 @@ function Index({ id }) {
   const [shippingMethod, setShippingMethod] = useState(null);
 
   const { data: order, error } = useFetch(`/api/db/find_one/orders?_id=${id}`, {
-    init: null
+    init: null,
   });
 
   const { data: paymentMethods, error: paymentMethodsError } = useFetch(
@@ -69,17 +75,17 @@ function Index({ id }) {
                 alignItems="center"
                 direction={{
                   xs: "column",
-                  md: "row"
+                  md: "row",
                 }}
                 spacing={{
                   xs: 2,
-                  md: 0
+                  md: 0,
                 }}
               >
                 <Stack direction="column">
-                  <Text variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
+                  <Typography variant="h5" sx={{ fontWeight: "bold", mb: 2 }}>
                     Order #{order.order_number}
-                  </Text>
+                  </Typography>
                   <Chip
                     label={formatDate(order.created_at, ".")}
                     color="info"
@@ -93,13 +99,13 @@ function Index({ id }) {
                       onClick: () =>
                         router.push({
                           pathname: "/admin/resources/[model]/[id]",
-                          query: { model: "users", id: order.user_id }
-                        })
+                          query: { model: "users", id: order.user_id },
+                        }),
                     },
                     {
                       icon: "order",
                       tooltip: "Invoice",
-                      onClick: showInvoice
+                      onClick: showInvoice,
                     },
                     {
                       icon: "table",
@@ -107,22 +113,21 @@ function Index({ id }) {
                       onClick: () =>
                         router.push({
                           pathname: "/admin/tables/[model]",
-                          query: { model: "orders" }
-                        })
-                    }
+                          query: { model: "orders" },
+                        }),
+                    },
                   ].map((btn) => (
                     <IconButton
                       size="large"
                       key={btn.tooltip}
-                      icon={
-                        <IconMapper icon={btn.icon} color="primary.light" />
-                      }
                       tooltip={btn.tooltip}
                       onClick={btn.onClick}
-                    />
+                    >
+                      <IconMapper icon={btn.icon} color="primary.light" />
+                    </IconButton>
                   ))}
                 </Stack>
-              </Stack>
+              </Stack>,
             ]}
             sizing={[{ xs: 12 }]}
           />
@@ -133,7 +138,7 @@ function Index({ id }) {
                   key="invoice"
                   details={order}
                   showOrder={showInvoice}
-                />
+                />,
               ]}
               sizing={[{ xs: 12 }]}
             />
@@ -147,30 +152,30 @@ function Index({ id }) {
                   v:
                     order.billing_details.first_name +
                     " " +
-                    order.billing_details.last_name
+                    order.billing_details.last_name,
                 },
                 {
-                  v: order.billing_details.company || null
+                  v: order.billing_details.company || null,
                 },
                 {
-                  v: order.billing_details.street
+                  v: order.billing_details.street,
                 },
                 {
                   v:
                     order.billing_details.zip_code +
                     " ," +
-                    order.billing_details.city
+                    order.billing_details.city,
                 },
                 {
-                  v: order.billing_details.country
+                  v: order.billing_details.country,
                 },
                 {
-                  v: order.billing_details.phone_number
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
+                  v: order.billing_details.phone_number,
+                },
+              ].map((el, i) => (
+                <Typography key={el.v + i} sx={{ ...el.styling }}>
                   {el.v}
-                </Text>
+                </Typography>
               ))}
             </Grid>
             <Grid item xs={6} md={3}>
@@ -178,12 +183,12 @@ function Index({ id }) {
 
               {[
                 {
-                  v: order.subtotal
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
+                  v: Number(order.subtotal).toFixed(2),
+                },
+              ].map((el, i) => (
+                <Typography key={el.v + i} sx={{ ...el.styling }}>
                   {el.v}
-                </Text>
+                </Typography>
               ))}
             </Grid>
             <Grid item xs={6} md={3}>
@@ -191,24 +196,24 @@ function Index({ id }) {
 
               {[
                 {
-                  v: order.total
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
+                  v: Number(order.total).toFixed(2),
+                },
+              ].map((el, i) => (
+                <Typography key={el.v + i} sx={{ ...el.styling }}>
                   {el.v}
-                </Text>
+                </Typography>
               ))}
             </Grid>
             <Grid item xs={6} md={3}>
               <ColumnHeader>Total to pay</ColumnHeader>
               {[
                 {
-                  v: order.total_to_pay
-                }
-              ].map((el) => (
-                <Text key={el.v} sx={{ ...el.styling }}>
+                  v: Number(order.total_to_pay).toFixed(2),
+                },
+              ].map((el, i) => (
+                <Typography key={el.v + i} sx={{ ...el.styling }}>
                   {el.v}
-                </Text>
+                </Typography>
               ))}
             </Grid>
           </Grid>
@@ -221,10 +226,10 @@ function Index({ id }) {
             <Grid item xs={12} md={5}>
               <ColumnHeader>Payment method</ColumnHeader>
               {paymentMethods && (
-                <Select
+                <MuiSelect
                   inputWidth={{ xs: "100%", md: "70%" }}
                   size="small"
-                  init={order.payment_method}
+                  selected={order.payment_method}
                   parentValue={paymentMethod}
                   options={paymentMethods.map((el) => el.name)}
                   handleChange={setPaymentMethod}
@@ -234,10 +239,10 @@ function Index({ id }) {
 
             <Grid item xs={12} md={5}>
               <ColumnHeader>Payment status</ColumnHeader>
-              <Select
+              <MuiSelect
                 inputWidth={{ xs: "100%", md: "70%" }}
                 size="small"
-                init={order.payment_status}
+                selected={order.payment_status}
                 parentValue={paymentStatus}
                 options={["PD", "AWT", "PAR/P", "RFD", "CXL"]}
                 handleChange={setPaymentStatus}
@@ -253,10 +258,10 @@ function Index({ id }) {
             <Grid item xs={12} md={5}>
               <ColumnHeader>Shipping method</ColumnHeader>
               {shippingMethods && (
-                <Select
+                <MuiSelect
                   size="small"
                   inputWidth={{ xs: "100%", md: "70%" }}
-                  init={order.shipping_method}
+                  selected={order.shipping_method}
                   parentValue={shippingMethod}
                   options={shippingMethods.map((el) => el.name)}
                   handleChange={setShippingMethod}
@@ -266,10 +271,10 @@ function Index({ id }) {
 
             <Grid item xs={12} md={5}>
               <ColumnHeader>Shipping status</ColumnHeader>
-              <Select
+              <MuiSelect
                 inputWidth={{ xs: "100%", md: "70%" }}
                 size="small"
-                init={order.shipping_status}
+                selected={order.shipping_status}
                 parentValue={shippingStatus}
                 options={["PREP", "DSPCH", "DELIV", "CXL"]}
                 handleChange={setShippingStatus}
@@ -291,11 +296,12 @@ function Index({ id }) {
                   <IconButton
                     sx={{ color: "primary.light", ml: 1 }}
                     tooltip="Edit"
-                    icon={<IconMapper icon="edit" />}
-                  />
+                  >
+                    <IconMapper icon="edit" />
+                  </IconButton>
                 </Stack>
-                <Text>{order.package_tracking_code || "n/a"}</Text>
-              </Stack>
+                <Typography>{order.package_tracking_code || "n/a"}</Typography>
+              </Stack>,
             ]}
           />
 
@@ -310,7 +316,7 @@ function Index({ id }) {
                 >
                   {order.comment}
                 </Box>
-              </Stack>
+              </Stack>,
             ]}
           />
 
@@ -324,7 +330,7 @@ function Index({ id }) {
                   orderProducts={order.products}
                   productIds={order.products.map((el) => el.product_id)}
                 />
-              </React.Fragment>
+              </React.Fragment>,
             ]}
           />
           <GridSection
@@ -337,20 +343,20 @@ function Index({ id }) {
                 direction="row"
                 justifyContent={{
                   md: "flex-end",
-                  xs: "center"
+                  xs: "center",
                 }}
               >
-                <UiButton
+                <Button
                   styling={{ minWidth: { xs: 230 } }}
                   label="Update changes"
                   onClick={() => update()}
                 />
-              </Stack>
+              </Stack>,
             ]}
           />
         </Grid>
       ) : (
-        <Text>No order found</Text>
+        <Typography>No order found</Typography>
       )}
       {info.component}
     </>

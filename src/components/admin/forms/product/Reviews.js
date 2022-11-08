@@ -1,7 +1,7 @@
 import { useFetch } from "core/hooks";
 import React from "react";
-import { Divider } from "core/ui/_libs";
-import { Review } from "core/ui";
+import { Divider } from "@mui/material";
+import Review from "core/ui/Review";
 
 const Reviews = ({ id }) => {
   const { data: reviews, error: reviewsError } = useFetch(

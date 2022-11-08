@@ -4,18 +4,20 @@ import {
   ListItemText,
   Divider,
   ListItemAvatar,
-  Avatar,
-  Box
-} from "core/ui/_libs";
+  Box,
+} from "@mui/material";
+
+import Avatar from "core/ui/Avatar";
+
+import IconButton from "core/ui/IconButton";
 
 import { formatDate } from "core/utils/dateHelpers";
 import { useTheme } from "@mui/styles";
 
 import { useRouter } from "next/router";
-import { IconButton, IconMapper } from "core/ui";
-import { SectionHeader } from ".";
+import IconMapper from "core/ui/icons/IconMapper";
+import { SectionHeader } from "./SectionHeader";
 import { useChunk } from "core/hooks";
-
 import React from "react";
 
 const arrayRand = require("core/utils/arrayRand");
@@ -25,7 +27,7 @@ function OrdersList() {
   const limit = 5;
 
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
   const { chunk, next, prev } = useChunk(
     `/api/db/find/orders?_only=total_to_pay,billing_details.first_name,billing_details.last_name,updated_at&_sort.updated_at=-1`,
@@ -52,7 +54,7 @@ function OrdersList() {
                     onClick={() =>
                       router.push({
                         pathname: "/admin/resources/orders/[id]",
-                        query: { id: order._id }
+                        query: { id: order._id },
                       })
                     }
                   />

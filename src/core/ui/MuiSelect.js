@@ -1,8 +1,12 @@
 import React from "react";
+import {
+  Select as MuiSelect,
+  FormControl,
+  MenuItem,
+  InputLabel,
+} from "@mui/material";
 
-import { Select, FormControl, MenuItem, InputLabel } from "core/ui/_libs";
-
-const MuiSelect = ({
+const Select = ({
   label,
   selected,
   handleChange,
@@ -10,12 +14,12 @@ const MuiSelect = ({
   displayProp,
   valueProp,
   emptyValue,
-  size
+  size,
 }) => {
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }}>
       <InputLabel id="demo-simple-select-label">{label}</InputLabel>
-      <Select
+      <MuiSelect
         size={size}
         label={label}
         labelId="demo-simple-select-label"
@@ -34,9 +38,9 @@ const MuiSelect = ({
               {o[displayProp] || o}
             </MenuItem>
           ))}
-      </Select>
+      </MuiSelect>
     </FormControl>
   );
 };
 
-export default MuiSelect;
+export default Select;

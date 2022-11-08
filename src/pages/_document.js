@@ -3,7 +3,6 @@ const db = process.env.db;
 
 class MyDocument extends Document {
   render() {
-    console.log(db);
     return (
       <Html>
         <Head>

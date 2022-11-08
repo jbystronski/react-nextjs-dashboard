@@ -1,7 +1,7 @@
-import { getToday, getMonth, padDate } from "core/utils/dateHelpers";
+import { getToday, getMonth } from "core/utils/dateHelpers";
 
-import { Timer } from "core/ui";
-import { Text, Box, Paper } from "core/ui/_libs";
+import Timer from "core/ui/Timer";
+import { Text, Box, Paper } from "@mui/material";
 
 export default function Time() {
   return (
@@ -12,7 +12,7 @@ export default function Time() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flexDirection: "column"
+        flexDirection: "column",
       }}
     >
       <Text
@@ -21,7 +21,7 @@ export default function Time() {
           color: "secondary.main",
           lineHeight: 1,
           mb: 1,
-          fontStyle: "oblique"
+          fontStyle: "oblique",
         }}
         variant="h4"
       >
@@ -34,7 +34,7 @@ export default function Time() {
           color: "secondary.main",
           lineHeight: 1,
           mb: 3,
-          fontStyle: "oblique"
+          fontStyle: "oblique",
         }}
         variant="h6"
       >

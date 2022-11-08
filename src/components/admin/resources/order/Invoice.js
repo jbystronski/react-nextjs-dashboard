@@ -1,17 +1,23 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 
 import {
   Box,
   Paper,
   Stack,
-  Text,
+  Typography,
   Divider,
   List,
   ListItem,
   ListSubheader,
-  ListItemText
-} from "core/ui/_libs";
-import { Image, UiButton, IconButton, IconMapper } from "core/ui";
+  ListItemText,
+} from "@mui/material";
+import Button from "core/ui/Button";
+
+import IconButton from "core/ui/IconButton";
+
+import IconMapper from "core/ui/icons/IconMapper";
+import Image from "core/ui/images/Image";
+
 import dynamic from "next/dynamic";
 
 const PdfInvoice = dynamic(() => import("./PdfInvoice"));
@@ -37,7 +43,7 @@ export default function Invoice({ details, showOrder }) {
     right,
     alignHeader,
     alignText,
-    disablePadding
+    disablePadding,
   }) => {
     return (
       <List
@@ -54,7 +60,7 @@ export default function Invoice({ details, showOrder }) {
               backgroundColor: "transparent",
               // fontSize: "0.75rem",
               lineHeight: "1rem",
-              fontWeight: 600
+              fontWeight: 600,
             }}
           >
             {header}
@@ -74,10 +80,10 @@ export default function Invoice({ details, showOrder }) {
                 secondary={secondary && secondary[index]}
                 primaryTypographyProps={{
                   variant: "body1",
-                  textAlign: alignText || "left"
+                  textAlign: alignText || "left",
                 }}
                 secondaryTypographyProps={{
-                  variant: "body2"
+                  variant: "body2",
                 }}
               />
             </ListItem>
@@ -94,7 +100,7 @@ export default function Invoice({ details, showOrder }) {
         vendorCompany,
         vendorStreet,
         vendorZipCode + ", " + vendorCity,
-        vendorCountry
+        vendorCountry,
       ]}
     />
   );
@@ -110,7 +116,7 @@ export default function Invoice({ details, showOrder }) {
           vendorEmail,
           vendorPhone,
           vendorCountry,
-          "TAX ID: 8312983890"
+          "TAX ID: 8312983890",
         ]}
       />
     </Stack>
@@ -148,7 +154,7 @@ export default function Invoice({ details, showOrder }) {
         "Tax Id " + recipient.tax_id,
         recipient.street,
         recipient.zip_code + ", " + recipient.city,
-        recipient.country
+        recipient.country,
       ]}
     />
   );
@@ -165,19 +171,19 @@ export default function Invoice({ details, showOrder }) {
         w: "30%",
         header: "Name",
         alignHeader: "left",
-        primary: items.map((i) => withDivider(i.name))
+        primary: items.map((i) => withDivider(i.name)),
       },
       {
         w: "15%",
         header: "SKU",
         alignHeader: "left",
-        primary: items.map((i) => withDivider(i.code))
+        primary: items.map((i) => withDivider(i.code)),
       },
       {
         w: "5%",
         header: "Qty",
         alignText: "right",
-        primary: items.map((i) => withDivider(i.qty))
+        primary: items.map((i) => withDivider(i.qty)),
       },
       {
         w: "20%",
@@ -185,7 +191,7 @@ export default function Invoice({ details, showOrder }) {
         alignText: "right",
         primary: items.map((i) =>
           withDivider("$" + i.unit_price_wo_tax.toFixed(2))
-        )
+        ),
       },
       {
         w: "15%",
@@ -195,14 +201,16 @@ export default function Invoice({ details, showOrder }) {
           withDivider(
             "$" + (i.unit_price_w_tax - i.unit_price_wo_tax).toFixed(2)
           )
-        )
+        ),
       },
       {
         w: "20%",
         header: "Total",
         alignText: "right",
-        primary: items.map((i) => withDivider("$" + i.product_total.toFixed(2)))
-      }
+        primary: items.map((i) =>
+          withDivider("$" + i.product_total.toFixed(2))
+        ),
+      },
     ];
 
     return (
@@ -246,7 +254,7 @@ export default function Invoice({ details, showOrder }) {
           "$" + (details.total - details.subtotal).toFixed(2)
         ),
         alignOpposite("Amount paid", "$" + (0).toFixed(2)),
-        alignOpposite("Amount left", "$" + details.total_to_pay.toFixed(2))
+        alignOpposite("Amount left", "$" + details.total_to_pay.toFixed(2)),
       ]}
     />
   );
@@ -263,7 +271,7 @@ export default function Invoice({ details, showOrder }) {
               // color: "#000",
               // fontSize: "0.75rem",
               p: 4,
-              position: "relative"
+              position: "relative",
             }}
           >
             <Box sx={{ position: "absolute", right: 4 * 4, top: 4 * 4 }}>
@@ -280,7 +288,7 @@ export default function Invoice({ details, showOrder }) {
             >
               <Vendor />
               <Box sx={{ pr: 2 }}>
-                <Text variant="h6">#89584</Text>
+                <Typography variant="h6">#89584</Typography>
               </Box>
             </Stack>
             <Divider />
@@ -301,7 +309,7 @@ export default function Invoice({ details, showOrder }) {
             </Stack>
           </Box>
           <Stack justifyContent="flex-end" direction="row" sx={{ mt: 4 }}>
-            <UiButton label="Show order" onClick={showOrder} />
+            <Button label="Show order" onClick={showOrder} />
           </Stack>
         </>
       ) : (
@@ -314,7 +322,7 @@ export default function Invoice({ details, showOrder }) {
               top: 0,
               left: 0,
               width: "100%",
-              height: "100%"
+              height: "100%",
             }}
           >
             <PdfInvoice
@@ -328,7 +336,7 @@ export default function Invoice({ details, showOrder }) {
                   street: vendorStreet,
                   company: vendorCompany,
                   taxId: vendorTaxId,
-                  email: vendorEmail
+                  email: vendorEmail,
                 },
                 client: recipient,
                 items: {
@@ -339,14 +347,14 @@ export default function Invoice({ details, showOrder }) {
                   taxes: items.map((i) =>
                     (i.unit_price_w_tax - i.unit_price_wo_tax).toFixed(2)
                   ),
-                  totals: items.map((i) => i.product_total.toFixed(2))
+                  totals: items.map((i) => i.product_total.toFixed(2)),
                 },
                 summary: {
                   total: details.total_to_pay.toFixed(2),
                   shipping_fee: (details.shipping_fee * 1).toFixed(2),
                   tax: (details.total - details.subtotal).toFixed(2),
-                  amount_paid: (0).toFixed(2)
-                }
+                  amount_paid: (0).toFixed(2),
+                },
               }}
               logoUrl={"/images/logo.png"}
             />

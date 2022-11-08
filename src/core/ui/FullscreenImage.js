@@ -1,5 +1,6 @@
-import { Box, Portal, Fade } from "core/ui/_libs";
-import { UiButton } from "core/ui";
+import { Portal, Fade, Box } from "@mui/material";
+
+import Button from "core/ui/Button";
 
 export default function FullscreenImage({ path, props, handleClose }) {
   return (
@@ -19,11 +20,11 @@ export default function FullscreenImage({ path, props, handleClose }) {
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
-                zIndex: 6002
+                zIndex: 6002,
               }}
             >
               <Box sx={{ position: "fixed", right: "1%", bottom: "2%" }}>
-                <UiButton label="close" onClick={handleClose} />
+                <Button label="close" onClick={handleClose} />
               </Box>
               <Box sx={{ overflow: "auto", width: "100%", height: "100%" }}>
                 <img src={path} />

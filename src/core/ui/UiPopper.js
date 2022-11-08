@@ -1,6 +1,6 @@
 import { useState } from "react";
-
-import { Fade, Popper, IconButton, Stack } from "core/ui/_libs";
+import { Fade, Popper, Stack } from "@mui/material";
+import IconButton from "./IconButton";
 
 export default function UiPopper({
   icon,
@@ -16,17 +16,6 @@ export default function UiPopper({
     setAnchorEl(event.currentTarget);
     setOpen((previousOpen) => !previousOpen);
   };
-
-  //   const renderActions = () => {
-  //     if (proceedAction || cancelAction) {
-  //       return (
-  //         <Stack directon="row">
-  //           <>{proceedAction || null}</>
-  //           <>{cancelAction || null}</>
-  //         </Stack>
-  //       );
-  //     }
-  //   };
 
   return (
     <>
@@ -54,11 +43,10 @@ export default function UiPopper({
                 minWidth: "200px",
                 borderColor: "primary.main",
                 borderWidth: 1,
-                borderStyle: "solid"
+                borderStyle: "solid",
               }}
             >
               {props.children}
-              {/* {renderActions} */}
             </Stack>
           </Fade>
         )}

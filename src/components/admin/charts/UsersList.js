@@ -1,25 +1,21 @@
 import React from "react";
 import { useChunk } from "core/hooks";
-
 import {
   List,
   ListItem,
-  ListItemText,
-  Text,
+  Typography,
   ListItemAvatar,
   Box,
   Stack,
-  Divider
-} from "core/ui/_libs";
-
+} from "@mui/material";
+import Avatar from "core/ui/Avatar";
 import { formatDate } from "core/utils/dateHelpers";
+import { SectionHeader } from "./SectionHeader";
 import { useTheme } from "@mui/styles";
-
-import { SectionHeader } from ".";
-import { IconButton, LinkIconButton, IconMapper, UiAvatar } from "core/ui";
-
+import IconMapper from "core/ui/icons/IconMapper";
+import LinkIconButton from "core/ui/LinkIconButton";
+import IconButton from "core/ui/IconButton";
 import { useRouter } from "next/router";
-
 const arrayRand = require("core/utils/arrayRand");
 
 export default function UsersList() {
@@ -28,7 +24,7 @@ export default function UsersList() {
   const limit = 5;
 
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
   const { chunk, next, prev } = useChunk(
     `/api/db/find/users?_sort.created_at=-1&_only=first_name,last_name,email,created_at,img,_id`,
@@ -51,7 +47,7 @@ export default function UsersList() {
                   mb: 2,
                   bgcolor: "background.dark",
                   py: 1,
-                  borderRadius: 2
+                  borderRadius: 2,
                   // borderLeftColor: arrayRand(colors),
                   // borderLeftWidth: 3,
                   // borderLeftStyle: "solid"
@@ -63,35 +59,35 @@ export default function UsersList() {
                     onClick={() =>
                       router.push({
                         pathname: "/admin/resources/[model]/[id]",
-                        query: { model: "users", id: user._id }
+                        query: { model: "users", id: user._id },
                       })
                     }
                   />
                 }
               >
                 <ListItemAvatar>
-                  <UiAvatar
+                  <Avatar
                     size={[42, 42]}
                     path={user.img || undefined}
                     fallback={
-                      <Text sx={{ bgcolor: arrayRand(colors) }}>
+                      <Typography sx={{ bgcolor: arrayRand(colors) }}>
                         {user.first_name.charAt(0)}
-                      </Text>
+                      </Typography>
                     }
                   />
                 </ListItemAvatar>
                 <Stack direction="column">
-                  <Text variant="body">
+                  <Typography variant="body">
                     {user.first_name + " " + user.last_name}
-                  </Text>
+                  </Typography>
 
-                  <Text variant="body2">
+                  <Typography variant="body2">
                     {formatDate(user.created_at, ".").slice(0, 10)}
-                  </Text>
+                  </Typography>
 
-                  <Text variant="caption" sx={{ fontStyle: "oblique" }}>
+                  <Typography variant="caption" sx={{ fontStyle: "oblique" }}>
                     {formatDate(user.created_at, ".").slice(10)}
-                  </Text>
+                  </Typography>
                 </Stack>
               </ListItem>
               {/* <Divider /> */}
@@ -101,17 +97,19 @@ export default function UsersList() {
       <Box sx={{ p: 1, display: "flex", justifyContent: "space-between" }}>
         {[
           {
-            icon: <IconMapper icon="paginate_prev" color="icons.primary" />,
+            icon: "paginate_prev",
             tooltip: "Previous users",
-            onClick: prev
+            onClick: prev,
           },
           {
-            icon: <IconMapper icon="paginate_next" color="icons.primary" />,
+            icon: "paginate_next",
             tooltip: "Next users",
-            onClick: next
-          }
-        ].map((props) => (
-          <IconButton key={props.tooltip} {...props} />
+            onClick: next,
+          },
+        ].map(({ tooltip, icon, ...props }) => (
+          <IconButton key={tooltip} tooltip={tooltip} {...props}>
+            <IconMapper icon={icon} color="icons.primary" />
+          </IconButton>
         ))}
       </Box>
     </Box>

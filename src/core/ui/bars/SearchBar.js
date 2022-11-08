@@ -1,8 +1,7 @@
 import { useState } from "react";
-
-import { IconButton, IconMapper } from "..";
-
-import { TextField, Divider } from "core/ui/_libs";
+import IconMapper from "core/ui/icons/IconMapper";
+import { TextField, Divider } from "@mui/material";
+import IconButton from "../IconButton";
 
 const useSearch = () => {
   const [value, setValue] = useState("");
@@ -14,7 +13,7 @@ const useSearch = () => {
   return {
     value,
     onValueChange,
-    onSearchClicked
+    onSearchClicked,
   };
 };
 
@@ -31,12 +30,11 @@ export default function SearchBar({ placeholder, handleSearch }) {
         endAdornment: (
           <>
             <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
-            <IconButton
-              icon={<IconMapper icon="search" color="icons.primary" />}
-              onClick={() => onSearchClicked(handleSearch)}
-            />
+            <IconButton onClick={() => onSearchClicked(handleSearch)}>
+              <IconMapper icon="search" color="icons.primary" />
+            </IconButton>
           </>
-        )
+        ),
       }}
     />
   );

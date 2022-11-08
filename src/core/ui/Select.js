@@ -1,14 +1,12 @@
 import React from "react";
-
 import {
   InputLabel,
   FormControl,
   MenuItem,
   Select as UiSelect,
-  Text
-} from "core/ui/_libs";
-
-import { IconMapper } from ".";
+  Typography,
+} from "@mui/material";
+import IconMapper from "core/ui/icons/IconMapper";
 
 const Select = (props) => {
   const {
@@ -20,7 +18,7 @@ const Select = (props) => {
     emptyValue,
     name,
     size,
-    inputProps
+    inputProps,
   } = props;
 
   const [value, setValue] = React.useState(init);
@@ -36,17 +34,16 @@ const Select = (props) => {
     <FormControl sx={{ minWidth: 120, width: props.inputWidth }}>
       <InputLabel id="demo-simple-select-label">{label}</InputLabel>
       <UiSelect
-        label={<Text variant="caption">label</Text>}
+        label={<Typography variant="caption">label</Typography>}
         labelId="demo-simple-select-label"
         id="demo-simple-select"
         value={props?.parentValue || value}
         onChange={handleChange}
         name={name}
         size={size}
-        sx={{ fontSize: "1rem" }}
+        sx={{ fontSize: "0.875rem" }}
         inputProps={inputProps}
-        SelectDisplayProps={{ fontSize: "1rem" }}
-        // IconComponent={icon}
+        SelectDisplayProps={{ fontSize: "0.875rem" }}
       >
         {emptyValue && (
           <MenuItem value={emptyValue}>

@@ -1,21 +1,25 @@
 import { useState } from "react";
 import { useAdmin } from "lib/contexts";
-import { Stack, Text, Box, Fade, Divider, Grid } from "core/ui/_libs";
-// import { useFileshare } from "jb-react-file-manager";
+import { useUrls } from "@jb_fmanager/react";
+import IconMapper from "core/ui/icons/IconMapper";
+import FullscreenImage from "core/ui/FullscreenImage";
+
 import {
-  UiButton,
-  IconMapper,
-  UiAvatar,
-  InteractiveImageMenu,
-  FullscreenImage,
-} from "core/ui";
+  Stack,
+  Typography,
+  Box,
+  Divider,
+  Grid,
+  IconButton,
+} from "@mui/material";
+import Button from "core/ui/Button";
 import { useNotification } from "core/hooks";
+import Avatar from "core/ui/Avatar";
 
 const OverlayImage = ({ file, menu }) => {
   const [state, setState] = useState(false);
-  console.log("FILE", file);
+
   return (
-    // <Fade timeout={300} in={show} sx={{ opacity: 0 }}>
     <Box
       onMouseEnter={() => setState(true)}
       onMouseLeave={() => setState(false)}
@@ -42,13 +46,36 @@ const OverlayImage = ({ file, menu }) => {
           zIndex: 2000,
         }}
       >
-        <InteractiveImageMenu menu={menu} />
+        <Stack
+          direction="row"
+          sx={{
+            p: 1,
+            position: "absolute",
+            width: "100%",
+            bottom: 0,
+            left: 0,
+            justifyContent: "flex-end",
+          }}
+        >
+          {menu &&
+            menu.map((props, index) => {
+              return (
+                <IconButton
+                  key={props.tooltip}
+                  onClick={props.onClick}
+                  tooltip={props.tooltip}
+                >
+                  <IconMapper icon={props.icon} color={props.iconColor} />
+                </IconButton>
+              );
+            })}
+        </Stack>
       </Box>
 
-      <UiAvatar
+      <Avatar
         styling={{ borderRadius: "8px" }}
         size={[146, 146]}
-        path={file ? file : null}
+        path={file}
         fallback={
           <IconMapper icon="image_file" sx={{ color: "primary.light" }} />
         }
@@ -67,13 +94,12 @@ const Images = ({
   const [secondary, setSecondary] = useState(
     productImages?.secondary_images || []
   );
-  // const [primary, setPrimary] = useState(productImages?.primary_image || null);
 
   const [fullscreenImage, setFullscreenImage] = useState(null);
 
   const { setManagerOpen } = useAdmin();
 
-  const { shared, shareFile } = useFileshare();
+  const urls = useUrls();
   const notification = useNotification();
 
   const onSubmit = () => {
@@ -101,7 +127,8 @@ const Images = ({
                 file={file}
                 menu={[
                   {
-                    icon: <IconMapper icon="x" color="secondary.main" />,
+                    icon: "x",
+                    iconColor: "secondary.main",
                     onClick: () => {
                       const cp = secondary.slice();
                       cp.splice(index, 1);
@@ -109,21 +136,19 @@ const Images = ({
                     },
                     tooltip: "Remove image",
                   },
+
                   {
-                    icon: (
-                      <IconMapper icon="image_file" color="secondary.main" />
-                    ),
+                    icon: "image_file",
+                    iconColor: "secondary.main",
+
                     onClick: () => setFullscreenImage(file),
 
                     tooltip: "Fullscreen",
                   },
                   {
-                    icon: (
-                      <IconMapper
-                        icon="star_empty"
-                        color={file === primary ? "gold" : "secondary.main"}
-                      />
-                    ),
+                    icon: "star_empty",
+                    iconColor: file === primary ? "gold" : "secondary.main",
+
                     onClick: () =>
                       handleSetPrimary(file === primary ? null : file),
                     tooltip: "Set primary image",
@@ -133,14 +158,14 @@ const Images = ({
             </Grid>
           ))
         ) : (
-          <Text variant="body2">
+          <Typography variant="body2">
             There are no images attached to this product
-          </Text>
+          </Typography>
         )}
       </Grid>
 
       <Divider sx={{ mb: 2 }} />
-      <Text sx={{ mb: 2 }}>Shared images</Text>
+      <Typography sx={{ mb: 2 }}>Shared images</Typography>
       <Grid
         container
         direction={{ xs: "column", md: "row" }}
@@ -148,42 +173,32 @@ const Images = ({
         spacing={3}
         sx={{ mb: 4 }}
       >
-        {shared.length
-          ? shared.map((file) => {
-              const f = file.split("public")[1];
-
+        {urls.length
+          ? urls.map((url) => {
               return (
-                <Grid key={f} item xs={1}>
+                <Grid key={url} item xs={1}>
                   <OverlayImage
-                    key={f}
-                    file={f}
+                    key={url}
+                    file={url}
                     menu={[
                       {
-                        icon: <IconMapper icon="x" color="secondary.main" />,
-                        onClick: () => shareFile(file),
-                        tooltip: "Remove image",
-                      },
-                      {
-                        icon: (
-                          <IconMapper
-                            icon="image_file"
-                            color="secondary.main"
-                          />
-                        ),
-                        onClick: () => setFullscreenImage(f),
+                        icon: "image_file",
+                        iconColor: "secondary.main",
+                        onClick: () => setFullscreenImage(url),
 
                         tooltip: "Fullscreen",
                       },
                       {
-                        icon: <IconMapper icon="plus" color="secondary.main" />,
+                        icon: "plus",
+                        iconColor: "secondary.main",
                         onClick: () => {
-                          if (secondary.indexOf(f) !== -1) {
+                          if (secondary.indexOf(url) !== -1) {
                             notification.set("Image already exists", "info");
                             notification.show();
                             return false;
                           }
 
-                          setSecondary([...secondary, f]);
+                          setSecondary([...secondary, url]);
                         },
                         tooltip: "Add image",
                       },
@@ -195,13 +210,13 @@ const Images = ({
           : null}
       </Grid>
       <Stack direction="row" justifyContent="space-between">
-        <UiButton
+        <Button
           label="browse files"
           variant="outlined"
           onClick={setManagerOpen}
           styling={{ mr: 3 }}
         />
-        <UiButton label="Update" onClick={onSubmit} />
+        <Button label="Update" onClick={onSubmit} />
       </Stack>
 
       {notification.component}

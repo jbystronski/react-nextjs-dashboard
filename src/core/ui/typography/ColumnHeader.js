@@ -1,18 +1,18 @@
-import { Text } from "core/ui/_libs";
+import { Typography } from "@mui/material";
 
 export default function ColumnHeader({ children }) {
   return (
-    <Text
+    <Typography
       variant="body1"
       sx={{
         fontWeight: "600",
         mt: 1,
         mb: 1,
-        // textTransform: "uppercase",
-        color: "text.secondary"
+
+        color: "text.secondary",
       }}
     >
       {children}
-    </Text>
+    </Typography>
   );
 }

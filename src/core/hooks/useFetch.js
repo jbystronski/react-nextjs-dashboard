@@ -10,11 +10,11 @@ const useFetch = (url, options) => {
     try {
       const res = await fetch(url, options);
       const json = await res.json();
-      console.log("resp", json);
+
       setData(json);
     } catch (e) {
       setError(e);
-      console.log(e);
+      console.error(e);
     }
   }
 

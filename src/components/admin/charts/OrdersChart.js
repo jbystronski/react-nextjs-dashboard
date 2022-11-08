@@ -1,21 +1,17 @@
 import { useState } from "react";
-
-import { Chart } from ".";
-
+import { Chart } from "./Chart";
 import { useFetch } from "core/hooks";
-
-import { Paper } from "core/ui/_libs";
-
+import { Paper } from "@mui/material";
 import {
   getYearFirstDay,
   getToday,
-  setTimeRange
+  setTimeRange,
 } from "core/utils/dateHelpers";
 import { useTheme } from "@mui/styles";
 
 export const OrdersChart = () => {
   const {
-    palette: { misc: colors }
+    palette: { misc: colors },
   } = useTheme();
 
   const [timeUnit, setTimeUnit] = useState("day");
@@ -42,7 +38,7 @@ export const OrdersChart = () => {
       if (!chartData.hasOwnProperty(key)) {
         chartData[key] = {
           count: 1,
-          total: el["total_to_pay"]
+          total: el["total_to_pay"],
         };
       } else {
         chartData[key]["count"]++;
@@ -61,9 +57,9 @@ export const OrdersChart = () => {
           fillColor: "rgba(220,220,220,0.5)",
           highlightFill: "rgba(220,220,220,0.75)",
           highlightStroke: "rgba(220,220,220,1)",
-          data: Object.values(chartData).map((el) => el["total"])
-        }
-      ]
+          data: Object.values(chartData).map((el) => el["total"]),
+        },
+      ],
     };
   };
 

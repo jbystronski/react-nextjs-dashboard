@@ -1,6 +1,12 @@
 import React from "react";
 
-import { List, ListItem, ListItemText, Switch, Text } from "core/ui/_libs";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  Switch,
+  Typography,
+} from "@mui/material";
 
 const SwitchList = ({
   list,
@@ -9,22 +15,22 @@ const SwitchList = ({
   isChecked,
   labelProps,
   listProps,
-  subheader
+  subheader,
 }) => {
   return (
     <List
       {...listProps}
       subheader={
         <ListItem>
-          <Text
+          <Typography
             sx={{
               textTransform: "uppercase",
 
-              color: "primary.main"
+              color: "primary.main",
             }}
           >
             {subheader}
-          </Text>
+          </Typography>
         </ListItem>
       }
     >
