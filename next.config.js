@@ -49,7 +49,7 @@ const options = {
     [
       "react-is",
       "@emotion/unitless",
-      "@babel/runtime",
+
       "@react-pdf/pdfkit",
       "restructure",
       "clone",
