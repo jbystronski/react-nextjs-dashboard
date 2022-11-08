@@ -96,13 +96,9 @@ const options = {
 
     seedersPath: envVars.SEEDERS_PATH,
     isDevelopment: envVars.NODE_ENV === "development",
-
-    db: {
-      client: envVars.DB_CLIENT,
-      host: envVars.DB_HOST,
-      database: envVars.DB_DATABASE,
-      resourceParam: "model",
-    },
+    db_database: envVars.DB_DATABASE,
+    db_host: envVars.DB_HOST,
+    db_resparam: "model",
   },
 };
 
