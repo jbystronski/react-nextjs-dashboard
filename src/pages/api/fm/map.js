@@ -3,7 +3,7 @@ const path = require("path");
 
 export default async (req, res) => {
   try {
-    const result = await map(path.join(proces.cwd(), "public"));
+    const result = await map(path.join(process.cwd(), "public"));
 
     return res.status(200).json(result);
   } catch (error) {
