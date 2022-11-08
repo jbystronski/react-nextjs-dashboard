@@ -21,7 +21,7 @@ export default async (req, res) => {
 
     const data = await q.run();
 
-    console.log("Data", data);
+    console.log("DATA", data);
 
     return res.status(200).json(data);
   } catch (e) {
