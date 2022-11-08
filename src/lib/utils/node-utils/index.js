@@ -114,7 +114,7 @@ exports.map = async (root) => {
   if (!root) throw Error("Missing root argument");
 
   try {
-    const target = path.resolve(root);
+    const target = path.join(process.cwd(), root);
 
     const stat = await fs.stat(target);
 
