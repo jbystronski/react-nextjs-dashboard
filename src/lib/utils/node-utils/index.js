@@ -88,6 +88,22 @@ const parseFileInfo = (stat) => {
   };
 };
 
+const resolvePath = async (filePath) => {
+  let p;
+
+  p = path.resolve(filePath);
+
+  console.log("path one", p);
+
+  const exists = await fs.stat(p);
+
+  if (!exists) {
+    p = path.join(process.cwd(), filePath);
+  }
+
+  return p;
+};
+
 const mapFilesHelper = async (path, target = []) => {
   try {
     for (const file of await fs.readdir(path)) {
@@ -114,7 +130,7 @@ exports.map = async (root) => {
   if (!root) throw Error("Missing root argument");
 
   try {
-    const target = path.join(process.cwd(), root);
+    const target = await resolvePath(root);
 
     const stat = await fs.stat(target);
 
