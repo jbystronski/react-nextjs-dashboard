@@ -9,7 +9,6 @@ import { useValidation, useNotification } from "core/hooks";
 import dynamic from "next/dynamic";
 
 const Product = dynamic(() => import("./product/Main"));
-const MailingList = dynamic(() => import("./mailing_list/Index"));
 
 const CreateForm = ({ model }) => {
   const { validate, getError, isValid } = useValidation(
@@ -20,7 +19,6 @@ const CreateForm = ({ model }) => {
 
   const forms = {
     products: <Product />,
-    mailing_lists: <MailingList />,
   };
 
   const handleSubmit = async (data) => {
