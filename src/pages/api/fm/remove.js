@@ -1,4 +1,4 @@
-const { remove } = require("@jb_fmanager/node-utils");
+const { remove } = require("../../../lib/utils/node-utils");
 
 export default async (req, res) => {
   try {

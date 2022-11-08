@@ -1,4 +1,4 @@
-const { move } = require("@jb_fmanager/node-utils");
+const { move } = require("../../../lib/utils/node-utils");
 
 export default async (req, res) => {
   try {

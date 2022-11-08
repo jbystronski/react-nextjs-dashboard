@@ -1,4 +1,4 @@
-const { map } = require("@jb_fmanager/node-utils");
+const { map } = require("../../../lib/utils/node-utils");
 const path = require("path");
 
 export default async (req, res) => {

@@ -1,4 +1,4 @@
-const { rename } = require("@jb_fmanager/node-utils");
+const { rename } = require("../../../lib/utils/node-utils");
 
 export default async (req, res) => {
   try {

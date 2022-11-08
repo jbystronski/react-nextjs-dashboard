@@ -1,4 +1,4 @@
-const { create_folder } = require("@jb_fmanager/node-utils");
+const { create_folder } = require("../../../lib/utils/node-utils");
 
 export default async (req, res) => {
   try {
