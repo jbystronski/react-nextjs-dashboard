@@ -84,13 +84,9 @@ const options = {
   // },
 
   env: {
-    localDbPath: envVars.LOCAL_DB_PATH,
     env: envVars.NODE_ENV,
     weather_app_key: envVars.WEATHER_APP_KEY,
     db: envVars.DB_CLIENT,
-    domain: envVars.DOMAIN,
-    port: envVars.PORT,
-    baseUrl: "http://" + envVars.DOMAIN + ":" + envVars.PORT + "/",
 
     seedersPath: envVars.SEEDERS_PATH,
     isDevelopment: envVars.NODE_ENV === "development",
