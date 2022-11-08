@@ -13,9 +13,15 @@ export default async (req, res) => {
         mode: "no_persist",
       }));
 
+    console.log("CONN", conn);
+
     const q = await Query.create({ connection: conn, url, body });
 
+    console.log("Q", q);
+
     const data = await q.run();
+
+    console.log("Data", data);
 
     return res.status(200).json(data);
   } catch (e) {
