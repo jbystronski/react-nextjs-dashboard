@@ -19,7 +19,6 @@
     "seed": "db-essentials-seed ./src/lib/seeders ./src/lib/db persist"
   },
   "dependencies": {
-    "@db-essentials/base": "^2.0.2",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@jb_fmanager/node-utils": "^1.0.4",

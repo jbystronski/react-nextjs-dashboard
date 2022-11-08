@@ -1,4 +1,4 @@
-const { Query, Connection } = require("@db-essentials/base");
+const { Query, Connection } = require("./../../../../lib/db/local_db");
 const path = require("path");
 
 export default async (req, res) => {
@@ -13,15 +13,9 @@ export default async (req, res) => {
         mode: "no_persist",
       }));
 
-    console.log("CONN", conn);
-
     const q = await Query.create({ connection: conn, url, body });
 
-    console.log("Q", q);
-
     const data = await q.run();
-
-    console.log("DATA", data);
 
     res.status(200).json(data);
   } catch (e) {
