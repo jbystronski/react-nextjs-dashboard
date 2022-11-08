@@ -21,13 +21,11 @@ const envVarsSchema = joi
       .required()
       .default("development"),
     PORT: joi.number().default(3000),
-    DOMAIN: joi.string().default("localhost"),
+
     DB_CLIENT: joi
       .string()
       .valid("persist", "no_persist", "mongo")
       .default("no_persist"),
-    DB_HOST: joi.string().default("test"),
-    DB_DATABASE: joi.string().default("test"),
   })
   .unknown();
 
@@ -96,9 +94,6 @@ const options = {
 
     seedersPath: envVars.SEEDERS_PATH,
     isDevelopment: envVars.NODE_ENV === "development",
-    db_database: envVars.DB_DATABASE,
-    db_host: envVars.DB_HOST,
-    db_resparam: "model",
   },
 };
 
