@@ -114,7 +114,7 @@ exports.map = async (root) => {
   if (!root) throw Error("Missing root argument");
 
   try {
-    const target = root;
+    const target = path.resolve(root);
 
     const stat = await fs.stat(target);
 
