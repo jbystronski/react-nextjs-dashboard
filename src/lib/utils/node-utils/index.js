@@ -89,11 +89,16 @@ const parseFileInfo = (stat) => {
 };
 
 const resolvePath = async (filePath) => {
-  let exists = fs.existsSync(filePath);
+  switch (true) {
+    case fs.existsSync(filePath):
+      return filePath;
+    case fs.existsSync(path.resolve(filePath)):
+      return filePath;
+    case fs.existsSync(path.join(process.cwd(), filePath)):
+      return filePath;
+  }
 
-  console.log("ex", exists);
-
-  return filePath;
+  throw Error("Can't access file " + filePath);
 };
 
 const mapFilesHelper = async (path, target = []) => {
