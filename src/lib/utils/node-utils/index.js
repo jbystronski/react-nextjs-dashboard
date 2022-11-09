@@ -89,11 +89,10 @@ const parseFileInfo = (stat) => {
 };
 
 const resolvePath = async (filePath) => {
+  return filePath;
   console.log("path", filePath);
 
   let exists = fs.existsSync(filePath);
-
-  console.log("exists", exists);
 
   if (exists) return filePath;
 };
