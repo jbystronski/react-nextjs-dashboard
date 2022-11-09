@@ -89,6 +89,7 @@ const parseFileInfo = (stat) => {
 };
 
 const resolvePath = async (filePath) => {
+  console.log("fPath", filePath);
   let p;
   let exists;
 
