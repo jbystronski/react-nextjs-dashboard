@@ -24,7 +24,7 @@ const Main = (props) => {
             id="jb_fmanager"
             mount="public"
             maxUploadSize="6291456"
-            browserOnly={false}
+            browserOnly={true}
             parentDarkMode={palette.mode === "dark"}
             stackIndex={6000}
             lightTheme={{}}

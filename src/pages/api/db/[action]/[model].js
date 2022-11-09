@@ -1,4 +1,4 @@
-const { Query, Connection } = require("./../../../../lib/db/local_db");
+const { Query, Connection } = require("@db-essentials/base");
 const path = require("path");
 
 export default async (req, res) => {
