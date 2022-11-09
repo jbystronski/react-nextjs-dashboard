@@ -144,6 +144,11 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@db-essentials/base@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@db-essentials/base/-/base-2.0.2.tgz#1901fd4ace92427df53db502f712c17a3612c344"
+  integrity sha512-OXpWpNCJT31oscidR7KDTWsiaRXzWNRJeTI6S8SZgqzwS41QocKoWZAr21qCr6Yxa69Ri0NQg5ivwY4QPOLTqQ==
+
 "@emotion/babel-plugin@^11.10.5":
   version "11.10.5"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.10.5.tgz#65fa6e1790ddc9e23cc22658a4c5dea423c55c3c"
