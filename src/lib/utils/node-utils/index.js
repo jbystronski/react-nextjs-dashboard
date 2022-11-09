@@ -90,11 +90,11 @@ const parseFileInfo = (stat) => {
 
 const resolvePath = async (filePath) => {
   switch (true) {
-    case fs.existsSync(filePath):
+    case await fs.pathExists(filePath):
       return filePath;
-    case fs.existsSync(path.resolve(filePath)):
+    case await fs.pathExists(path.resolve(filePath)):
       return filePath;
-    case fs.existsSync(path.join(process.cwd(), filePath)):
+    case await fs.pathExists(path.join(process.cwd(), filePath)):
       return filePath;
   }
 
