@@ -97,8 +97,10 @@ const resolvePath = async (filePath) => {
 
   const exists = await fs.stat(p);
 
+  console.log("ex", exists);
+
   if (!exists) {
-    p = path.join(process.cwd(), filePath);
+    p = path.resolve(process.cwd(), filePath);
   }
 
   return p;
