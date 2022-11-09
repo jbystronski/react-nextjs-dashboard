@@ -8,7 +8,7 @@ export default async (req, res) => {
   console.log("joined", path.join(process.cwd(), req.query.path));
   try {
     await create_folder(
-      path.join(process.cwd(), req.query.path),
+      path.resolve(process.cwd(), req.query.path),
       req.query.name
     );
 
