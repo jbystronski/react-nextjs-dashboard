@@ -2,8 +2,6 @@ const { create_folder } = require("../../../lib/utils/node-utils");
 const path = require("path");
 
 export default async (req, res) => {
-  console.log("dddddddddddddddddddddddddddd");
-
   console.log("browsr only false, creating dir");
   console.log("dir new", req.query.path);
   console.log("resolved", path.resolve(process.cwd(), req.query.path));
