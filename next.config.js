@@ -94,6 +94,9 @@ const options = {
 };
 
 module.exports = {
+  serverRuntimeConfig: {
+    PROJECT_ROOT: __dirname,
+  },
   ...withBundleAnalyzer(options),
   images: {
     domains: ["localhost"],

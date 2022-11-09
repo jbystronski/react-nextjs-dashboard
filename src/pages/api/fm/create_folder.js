@@ -1,14 +1,22 @@
 const { create_folder } = require("../../../lib/utils/node-utils");
 const path = require("path");
+import getConfig from "next/config";
+const { serverRuntimeConfig } = getConfig();
 
 export default async (req, res) => {
   console.log("browsr only false, creating dir");
   console.log("dir new", req.query.path);
-  console.log("resolved", path.resolve(process.cwd(), req.query.path));
-  console.log("joined", path.join(process.cwd(), req.query.path));
+  console.log(
+    "resolved",
+    path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path)
+  );
+  console.log(
+    "joined",
+    path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path)
+  );
   try {
     await create_folder(
-      path.resolve(process.cwd(), req.query.path),
+      path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path),
       req.query.name
     );
 
