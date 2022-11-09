@@ -89,21 +89,9 @@ const parseFileInfo = (stat) => {
 };
 
 const resolvePath = async (filePath) => {
-  console.log("fPath", filePath);
-  let p;
-  let exists;
+  let exists = fs.existsSync(filePath);
 
-  p = path.resolve(filePath);
-
-  console.log("path one", p);
-
-  try {
-    await fs.stat(p);
-  } catch (error) {
-    if (error) p = path.resolve(process.cwd(), filePath);
-  }
-
-  return p;
+  if (exists) return filePath;
 };
 
 const mapFilesHelper = async (path, target = []) => {
