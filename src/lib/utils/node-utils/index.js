@@ -90,17 +90,16 @@ const parseFileInfo = (stat) => {
 
 const resolvePath = async (filePath) => {
   let p;
+  let exists;
 
   p = path.resolve(filePath);
 
   console.log("path one", p);
 
-  const exists = await fs.stat(p);
-
-  console.log("ex", exists);
-
-  if (!exists) {
-    p = path.resolve(process.cwd(), filePath);
+  try {
+    await fs.stat(p);
+  } catch (error) {
+    if (error) p = path.resolve(process.cwd(), filePath);
   }
 
   return p;
