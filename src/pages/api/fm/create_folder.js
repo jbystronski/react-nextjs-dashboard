@@ -6,17 +6,11 @@ const { serverRuntimeConfig } = getConfig();
 export default async (req, res) => {
   console.log("browsr only false, creating dir");
   console.log("dir new", req.query.path);
-  console.log(
-    "resolved",
-    path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path)
-  );
-  console.log(
-    "joined",
-    path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path)
-  );
+  console.log("resolved", path.resolve("./public", req.query.path));
+  console.log("joined", path.resolve("./public", req.query.path));
   try {
     await create_folder(
-      path.resolve(serverRuntimeConfig.PROJECT_ROOT, req.query.path),
+      path.resolve("./public", req.query.path),
       req.query.name
     );
 
