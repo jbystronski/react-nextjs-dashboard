@@ -24,14 +24,14 @@ const Header = (props) => {
         sx={{
           width: "100%",
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "end",
           alignItems: "center",
         }}
       >
         <Box>
           <ThemesMenu />
 
-          <SettingsMenu />
+          {/* <SettingsMenu /> */}
         </Box>
       </Stack>
     </Toolbar>
