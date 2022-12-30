@@ -6,7 +6,7 @@ import OrdersTimeline from "./OrdersTimeline";
 import BestsellersList from "./BestsellersList";
 import UsersList from "./UsersList";
 
-import { WeatherWidget } from "jb-react-weather-widget";
+import WeatherWidget from "jb-react-weather-widget";
 import { useTheme } from "@mui/styles";
 import { useWindowSize } from "core/hooks";
 
@@ -43,12 +43,8 @@ const ChartsLayout = () => {
             }}
           >
             <WeatherWidget
-              defaultLocation="Warsaw"
-              units={{
-                speed: "kmh",
-                temperature: "celsius",
-              }}
-              remember={false}
+              apiKey={process.env.weather_app_key}
+              units="metric"
               theme={{
                 color: {
                   font: {
