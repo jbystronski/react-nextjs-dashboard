@@ -15,7 +15,7 @@ export const OrdersChart = () => {
   } = useTheme();
 
   const [timeUnit, setTimeUnit] = useState("day");
-  const [from, setFrom] = useState(getYearFirstDay);
+  const [from, setFrom] = useState("2022-01-01");
   const [to, setTo] = useState(getToday);
 
   const { data, error } = useFetch(

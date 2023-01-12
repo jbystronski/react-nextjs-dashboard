@@ -38,9 +38,9 @@ export function padDate(num) {
   }
 }
 
-export function getYearFirstDay() {
+export function getYearFirstDay(year) {
   var d = new Date();
-  return d.getFullYear() + "-01-01";
+  return (year ? d.setFullYear(year) : d.getFullYear()) + "-01-01";
 }
 
 export function getToday(sep = "-") {

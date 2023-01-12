@@ -21,7 +21,7 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
         isValid={isValid}
       />
     ),
-    reviews: id && <Reviews id={id} />,
+    // reviews: id && <Reviews id={id} />,
     images: (
       <Images
         key={id}
@@ -59,7 +59,7 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
           {
             {
               0: "Product information",
-              1: "Product reviews",
+              // 1: "Product reviews",
               2: "Product images",
             }[view]
           }
@@ -68,7 +68,7 @@ const Main = ({ data, handleSubmit, id, getError, isValid }) => {
         <Box>
           {[
             ["list", "General details", "general"],
-            ["star_empty", "Reviews", "reviews"],
+            // ["star_empty", "Reviews", "reviews"],
             ["image_file", "Images", "images"],
           ].map((a, index) => (
             <IconButton
