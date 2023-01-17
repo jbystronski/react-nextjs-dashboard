@@ -43,9 +43,6 @@ export default function TimeRange({ refresh }) {
   };
 
   const handleSetTime = (e) => {
-    console.log(e);
-    return;
-
     setTimeUnit(e.target.value);
   };
 
@@ -64,7 +61,7 @@ export default function TimeRange({ refresh }) {
           label="Set time unit"
           selected={timeUnit}
           options={["hour", "day", "month", "year"]}
-          handleChange={setTimeUnit}
+          handleChange={handleSetTime}
         />
         <RefreshButton handleClick={() => refresh(from, to, timeUnit)} />
       </Stack>

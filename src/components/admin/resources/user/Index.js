@@ -53,7 +53,7 @@ function Index({ id }) {
               <Stack
                 key="user_top"
                 flexDirection={{ xs: "column", sm: "column", md: "row" }}
-                alignItems="center"
+                alignItems={{ xs: "center", md: "flex-start" }}
               >
                 <Avatar
                   size={[128, 128]}

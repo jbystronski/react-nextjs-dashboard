@@ -1,5 +1,4 @@
 import FullScreenLoader from "core/ui/FullScreenLoader";
-
 import { useState, useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
@@ -17,8 +16,6 @@ function MyApp({ Component, pageProps }) {
   ) : (
     getLayout(<Component {...pageProps}></Component>)
   );
-
-  // return <Component {...pageProps} />;
 }
 
 export default MyApp;
